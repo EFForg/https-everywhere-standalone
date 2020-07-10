@@ -1,0 +1,14 @@
+[package]
+name = "https-everywhere-mitmproxy-pyo"
+version = "0.1.0"
+authors = ["William Budington <bill@eff.org>"]
+edition = "2018"
+
+[lib]
+name = "https_everywhere_mitmproxy_pyo"
+crate-type = ["cdylib"]
+
+[dependencies]
+https-everywhere-lib-core = { path = "lib-core" }
+pyo3 = { version = "0.11.1", features = ["extension-module"] }
+simple_logger = "1.0"

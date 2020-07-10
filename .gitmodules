@@ -1,0 +1,3 @@
+[submodule "rust/lib-core"]
+	path = rust/lib-core
+	url = https://github.com/efforg/https-everywhere-lib-core.git
