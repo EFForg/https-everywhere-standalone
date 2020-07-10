@@ -10,8 +10,8 @@ This project uses the [`https-everywhere-lib-core`](https://github.com/EFForg/ht
 
 Platform support is limited, so first try this.  If it doesn't work, try the 'developing' section below.
 
-    apt install libssl1.1 python3-pip wget
-    ./install.sh
+    sudo apt install libssl1.1 python3-pip wget
+    sudo ./install.sh
     cp pre-mitm.sh.example pre-mitm.sh     # edit this file if necessary, this is meant to work with the above RasPi project
     cp post-mitm.sh.example post-mitm.sh   # same here
     ./mitm.sh
@@ -20,7 +20,7 @@ Platform support is limited, so first try this.  If it doesn't work, try the 'de
 
 In order to build the project, you'll need to have [rust](https://rust-lang.org/) >= 1.39 installed.
 
-    apt install libssl-dev pkg-config python3-pip python3-venv
+    sudo apt install libssl-dev pkg-config python3-pip python3-venv
     python3 -m venv .venv
     source .venv/bin/activate
     pip3 install -r requirements-develop.txt
