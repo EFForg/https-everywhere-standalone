@@ -11,7 +11,7 @@ This project uses the [`https-everywhere-lib-core`](https://github.com/EFForg/ht
 Platform support is limited, so first try this.  If it doesn't work, try the 'developing' section below.
 
     apt install libssl1.1 python3-pip wget
-    pip3 install -r requirements.txt
+    ./install.sh
     cp pre-mitm.sh.example pre-mitm.sh     # edit this file if necessary, this is meant to work with the above RasPi project
     cp post-mitm.sh.example post-mitm.sh   # same here
     ./mitm.sh

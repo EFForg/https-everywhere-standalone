@@ -12,7 +12,7 @@ else
 	MVER=${VERSION}m
 fi
 
-if wget -P rust/wheels/ https_everywhere_mitmproxy_pyo-0.1.0-${IMPLEMENTATION}${VERSION}-${IMPLEMENTATION}${MVER}-${PLATFORM}_${ARCH}.whl; then
+if wget -P rust/wheels/ https://github.com/EFForg/https-everywhere-mitmproxy-wheels/raw/master/https_everywhere_mitmproxy_pyo-0.1.0-${IMPLEMENTATION}${VERSION}-${IMPLEMENTATION}${MVER}-${PLATFORM}_${ARCH}.whl; then
 	pip3 install -r requirements.txt
 else
 	echo "Error: https-everywhere-mitmproxy is not supported on your system."
