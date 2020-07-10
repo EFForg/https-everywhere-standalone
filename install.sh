@@ -1,3 +1,5 @@
+#!/bin/bash
+
 PLATFORM=`python3 -c "import sys; print(sys.platform)"`
 ARCH=`python3 -c "import platform; print(platform.machine())"`
 VERSION=`python3 -c "import platform; print(platform.python_version()[:3])" | sed 's/\.//g'`
