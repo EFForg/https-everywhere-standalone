@@ -12,9 +12,7 @@ Platform support is limited, so first try this.  If it doesn't work, try the 'de
 
     sudo apt install libssl1.1 python3-pip wget
     sudo ./install.sh
-    cp pre-mitm.sh.example pre-mitm.sh     # edit this file if necessary, this is meant to work with the above RasPi project
-    cp post-mitm.sh.example post-mitm.sh   # same here
-    ./mitm.sh
+    sudo ./mitm.sh
 
 ## Developing
 
@@ -30,4 +28,4 @@ In order to build the project, you'll need to have [rust](https://rust-lang.org/
     cd ..
     cp pre-mitm.sh.example pre-mitm.sh     # edit this file if necessary, this is meant to work with the above RasPi project
     cp post-mitm.sh.example post-mitm.sh   # same here
-    ./mitm.sh
+    sudo ./mitm.sh

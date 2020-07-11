@@ -43,12 +43,12 @@ class Rewriter:
                 b"HTTPS Everywhere has blocked this request",
                 {"Content-Type": "text/html", "Location": "https" + url[4:]}
             )
-            print("Cancelling request for: \n\t" + url)
+            ctx.log.info("Cancelling request for: \n\t" + url)
         elif ra[1] == True:
-            print("Not modifying request for: \n\t" + url)
+            ctx.log.info("Not modifying request for: \n\t" + url)
             pass
         else:
-            print("Redirecting request for/to: \n\t" + url + "\n\t" + ra[2])
+            ctx.log.info("Redirecting request for/to: \n\t" + url + "\n\t" + ra[2])
             flow.response = http.HTTPResponse.make(
                 302,
                 b"HTTPS Everywhere has blocked this request",
