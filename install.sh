@@ -17,7 +17,7 @@ fi
 if wget -c -P rust/wheels/ https://github.com/EFForg/https-everywhere-mitmproxy-wheels/raw/master/https_everywhere_mitmproxy_pyo-0.1.0-${IMPLEMENTATION}${VERSION}-${IMPLEMENTATION}${MVER}-${PLATFORM}_${ARCH}.whl; then
 	pip3 install -r requirements.txt
 	pip3 install --upgrade --force pyasn1 # who knows why we have to do this...
-	read -p "Do you wish to proxy connections on this machine? [Yn] " yn
+	read -p "Is this the workstation you would like to secure connections from? [Yn] " yn
 	[ -z "$yn" ] && yn="Y"
 	case $yn in
 		[Yy]* ) echo "Adding user 'mitmproxy'..."
