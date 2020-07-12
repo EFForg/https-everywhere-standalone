@@ -10,7 +10,7 @@ This project uses the [`https-everywhere-lib-core`](https://github.com/EFForg/ht
 
 Platform support is limited, so first try this.  If it doesn't work, try the 'developing' section below.
 
-    sudo apt install libssl-dev libssl1.1 python3-pip wget
+    sudo apt install libssl-dev locales-all python3-pip wget
     sudo ./install.sh
     sudo ./mitm.sh
 
