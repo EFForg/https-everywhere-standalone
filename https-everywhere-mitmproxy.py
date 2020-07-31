@@ -1,4 +1,5 @@
-from mitmproxy import http, ctx
+from mitmproxy import http, ctx, proxy, options
+from mitmproxy.tools.dump import DumpMaster
 import https_everywhere_mitmproxy_pyo as https_everywhere
 
 class Rewriter:
@@ -63,7 +64,16 @@ class Rewriter:
         https_everywhere.destroy_storage(self.s_ptr)
 
 
+opts = options.Options(listen_host='127.0.0.1', listen_port=8080)
+opts.add_option("body_size_limit", int, 0, "")
+opts.add_option("allow_hosts", list, ["^http"], "")
+pconf = proxy.config.ProxyConfig(opts)
 
-addons = [
-    Rewriter()
-]
+m = DumpMaster(None)
+m.addons.add(Rewriter())
+m.server = proxy.server.ProxyServer(pconf)
+
+try:
+        m.run()
+except KeyboardInterrupt:
+        m.shutdown()
