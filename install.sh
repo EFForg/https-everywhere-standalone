@@ -28,8 +28,6 @@ if wget -c -P rust/wheels/ https://github.com/EFForg/https-everywhere-mitmproxy-
 				echo "Creating 'post-mitm.sh'..."
 				echo "iptables -t nat -D OUTPUT -p tcp --dport 80 -m owner ! --uid-owner 1789 -j DNAT --to 127.0.0.1:8080" > post-mitm.sh
 				chmod +x post-mitm.sh
-				echo "Altering 'mitm.sh' to run from new 'httpse' user..."
-				sed -i 's/^python/sudo -u httpse python/g' mitm.sh
 				echo "DONE"
 				break
 				;;
