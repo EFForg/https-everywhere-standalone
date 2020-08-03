@@ -2,6 +2,13 @@ from mitmproxy import http, ctx, proxy, options
 from mitmproxy.tools.dump import DumpMaster
 import https_everywhere_mitmproxy_pyo as https_everywhere
 
+import os, sys
+# If we are packaged as a standalone executable, cd into temp dir
+try:
+    os.chdir(sys._MEIPASS)
+except AttributeError:
+    pass
+
 class Rewriter:
     def __init__(self):
         self.rs_ptr = https_everywhere.create_rulesets()
@@ -67,6 +74,8 @@ class Rewriter:
 opts = options.Options(listen_host='127.0.0.1', listen_port=8080)
 opts.add_option("body_size_limit", int, 0, "")
 opts.add_option("allow_hosts", list, ["^http"], "")
+opts.add_option("flow_detail", int, 0, "")
+opts.add_option("termlog_verbosity", str, "error", "")
 pconf = proxy.config.ProxyConfig(opts)
 
 m = DumpMaster(None)
