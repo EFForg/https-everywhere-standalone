@@ -1,8 +1,8 @@
 from mitmproxy import http, ctx, proxy, options
 from mitmproxy.tools.dump import DumpMaster
 import https_everywhere_mitmproxy_pyo as https_everywhere
+import os, sys, argparse
 
-import os, sys
 # If we are packaged as a standalone executable, cd into temp dir
 try:
     os.chdir(sys._MEIPASS)
@@ -71,11 +71,18 @@ class Rewriter:
         https_everywhere.destroy_storage(self.s_ptr)
 
 
+parser = argparse.ArgumentParser()
+parser.add_argument('--transparent', action='store_true', default=False,
+        help='Run in transparent mode (default: false)')
+args = parser.parse_args()
+
 opts = options.Options(listen_host='127.0.0.1', listen_port=8080)
 opts.add_option("body_size_limit", int, 0, "")
 opts.add_option("allow_hosts", list, ["^http"], "")
 opts.add_option("flow_detail", int, 0, "")
 opts.add_option("termlog_verbosity", str, "error", "")
+if args.transparent:
+    opts.add_option("mode", str, "transparent", "")
 pconf = proxy.config.ProxyConfig(opts)
 
 m = DumpMaster(None)
