@@ -1,50 +1,104 @@
 use https_everywhere_lib_core::{updater::{UpdateChannels, Updater}, RuleSets, rewriter::{Rewriter, RewriteAction}, Storage, Settings};
-use std::collections::HashMap;
 use std::fs;
 use std::sync::{Arc, Mutex};
+use rusqlite::NO_PARAMS;
+use rusqlite::{params, Connection, OptionalExtension};
 
 use pyo3::prelude::*;
 use pyo3::wrap_pyfunction;
 
-#[derive(Default)]
-pub struct WorkingTempStorage {
-    ints: HashMap<String, usize>,
-    bools: HashMap<String, bool>,
-    strings: HashMap<String, String>,
+pub struct SQLiteStorage {
+    conn: Mutex<Connection>,
 }
 
-impl Storage for WorkingTempStorage {
-    fn get_int(&self, key: String) -> Option<usize> {
-        match self.ints.get(&key) {
-            Some(value) => Some(*value),
-            None => None
+impl SQLiteStorage {
+    fn new() -> SQLiteStorage {
+        let conn_mutex = Mutex::new(Connection::open("storage.db").unwrap());
+        {
+            let conn = conn_mutex.lock().unwrap();
+            conn.execute("
+                CREATE TABLE IF NOT EXISTS `ints` (
+                    `key` STRING PRIMARY KEY,
+                    `value` INTEGER NOT NULL
+                )",
+                NO_PARAMS,
+            ).unwrap();
+            conn.execute("
+                CREATE TABLE IF NOT EXISTS `bools` (
+                    `key` STRING PRIMARY KEY,
+                    `value` BOOL NOT NULL
+                )",
+                NO_PARAMS,
+            ).unwrap();
+            conn.execute("
+                CREATE TABLE IF NOT EXISTS `strings` (
+                    `key` STRING PRIMARY KEY,
+                    `value` TEXT NOT NULL
+                )",
+                NO_PARAMS,
+            ).unwrap();
         }
+        SQLiteStorage {
+            conn: conn_mutex
+        }
+    }
+}
+
+impl Storage for SQLiteStorage {
+    fn get_int(&self, key: String) -> Option<usize> {
+        let conn = self.conn.lock().unwrap();
+        conn.query_row(
+            "SELECT `value` FROM `ints` WHERE `key` = ?1",
+            params![key],
+            |row| {
+                match row.get::<_, isize>(0) {
+                    Ok(integer) => Ok(integer as usize),
+                    Err(err) => Err(err)
+                }
+            }
+        ).optional().unwrap()
     }
 
     fn get_bool(&self, key: String) -> Option<bool> {
-        match self.bools.get(&key) {
-            Some(value) => Some(*value),
-            None => None
-        }
+        let conn = self.conn.lock().unwrap();
+        conn.query_row(
+            "SELECT `value` FROM `bools` WHERE `key` = ?1",
+            params![key],
+            |row| row.get(0)
+        ).optional().unwrap()
     }
 
     fn get_string(&self, key: String) -> Option<String> {
-        match self.strings.get(&key) {
-            Some(value) => Some(value.clone()),
-            None => None
-        }
+        let conn = self.conn.lock().unwrap();
+        conn.query_row(
+            "SELECT `value` FROM `strings` WHERE `key` = ?1",
+            params![key],
+            |row| row.get(0)
+        ).optional().unwrap()
     }
 
     fn set_int(&mut self, key: String, value: usize) {
-        self.ints.insert(key, value);
+        let conn = self.conn.lock().unwrap();
+        conn.execute(
+            "INSERT INTO `ints` (`key`, `value`) VALUES (?1, ?2) ON CONFLICT (`key`) DO UPDATE SET `value`=`excluded`.`value`",
+            params![key, value as isize],
+        ).unwrap();
     }
 
     fn set_bool(&mut self, key: String, value: bool) {
-        self.bools.insert(key, value);
+        let conn = self.conn.lock().unwrap();
+        conn.execute(
+            "INSERT INTO `bools` (`key`, `value`) VALUES (?1, ?2) ON CONFLICT (`key`) DO UPDATE SET `value`=`excluded`.`value`",
+            params![key, value],
+        ).unwrap();
     }
 
     fn set_string(&mut self, key: String, value: String) {
-        self.strings.insert(key, value);
+        let conn = self.conn.lock().unwrap();
+        conn.execute(
+            "INSERT INTO `strings` (`key`, `value`) VALUES (?1, ?2) ON CONFLICT (`key`) DO UPDATE SET `value`=`excluded`.`value`",
+            params![key, value],
+        ).unwrap();
     }
 }
 
@@ -62,20 +116,20 @@ unsafe fn destroy_rulesets(ptr: usize) {
 
 #[pyfunction]
 fn create_storage() -> PyResult<usize> {
-    let s = WorkingTempStorage::default();
+    let s = SQLiteStorage::new();
 
     Ok(Box::into_raw(Box::new(Arc::new(Mutex::new(s)))) as usize)
 }
 
 #[pyfunction]
 unsafe fn destroy_storage(ptr: usize) {
-    drop(Box::from_raw(ptr as *mut Arc<Mutex<WorkingTempStorage>>));
+    drop(Box::from_raw(ptr as *mut Arc<Mutex<SQLiteStorage>>));
 }
 
 #[pyfunction]
 unsafe fn create_rewriter(rulesets_ptr: usize, storage_ptr: usize) -> PyResult<usize> {
     let rs = & *(rulesets_ptr as *mut Arc<Mutex<RuleSets>>);
-    let s = & *(storage_ptr as *mut Arc<Mutex<WorkingTempStorage>>);
+    let s = & *(storage_ptr as *mut Arc<Mutex<SQLiteStorage>>);
 
     let rs_threadsafe = Arc::clone(rs);
     let s_threadsafe = Arc::clone(s);
@@ -92,7 +146,7 @@ unsafe fn destroy_rewriter(ptr: usize) {
 
 #[pyfunction]
 unsafe fn create_settings(storage_ptr: usize) -> PyResult<usize> {
-    let s = & *(storage_ptr as *mut Arc<Mutex<WorkingTempStorage>>);
+    let s = & *(storage_ptr as *mut Arc<Mutex<SQLiteStorage>>);
 
     let s_threadsafe = Arc::clone(s);
 
@@ -112,7 +166,7 @@ unsafe fn destroy_settings(ptr: usize) {
 #[pyfunction]
 unsafe fn update_rulesets(rulesets_ptr: usize, storage_ptr: usize) {
     let rs = & *(rulesets_ptr as *mut Arc<Mutex<RuleSets>>);
-    let s = & *(storage_ptr as *mut Arc<Mutex<WorkingTempStorage>>);
+    let s = & *(storage_ptr as *mut Arc<Mutex<SQLiteStorage>>);
 
     let update_channels_string = fs::read_to_string("update_channels.json").unwrap();
     let ucs = UpdateChannels::from(&update_channels_string[..]);
