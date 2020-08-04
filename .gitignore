@@ -6,3 +6,5 @@ __pycache__
 pre-mitm.sh
 post-mitm.sh
 storage.db
+build
+dist
