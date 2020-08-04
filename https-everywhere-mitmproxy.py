@@ -2,6 +2,18 @@ from mitmproxy import http, ctx, proxy, options
 from mitmproxy.tools.dump import DumpMaster
 import https_everywhere_mitmproxy_pyo as https_everywhere
 import os, sys, argparse
+from pathlib import Path
+import web_ui
+
+parser = argparse.ArgumentParser()
+parser.add_argument('--transparent', action='store_true', default=False,
+        help='Run in transparent mode (default: false)')
+parser.add_argument('--port', dest='proxy_port', type=int, default=8080,
+        help='Port to run proxy on (default: 8080)')
+parser.add_argument('--web-ui-port', dest='web_ui_port', type=int, default=8081,
+        help='Port to run web ui on (default: 8081)')
+args = parser.parse_args()
+
 
 class Rewriter:
     def __init__(self):
@@ -23,29 +35,16 @@ class Rewriter:
 
         https_everywhere.update_rulesets(self.rs_ptr, self.s_ptr)
 
-    def load(self, loader):
-        loader.add_option(
-            name = "https_everywhere_enabled",
-            typespec = bool,
-            default = True,
-            help = "Enable or disable HTTPS Everywhere",
-        )
-        loader.add_option(
-            name = "https_everywhere_ease_mode",
-            typespec = bool,
-            default = False,
-            help = "Enable or disable HTTPS Everywhere's Encrypt All Sites Eligible (EASE) mode.  This disallows HTTP requests from going through.",
-        )
+    def update(self, updates):
+        if "ease" in updates:
+            https_everywhere.set_ease_mode_enabled(self.settings_ptr, updates['ease'])
+        if "enabled" in updates:
+            https_everywhere.set_enabled(self.settings_ptr, updates['enabled'])
 
-    def configure(self, updates):
-        if "https_everywhere_enabled" in updates:
-            value = ctx.options.https_everywhere_enabled
-            if value is not None:
-                https_everywhere.set_enabled(self.settings_ptr, value)
-        if "https_everywhere_ease_mode" in updates:
-            value = ctx.options.https_everywhere_ease_mode
-            if value is not None:
-                https_everywhere.set_ease_mode_enabled(self.settings_ptr, value)
+    def settings(self):
+        return {'ease': https_everywhere.get_ease_mode_enabled_or(self.settings_ptr, False),
+                'enabled': https_everywhere.get_enabled_or(self.settings_ptr, True),
+               }
 
     def request(self, flow):
         url = flow.request.pretty_url
@@ -76,12 +75,11 @@ class Rewriter:
         https_everywhere.destroy_storage(self.s_ptr)
 
 
-parser = argparse.ArgumentParser()
-parser.add_argument('--transparent', action='store_true', default=False,
-        help='Run in transparent mode (default: false)')
-args = parser.parse_args()
+rw = Rewriter()
+web_ui.run(args.web_ui_port, rw)
 
-opts = options.Options(listen_host='127.0.0.1', listen_port=8080)
+
+opts = options.Options(listen_host='127.0.0.1', listen_port=args.proxy_port)
 opts.add_option("body_size_limit", int, 0, "")
 opts.add_option("allow_hosts", list, ["^http"], "")
 opts.add_option("flow_detail", int, 0, "")
@@ -91,7 +89,7 @@ if args.transparent:
 pconf = proxy.config.ProxyConfig(opts)
 
 m = DumpMaster(None)
-m.addons.add(Rewriter())
+m.addons.add(rw)
 m.server = proxy.server.ProxyServer(pconf)
 
 try:
