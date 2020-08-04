@@ -3,18 +3,18 @@ from mitmproxy.tools.dump import DumpMaster
 import https_everywhere_mitmproxy_pyo as https_everywhere
 import os, sys, argparse
 
-# If we are packaged as a standalone executable, cd into temp dir
-try:
-    os.chdir(sys._MEIPASS)
-except AttributeError:
-    pass
-
 class Rewriter:
     def __init__(self):
         self.rs_ptr = https_everywhere.create_rulesets()
         self.s_ptr = https_everywhere.create_storage()
         self.rw_ptr = https_everywhere.create_rewriter(self.rs_ptr, self.s_ptr)
         self.settings_ptr = https_everywhere.create_settings(self.s_ptr)
+
+        # If we are packaged as a standalone executable, cd into temp dir
+        try:
+            os.chdir(sys._MEIPASS)
+        except AttributeError:
+            pass
 
         https_everywhere.update_rulesets(self.rs_ptr, self.s_ptr)
 
