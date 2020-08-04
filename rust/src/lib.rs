@@ -13,7 +13,7 @@ pub struct SQLiteStorage {
 
 impl SQLiteStorage {
     fn new() -> SQLiteStorage {
-        let conn_mutex = Mutex::new(Connection::open("storage.db").unwrap());
+        let conn_mutex = Mutex::new(Connection::open("https-everywhere-storage.db").unwrap());
         {
             let conn = conn_mutex.lock().unwrap();
             conn.execute("
