@@ -5,6 +5,5 @@ __pycache__
 *.pyc
 pre-mitm.sh
 post-mitm.sh
-storage.db
 build
 dist
