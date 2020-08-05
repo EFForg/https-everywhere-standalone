@@ -1,4 +1,5 @@
 use https_everywhere_lib_core::{updater::{UpdateChannels, Updater}, RuleSets, rewriter::{Rewriter, RewriteAction}, Storage, Settings};
+use std::collections::HashMap;
 use std::fs;
 use std::sync::{Arc, Mutex};
 use rusqlite::NO_PARAMS;
@@ -117,7 +118,6 @@ unsafe fn destroy_rulesets(ptr: usize) {
 #[pyfunction]
 fn create_storage() -> PyResult<usize> {
     let s = SQLiteStorage::new();
-
     Ok(Box::into_raw(Box::new(Arc::new(Mutex::new(s)))) as usize)
 }
 
@@ -135,7 +135,6 @@ unsafe fn create_rewriter(rulesets_ptr: usize, storage_ptr: usize) -> PyResult<u
     let s_threadsafe = Arc::clone(s);
 
     let rw = Rewriter::new(rs_threadsafe, s_threadsafe);
-
     Ok(Box::into_raw(Box::new(rw)) as usize)
 }
 
@@ -151,7 +150,6 @@ unsafe fn create_settings(storage_ptr: usize) -> PyResult<usize> {
     let s_threadsafe = Arc::clone(s);
 
     let settings = Settings::new(s_threadsafe);
-
     Ok(Box::into_raw(Box::new(settings)) as usize)
 }
 
@@ -160,11 +158,8 @@ unsafe fn destroy_settings(ptr: usize) {
     drop(Box::from_raw(ptr as *mut Settings));
 }
 
-
-
-
 #[pyfunction]
-unsafe fn update_rulesets(rulesets_ptr: usize, storage_ptr: usize) {
+unsafe fn create_updater(rulesets_ptr: usize, storage_ptr: usize) -> PyResult<usize> {
     let rs = & *(rulesets_ptr as *mut Arc<Mutex<RuleSets>>);
     let s = & *(storage_ptr as *mut Arc<Mutex<SQLiteStorage>>);
 
@@ -174,9 +169,29 @@ unsafe fn update_rulesets(rulesets_ptr: usize, storage_ptr: usize) {
     let rs_threadsafe = Arc::clone(rs);
     let s_threadsafe = Arc::clone(s);
 
-    let mut updater = Updater::new(rs_threadsafe, &ucs, s_threadsafe, None, 15);
+    let updater = Updater::new(rs_threadsafe, ucs, s_threadsafe, None, 15);
+    Ok(Box::into_raw(Box::new(updater)) as usize)
+}
+
+#[pyfunction]
+unsafe fn destroy_updater(ptr: usize) {
+    drop(Box::from_raw(ptr as *mut Updater));
+}
+
+
+
+
+#[pyfunction]
+unsafe fn update_rulesets(ptr: usize) {
+    let updater = &mut *(ptr as *mut Updater);
     updater.apply_stored_rulesets();
     updater.perform_check();
+}
+
+#[pyfunction]
+unsafe fn get_update_channel_timestamps(updater_ptr: usize) -> PyResult<HashMap<String, Option<usize>>> {
+    let updater = & *(updater_ptr as *mut Updater);
+    Ok(updater.get_update_channel_timestamps())
 }
 
 #[pyfunction]
@@ -239,8 +254,11 @@ fn https_everywhere_mitmproxy_pyo(_py: Python, m: &PyModule) -> PyResult<()> {
     m.add_wrapped(wrap_pyfunction!(destroy_rewriter))?;
     m.add_wrapped(wrap_pyfunction!(create_settings))?;
     m.add_wrapped(wrap_pyfunction!(destroy_settings))?;
+    m.add_wrapped(wrap_pyfunction!(create_updater))?;
+    m.add_wrapped(wrap_pyfunction!(destroy_updater))?;
 
     m.add_wrapped(wrap_pyfunction!(update_rulesets))?;
+    m.add_wrapped(wrap_pyfunction!(get_update_channel_timestamps))?;
     m.add_wrapped(wrap_pyfunction!(rewrite_url))?;
     m.add_wrapped(wrap_pyfunction!(get_enabled_or))?;
     m.add_wrapped(wrap_pyfunction!(set_enabled))?;

@@ -27,7 +27,8 @@ def index():
     settings = rw.settings()
     return render_template('index.html',
                            ease=settings['ease'],
-                           enabled=settings['enabled'])
+                           enabled=settings['enabled'],
+                           update_channel_timestamps=json.dumps(settings['update_channel_timestamps']))
 
 @app.route('/settings_changed', methods=['POST'])
 def settings_changed():

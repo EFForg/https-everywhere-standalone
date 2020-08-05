@@ -33,7 +33,8 @@ class Rewriter:
         except AttributeError:
             os.chdir(initial_path)
 
-        https_everywhere.update_rulesets(self.rs_ptr, self.s_ptr)
+        self.updater_ptr = https_everywhere.create_updater(self.rs_ptr, self.s_ptr)
+        https_everywhere.update_rulesets(self.updater_ptr)
 
     def update(self, updates):
         if "ease" in updates:
@@ -44,6 +45,7 @@ class Rewriter:
     def settings(self):
         return {'ease': https_everywhere.get_ease_mode_enabled_or(self.settings_ptr, False),
                 'enabled': https_everywhere.get_enabled_or(self.settings_ptr, True),
+                'update_channel_timestamps': https_everywhere.get_update_channel_timestamps(self.updater_ptr),
                }
 
     def request(self, flow):
@@ -69,6 +71,7 @@ class Rewriter:
 
 
     def __del__(self):
+        https_everywhere.destroy_updater(self.updater_ptr)
         https_everywhere.destroy_rewriter(self.rw_ptr)
         https_everywhere.destroy_settings(self.settings_ptr)
         https_everywhere.destroy_rulesets(self.rs_ptr)
