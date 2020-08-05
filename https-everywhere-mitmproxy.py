@@ -55,12 +55,12 @@ class Rewriter:
                 b"HTTPS Everywhere has blocked this request",
                 {"Content-Type": "text/html", "Location": "https" + url[4:]}
             )
-            ctx.log.info("Cancelling request for: \n\t" + url)
+            ctx.log.debug("Cancelling request for: \n\t" + url)
         elif ra[1] == True:
-            ctx.log.info("Not modifying request for: \n\t" + url)
+            ctx.log.debug("Not modifying request for: \n\t" + url)
             pass
         else:
-            ctx.log.info("Redirecting request for/to: \n\t" + url + "\n\t" + ra[2])
+            ctx.log.debug("Redirecting request for/to: \n\t" + url + "\n\t" + ra[2])
             flow.response = http.HTTPResponse.make(
                 302,
                 b"HTTPS Everywhere has blocked this request",
@@ -76,23 +76,22 @@ class Rewriter:
 
 
 rw = Rewriter()
-web_ui.run(args.web_ui_port, rw)
-
 
 opts = options.Options(listen_host='127.0.0.1', listen_port=args.proxy_port)
 opts.add_option("body_size_limit", int, 0, "")
 opts.add_option("allow_hosts", list, ["^http"], "")
-opts.add_option("flow_detail", int, 0, "")
-opts.add_option("termlog_verbosity", str, "error", "")
+opts.add_option("dumper_filter", str, "error", "")
 if args.transparent:
     opts.add_option("mode", str, "transparent", "")
 pconf = proxy.config.ProxyConfig(opts)
 
-m = DumpMaster(None)
+m = DumpMaster({}, with_dumper=False)
 m.addons.add(rw)
 m.server = proxy.server.ProxyServer(pconf)
 
 try:
+        web_ui.run(args.web_ui_port, rw)
         m.run()
 except KeyboardInterrupt:
         m.shutdown()
+        web_ui.shutdown()

@@ -1,5 +1,24 @@
 from flask import Flask, render_template, request
-import threading, json
+from werkzeug.serving import make_server
+import threading, json, logging
+
+
+class ServerThread(threading.Thread):
+
+    def __init__(self, app, port):
+        threading.Thread.__init__(self)
+        self.port = port
+        self.srv = make_server('127.0.0.1', port, app)
+        self.ctx = app.app_context()
+        self.ctx.push()
+
+    def run(self):
+        print('Starting Web UI on http://127.0.0.1:' + str(self.port))
+        self.srv.serve_forever()
+
+    def shutdown(self):
+        self.srv.shutdown()
+
 
 app = Flask(__name__)
 
@@ -16,7 +35,17 @@ def settings_changed():
     rw.update(results)
     return results.__repr__()
 
+
 def run(port, rewriter):
-    global rw
+    global rw, server
     rw = rewriter
-    threading.Thread(target=app.run, kwargs={'port': port}).start()
+
+    log = logging.getLogger('werkzeug')
+    log.setLevel(logging.ERROR)
+
+    server = ServerThread(app, port)
+    server.start()
+
+def shutdown():
+    global server
+    server.shutdown()
