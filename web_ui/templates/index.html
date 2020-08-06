@@ -9,6 +9,6 @@
 var update_channel_timestamps = JSON.parse('{{ update_channel_timestamps | safe }}');
 </script>
 <div id='rulesets-versions'></div>
-<input type='checkbox' name='enabled' id='enabled' {% if enabled %}checked='checked'{% endif %}><label for='enabled'>Enable HTTPS Everywhere</label><br>
-<input type='checkbox' name='ease' id='ease' {% if ease %}checked='checked'{% endif %}><label for='ease'>Enable EASE mode</label><br>
+<input type='checkbox' name='enabled' id='enabled' {% if enabled %}checked='checked'{% endif %}><label for='enabled' id='enabled_label'></label><br>
+<input type='checkbox' name='ease' id='ease' {% if ease %}checked='checked'{% endif %}><label for='ease' id='ease_label'></label><br>
 {% endblock %}
