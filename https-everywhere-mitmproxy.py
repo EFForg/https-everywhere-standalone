@@ -61,6 +61,12 @@ class Rewriter:
         elif ra[1] == True:
             ctx.log.debug("Not modifying request for: \n\t" + url)
             pass
+        elif ra[3] == True:
+            flow.response = http.HTTPResponse.make(
+                200,
+                b"HTTPS Everywhere is attempting to upgrade this connection, but the website is downgrading it to HTTP.  This is causing a redirection loop.  To access this site, please change your settings to exclude this domain from HTTPS Everywhere and refresh this page.",
+            )
+            ctx.log.debug("Responding with redirect warning for: \n\t" + url)
         else:
             ctx.log.debug("Redirecting request for/to: \n\t" + url + "\n\t" + ra[2])
             flow.response = http.HTTPResponse.make(

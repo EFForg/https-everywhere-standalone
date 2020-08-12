@@ -195,20 +195,23 @@ unsafe fn get_update_channel_timestamps(updater_ptr: usize) -> PyResult<HashMap<
 }
 
 #[pyfunction]
-unsafe fn rewrite_url(ptr: usize, url: String) -> PyResult<(bool, bool, String)> {
-    let rw = & *(ptr as *mut Rewriter);
+unsafe fn rewrite_url(ptr: usize, url: String) -> PyResult<(bool, bool, String, bool)> {
+    let rw = &mut *(ptr as *mut Rewriter);
 
     if let Ok(ra) = rw.rewrite_url(&url) {
 	match ra {
 	    RewriteAction::CancelRequest => {
-                return Ok((true, false, "".to_string()));
-            }
+                return Ok((true, false, "".to_string(), false));
+            },
             RewriteAction::NoOp => {
-                return Ok((false, true, "".to_string()));
-	    }
+                return Ok((false, true, "".to_string(), false));
+	    },
 	    RewriteAction::RewriteUrl(url) => {
-                return Ok((false, false, url));
-	    }
+                return Ok((false, false, url, false));
+	    },
+	    RewriteAction::RedirectLoopWarning => {
+                return Ok((false, false, "".to_string(), true));
+	    },
 	}
     } else {
 	panic!("An error occurred attempting to rewrite url: {}", url);
