@@ -82,7 +82,7 @@ rw = Rewriter()
 
 opts = options.Options(listen_host='127.0.0.1', listen_port=args.proxy_port)
 opts.add_option("body_size_limit", int, 0, "")
-opts.add_option("allow_hosts", list, ["^http"], "")
+opts.add_option("allow_hosts", list, ["^http:"], "")
 opts.add_option("dumper_filter", str, "error", "")
 if args.transparent:
     opts.add_option("mode", str, "transparent", "")
