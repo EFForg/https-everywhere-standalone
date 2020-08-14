@@ -42,10 +42,14 @@ class Rewriter:
         if "enabled" in updates:
             https_everywhere.set_enabled(self.settings_ptr, updates['enabled'])
 
+    def set_site_disabled(self, site, disabled):
+        return https_everywhere.set_site_disabled(self.settings_ptr, site, disabled)
+
     def settings(self):
         return {'ease': https_everywhere.get_ease_mode_enabled_or(self.settings_ptr, False),
                 'enabled': https_everywhere.get_enabled_or(self.settings_ptr, True),
                 'update_channel_timestamps': https_everywhere.get_update_channel_timestamps(self.updater_ptr),
+                'sites_disabled': https_everywhere.get_sites_disabled(self.settings_ptr),
                }
 
     def request(self, flow):

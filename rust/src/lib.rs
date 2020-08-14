@@ -1,9 +1,11 @@
 use https_everywhere_lib_core::{updater::{UpdateChannels, Updater}, RuleSets, rewriter::{Rewriter, RewriteAction}, Storage, Settings};
-use std::collections::HashMap;
+use std::collections::{HashMap, HashSet};
+use std::iter::FromIterator;
 use std::fs;
 use std::sync::{Arc, Mutex};
 use rusqlite::NO_PARAMS;
 use rusqlite::{params, Connection, OptionalExtension};
+use url::Host;
 
 use pyo3::prelude::*;
 use pyo3::wrap_pyfunction;
@@ -242,6 +244,21 @@ unsafe fn set_ease_mode_enabled(ptr: usize, value: bool) {
     settings.lock().unwrap().set_ease_mode_enabled(value)
 }
 
+#[pyfunction]
+unsafe fn get_sites_disabled(ptr: usize) -> PyResult<HashSet<String>> {
+    let settings = & *(ptr as *mut Arc<Mutex<Settings>>);
+    Ok(HashSet::from_iter(settings.lock().unwrap().get_sites_disabled().iter().map(|host| host.to_string())))
+}
+
+#[pyfunction]
+unsafe fn set_site_disabled(ptr: usize, site: String, set_disabled: bool) -> PyResult<bool> {
+    let settings = &mut *(ptr as *mut Arc<Mutex<Settings>>);
+    settings.lock().unwrap().set_site_disabled(match Host::parse(&site) {
+        Ok(res) => res,
+        Err(_) => return Ok(false),
+    }, set_disabled);
+    Ok(true)
+}
 
 
 
@@ -267,6 +284,8 @@ fn https_everywhere_mitmproxy_pyo(_py: Python, m: &PyModule) -> PyResult<()> {
     m.add_wrapped(wrap_pyfunction!(set_enabled))?;
     m.add_wrapped(wrap_pyfunction!(get_ease_mode_enabled_or))?;
     m.add_wrapped(wrap_pyfunction!(set_ease_mode_enabled))?;
+    m.add_wrapped(wrap_pyfunction!(get_sites_disabled))?;
+    m.add_wrapped(wrap_pyfunction!(set_site_disabled))?;
 
     Ok(())
 }
