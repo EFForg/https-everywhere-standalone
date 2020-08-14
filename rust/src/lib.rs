@@ -127,14 +127,14 @@ unsafe fn destroy_storage(ptr: usize) {
 }
 
 #[pyfunction]
-unsafe fn create_rewriter(rulesets_ptr: usize, storage_ptr: usize) -> PyResult<usize> {
+unsafe fn create_rewriter(rulesets_ptr: usize, settings_ptr: usize) -> PyResult<usize> {
     let rs = & *(rulesets_ptr as *mut Arc<Mutex<RuleSets>>);
-    let s = & *(storage_ptr as *mut Arc<Mutex<SQLiteStorage>>);
+    let settings = & *(settings_ptr as *mut Arc<Mutex<Settings>>);
 
     let rs_threadsafe = Arc::clone(rs);
-    let s_threadsafe = Arc::clone(s);
+    let settings_threadsafe = Arc::clone(settings);
 
-    let rw = Rewriter::new(rs_threadsafe, s_threadsafe);
+    let rw = Rewriter::new(rs_threadsafe, settings_threadsafe);
     Ok(Box::into_raw(Box::new(rw)) as usize)
 }
 
@@ -150,12 +150,12 @@ unsafe fn create_settings(storage_ptr: usize) -> PyResult<usize> {
     let s_threadsafe = Arc::clone(s);
 
     let settings = Settings::new(s_threadsafe);
-    Ok(Box::into_raw(Box::new(settings)) as usize)
+    Ok(Box::into_raw(Box::new(Arc::new(Mutex::new(settings)))) as usize)
 }
 
 #[pyfunction]
 unsafe fn destroy_settings(ptr: usize) {
-    drop(Box::from_raw(ptr as *mut Settings));
+    drop(Box::from_raw(ptr as *mut Arc<Mutex<Settings>>));
 }
 
 #[pyfunction]
@@ -220,26 +220,26 @@ unsafe fn rewrite_url(ptr: usize, url: String) -> PyResult<(bool, bool, String, 
 
 #[pyfunction]
 unsafe fn get_enabled_or(ptr: usize, default: bool) -> PyResult<bool> {
-    let settings = & *(ptr as *mut Settings);
-    Ok(settings.get_https_everywhere_enabled_or(default))
+    let settings = & *(ptr as *mut Arc<Mutex<Settings>>);
+    Ok(settings.lock().unwrap().get_https_everywhere_enabled_or(default))
 }
 
 #[pyfunction]
 unsafe fn set_enabled(ptr: usize, value: bool) {
-    let settings = &mut *(ptr as *mut Settings);
-    settings.set_https_everywhere_enabled(value)
+    let settings = &mut *(ptr as *mut Arc<Mutex<Settings>>);
+    settings.lock().unwrap().set_https_everywhere_enabled(value)
 }
 
 #[pyfunction]
 unsafe fn get_ease_mode_enabled_or(ptr: usize, default: bool) -> PyResult<bool> {
-    let settings = & *(ptr as *mut Settings);
-    Ok(settings.get_ease_mode_enabled_or(default))
+    let settings = & *(ptr as *mut Arc<Mutex<Settings>>);
+    Ok(settings.lock().unwrap().get_ease_mode_enabled_or(default))
 }
 
 #[pyfunction]
 unsafe fn set_ease_mode_enabled(ptr: usize, value: bool) {
-    let settings = &mut *(ptr as *mut Settings);
-    settings.set_ease_mode_enabled(value)
+    let settings = &mut *(ptr as *mut Arc<Mutex<Settings>>);
+    settings.lock().unwrap().set_ease_mode_enabled(value)
 }
 
 

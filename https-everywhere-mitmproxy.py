@@ -23,8 +23,8 @@ class Rewriter:
 
         self.rs_ptr = https_everywhere.create_rulesets()
         self.s_ptr = https_everywhere.create_storage()
-        self.rw_ptr = https_everywhere.create_rewriter(self.rs_ptr, self.s_ptr)
         self.settings_ptr = https_everywhere.create_settings(self.s_ptr)
+        self.rw_ptr = https_everywhere.create_rewriter(self.rs_ptr, self.settings_ptr)
 
         # If we are packaged as a standalone executable, cd into temp dir
         # otherwise, cd to initial path
@@ -63,7 +63,7 @@ class Rewriter:
             pass
         elif ra[3] == True:
             flow.response = http.HTTPResponse.make(
-                200,
+                409,
                 b"HTTPS Everywhere is attempting to upgrade this connection, but the website is downgrading it to HTTP.  This is causing a redirection loop.  To access this site, please change your settings to exclude this domain from HTTPS Everywhere and refresh this page.",
             )
             ctx.log.debug("Responding with redirect warning for: \n\t" + url)
@@ -80,8 +80,8 @@ class Rewriter:
         https_everywhere.destroy_updater(self.updater_ptr)
         https_everywhere.destroy_rewriter(self.rw_ptr)
         https_everywhere.destroy_settings(self.settings_ptr)
-        https_everywhere.destroy_rulesets(self.rs_ptr)
         https_everywhere.destroy_storage(self.s_ptr)
+        https_everywhere.destroy_rulesets(self.rs_ptr)
 
 
 rw = Rewriter()
