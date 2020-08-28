@@ -24,7 +24,7 @@ In order to build the project, you'll need to have [rust](https://rust-lang.org/
     pip3 install -r requirements-develop.txt
     cd rust
     git submodule update --init
-    maturin develop   # this build step will take a while
+    maturin develop --release   # this build step will take a while
     cd ..
     cp pre-mitm.sh.example pre-mitm.sh     # edit this file if necessary, this is meant to work with the above RasPi project
     cp post-mitm.sh.example post-mitm.sh   # same here
