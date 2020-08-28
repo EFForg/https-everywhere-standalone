@@ -2,14 +2,19 @@ from mitmproxy import http, ctx, proxy, options
 from mitmproxy.tools.dump import DumpMaster
 import https_everywhere_mitmproxy_pyo as https_everywhere
 import os, sys, argparse
+from ipaddress import ip_address
 from pathlib import Path
 import web_ui
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--transparent', action='store_true', default=False,
         help='Run in transparent mode (default: false)')
+parser.add_argument('--host', dest='proxy_host', type=ip_address, default='127.0.0.1',
+        help='Host to run proxy on (default: 127.0.0.1)')
 parser.add_argument('--port', dest='proxy_port', type=int, default=8080,
         help='Port to run proxy on (default: 8080)')
+parser.add_argument('--web-ui-host', dest='web_ui_host', type=ip_address, default='127.0.0.1',
+        help='Host to run web ui on (default: 127.0.0.1)')
 parser.add_argument('--web-ui-port', dest='web_ui_port', type=int, default=8081,
         help='Port to run web ui on (default: 8081)')
 args = parser.parse_args()
@@ -90,7 +95,7 @@ class Rewriter:
 
 rw = Rewriter()
 
-opts = options.Options(listen_host='127.0.0.1', listen_port=args.proxy_port)
+opts = options.Options(listen_host=str(args.proxy_host), listen_port=args.proxy_port)
 opts.add_option("body_size_limit", int, 0, "")
 opts.add_option("allow_hosts", list, ["^http:"], "")
 opts.add_option("dumper_filter", str, "error", "")
@@ -103,7 +108,7 @@ m.addons.add(rw)
 m.server = proxy.server.ProxyServer(pconf)
 
 try:
-        web_ui.run(args.web_ui_port, rw)
+        web_ui.run(args.web_ui_host, args.web_ui_port, rw)
         m.run()
 except KeyboardInterrupt:
         m.shutdown()

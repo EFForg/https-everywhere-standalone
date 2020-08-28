@@ -5,15 +5,16 @@ import threading, json, logging
 
 class ServerThread(threading.Thread):
 
-    def __init__(self, app, port):
+    def __init__(self, app, host, port):
         threading.Thread.__init__(self)
+        self.host = host
         self.port = port
-        self.srv = make_server('127.0.0.1', port, app)
+        self.srv = make_server(str(host), port, app)
         self.ctx = app.app_context()
         self.ctx.push()
 
     def run(self):
-        print('Starting Web UI on http://127.0.0.1:' + str(self.port))
+        print(f"Starting Web UI on http://{str(self.host)}:{str(self.port)}")
         self.srv.serve_forever()
 
     def shutdown(self):
@@ -44,14 +45,14 @@ def set_site_disabled():
     return json.dumps(rw.set_site_disabled(results['site'], results['disabled']))
 
 
-def run(port, rewriter):
+def run(host, port, rewriter):
     global rw, server
     rw = rewriter
 
     log = logging.getLogger('werkzeug')
     log.setLevel(logging.ERROR)
 
-    server = ServerThread(app, port)
+    server = ServerThread(app, host, port)
     server.start()
 
 def shutdown():
