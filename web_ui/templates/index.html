@@ -6,16 +6,29 @@
 
 {% block body %}
 <script type='text/javascript'>
-var update_channel_timestamps = JSON.parse('{{ update_channel_timestamps | safe }}');
-var sites_disabled = JSON.parse('{{ sites_disabled | safe }}');
+  var update_channel_timestamps = JSON.parse('{{ update_channel_timestamps | safe }}');
+  var sites_disabled = JSON.parse('{{ sites_disabled | safe }}');
 </script>
-<div id='rulesets-versions'></div>
-<input type='checkbox' name='enabled' id='enabled' {% if enabled %}checked='checked'{% endif %}><label for='enabled' id='enabled_label'></label><br>
-<input type='checkbox' name='ease' id='ease' {% if ease %}checked='checked'{% endif %}><label for='ease' id='ease_label'></label><br>
-<div id="sites_disabled_header"></div>
-<div id="add_site_disabled_wrapper">
-  <button id="add_site_disabled" data-i18n="options_addDisabledSite"></button>
-  <input type="text" id="site_disabled" />
+<img id='banner' src='/static/images/https-everywhere-banner.png' alt='HTTPS Everywhere (Banner)'>
+<div id='content_wrapper'>
+  <div id='rulesets-versions'></div>
+  <div id='enabled_wrapper'>
+    <h1 id='enabled_text'></h1>
+    <input type='checkbox' name='enabled' id='enabled' {% if enabled %}checked='checked'{% endif %}><label for='enabled' id='enabled_label'></label><br>
+  </div>
+  <div id='ease_wrapper'>
+    <h1 id='ease_text'></h1>
+    <input type='checkbox' name='ease' id='ease' {% if ease %}checked='checked'{% endif %}><label for='ease' id='ease_label'></label><br>
+    <div id='ease_explainer'></div>
+  </div>
+  <div id='sites_disabled_section_wrapper'>
+    <div id="sites_disabled_header"></div>
+    <div id="add_site_disabled_wrapper">
+      <button id="add_site_disabled" data-i18n="options_addDisabledSite"></button>
+      <input type="text" id="site_disabled" />
+    </div>
+    <div id='host_not_formatted_correctly'></div>
+    <div id='sites_disabled_wrapper'></div>
+  </div>
 </div>
-<div id='sites_disabled_wrapper'></div>
 {% endblock %}

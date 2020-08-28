@@ -1,0 +1,139 @@
+:root {
+  --https-blue: #0a84ff;
+  --darker-blue: #0060df;
+  --text-main: #000;
+  --text-secondary: #464646;
+  --light-grey: #ececec;
+  --space: 5px;
+}
+body{
+  margin-top: 6em;
+  left: 50%;
+  position: relative;
+  overflow-x: hidden;
+}
+
+img#banner{
+  position: relative;
+  left: -289px;
+}
+
+#content_wrapper{
+  width: 600px;
+  position: relative;
+  left: -300px;
+  font-size: 12pt;
+  font-family: sans-serif;
+  line-height: 150%;
+}
+
+#rulesets-versions{
+  font-weight: bold;
+  font-size: .8em;
+}
+
+#enabled_wrapper, #ease_wrapper{
+  clear: both;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-top: var(--light-grey) solid 1px;
+}
+#ease_wrapper{
+  border-bottom: var(--light-grey) solid 1px;
+}
+#enabled_text, #ease_text{
+  font-weight: bold;
+  font-size: 16px;
+  float: left;
+}
+#ease_text{
+  margin-bottom: 3px;
+}
+#ease_explainer{
+  clear: both;
+}
+
+input[type=checkbox] {
+  opacity: 0;
+}
+label {
+  background: grey;
+  border-radius: 25px;
+  color: var(--text-main);
+  cursor: pointer;
+  display: block;
+  float: right;
+  height: 30px;
+  position: relative;
+  text-indent: -400px;
+  width: 50px;
+}
+label:after {
+  background: #fff;
+  border-radius: 90px;
+  content: '';
+  height: 20px;
+  left: 5px;
+  position: absolute;
+  top: 5px;
+  transition: 0.3s; /* Acts on transform below */
+  width: 20px;
+}
+input:checked+label {
+  background: var(--https-blue);
+}
+/* position  when checked*/
+input:checked+label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+/* Sites disabled */
+
+#sites_disabled_section_wrapper{
+  clear: both;
+  margin-top: 10px;
+}
+#sites_disabled_header{
+  font-size: .9em;
+  font-weight: bold;
+}
+#add_site_disabled_wrapper{
+  margin-top: 10px;
+}
+#add_site_disabled{
+  float: right;
+  margin: 0px 10px 10px 10px;
+  border-radius: 7px;
+}
+#site_disabled{
+  float: right;
+}
+#host_not_formatted_correctly{
+  clear: both;
+  padding: 10px;
+  font-weight: bold;
+  font-size: .8em;
+  color: red;
+  display: none;
+}
+#sites_disabled_wrapper{
+  clear: both;
+}
+.site-disabled-list-item{
+  border-bottom: var(--light-grey) solid 1px;
+  clear: both;
+  margin-left: 5%;
+  display: inline-flex;
+  width: 95%;
+}
+.site-disabled-list-item p{
+  width: 100%;
+}
+.site-disabled-list-item img{
+  cursor: pointer;
+  float: right;
+  height: 15px;
+  margin-top: 22px;
+  width: 15px;
+}

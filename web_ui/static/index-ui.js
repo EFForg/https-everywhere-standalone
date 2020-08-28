@@ -1,12 +1,16 @@
-let ease, enabled, ease_label, enabled_label, t, sites_disabled_wrapper;
+let ease, enabled, ease_text, ease_explainer, enabled_text, t, sites_disabled_wrapper, host_not_formatted_correctly;
 
 window.onload = async () => {
   t = await get_translator();
   ease = document.getElementById('ease');
-  ease_label = document.getElementById('ease_label');
+  ease_text = document.getElementById('ease_text');
+  ease_explainer = document.getElementById('ease_explainer');
   enabled = document.getElementById('enabled');
-  enabled_label = document.getElementById('enabled_label');
+  enabled_text = document.getElementById('enabled_text');
   sites_disabled_wrapper = document.getElementById('sites_disabled_wrapper');
+  host_not_formatted_correctly = document.getElementById('host_not_formatted_correctly');
+
+  host_not_formatted_correctly.innerText = t("options_hostNotFormattedCorrectly");
 
   ease.onchange = () => {
     send_settings({'ease': ease.checked});
@@ -73,14 +77,28 @@ window.onload = async () => {
   site_disabled_input.setAttribute("placeholder", t("options_enterDisabledSite"));
   add_site_disabled_button.innerText = t("options_addDisabledSite");
 
-  add_site_disabled_button.addEventListener("click", async function() {
-    const success = await set_site_disabled(site_disabled_input.value, true);
-    if (success) {
-      add_site_disabled(site_disabled_input.value);
+  const set_and_add_site_disabled = async function() {
+    if (site_disabled_input.value != ""){
+      const success = await set_site_disabled(site_disabled_input.value, true);
+      if (success) {
+        host_not_formatted_correctly.style.display = "none";
+        add_site_disabled(site_disabled_input.value);
+        site_disabled_input.value = "";
+      } else {
+        host_not_formatted_correctly.style.display = "block";
+      }
     } else {
-      t("options_hostNotFormattedCorrectly");
+      host_not_formatted_correctly.style.display = "block";
+    }
+  }
+
+  site_disabled.addEventListener("keypress", async function(e){
+    if (e.code == "Enter") {
+      await set_and_add_site_disabled();
     }
   });
+
+  add_site_disabled_button.addEventListener("click", set_and_add_site_disabled);
 
 
   update_ui();
@@ -113,15 +131,17 @@ function set_site_disabled(site, disabled) {
 
 function update_ui() {
   if(enabled.checked) {
-    enabled_label.innerText = t("menu_globalEnable");
+    enabled_text.innerText = t("menu_globalEnable");
   } else {
-    enabled_label.innerText = t("menu_globalDisable");
+    enabled_text.innerText = t("menu_globalDisable");
   }
 
   if(ease.checked) {
-    ease_label.innerText = t("menu_encryptAllSitesEligibleOn");
+    ease_text.innerText = t("menu_encryptAllSitesEligibleOn");
+    ease_explainer.innerText = t("menu_httpNoWhereExplainedBlocked");
   } else {
-    ease_label.innerText = t("menu_encryptAllSitesEligibleOff");
+    ease_text.innerText = t("menu_encryptAllSitesEligibleOff");
+    ease_explainer.innerText = t("menu_httpNoWhereExplainedAllowed");
   }
 
 }
