@@ -1,7 +1,9 @@
-let ease, enabled, ease_text, ease_explainer, enabled_text, t, sites_disabled_wrapper, host_not_formatted_correctly;
+let version, rulesets_versions, ease, enabled, ease_text, ease_explainer, enabled_text, t, sites_disabled_wrapper, host_not_formatted_correctly;
 
 window.onload = async () => {
   t = await get_translator();
+  version = document.getElementById('version');
+  rulesets_versions = document.getElementById('rulesets-versions');
   ease = document.getElementById('ease');
   ease_text = document.getElementById('ease_text');
   ease_explainer = document.getElementById('ease_explainer');
@@ -11,6 +13,7 @@ window.onload = async () => {
   host_not_formatted_correctly = document.getElementById('host_not_formatted_correctly');
 
   host_not_formatted_correctly.innerText = t("options_hostNotFormattedCorrectly");
+  version.innerText = `${t("about_version")}: ${version_string}`;
 
   ease.onchange = () => {
     send_settings({'ease': ease.checked});
@@ -20,8 +23,6 @@ window.onload = async () => {
     send_settings({'enabled': enabled.checked});
     update_ui();
   }
-
-  let rulesets_versions = document.getElementById('rulesets-versions');
 
   rulesets_versions.addSpan = function(update_channel_name, ruleset_version_string) {
     let timestamp_span = document.createElement("span");

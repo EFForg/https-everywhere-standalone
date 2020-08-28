@@ -1,6 +1,7 @@
 {
     "ach": {
         "about_rulesets_version": "Rulesets version for",
+        "about_version": "Version",
         "menu_encryptAllSitesEligibleOff": "Encrypt All Sites Eligible is OFF",
         "menu_encryptAllSitesEligibleOn": "Encrypt All Sites Eligible is ON",
         "menu_globalDisable": "HTTPS Everywhere is OFF",
@@ -13,6 +14,7 @@
     },
     "af": {
         "about_rulesets_version": "Rulesets version for",
+        "about_version": "Weergawe",
         "menu_encryptAllSitesEligibleOff": "Encrypt All Sites Eligible is OFF",
         "menu_encryptAllSitesEligibleOn": "Encrypt All Sites Eligible is ON",
         "menu_globalDisable": "HTTPS Everywhere is OFF",
@@ -25,6 +27,7 @@
     },
     "ar": {
         "about_rulesets_version": "\u0625\u0635\u062f\u0627\u0631\u0629 \u0645\u062c\u0645\u0648\u0639\u0629 \u0642\u0648\u0627\u0639\u062f",
+        "about_version": "\u0627\u0644\u0646\u0633\u062e\u0629",
         "menu_encryptAllSitesEligibleOff": "\u062a\u0634\u0641\u064a\u0631 \u0643\u0627\u0641\u0629 \u0627\u0644\u0645\u0648\u0627\u0642\u0639 \u0627\u0644\u0645\u0624\u0647\u0644\u0629 \u0644\u0644\u062a\u0634\u0641\u064a\u0631 \u0644\u0627 \u064a\u0639\u0645\u0644",
         "menu_encryptAllSitesEligibleOn": "\u062a\u0634\u0641\u064a\u0631 \u0643\u0627\u0641\u0629 \u0627\u0644\u0645\u0648\u0627\u0642\u0639 \u0627\u0644\u0645\u0624\u0647\u0644\u0629 \u0644\u0644\u062a\u0634\u0641\u064a\u0631 \u064a\u0639\u0645\u0644",
         "menu_globalDisable": "HTTPS Everywhere \u0644\u0627 \u064a\u0639\u0645\u0644",
@@ -37,6 +40,7 @@
     },
     "ast": {
         "about_rulesets_version": "Rulesets version for",
+        "about_version": "Versi\u00f3n",
         "menu_encryptAllSitesEligibleOff": "Encrypt All Sites Eligible is OFF",
         "menu_encryptAllSitesEligibleOn": "Encrypt All Sites Eligible is ON",
         "menu_globalDisable": "HTTPS Everywhere is OFF",
@@ -49,6 +53,7 @@
     },
     "az": {
         "about_rulesets_version": "Rulesets version for",
+        "about_version": "Versiya",
         "menu_encryptAllSitesEligibleOff": "Encrypt All Sites Eligible is OFF",
         "menu_encryptAllSitesEligibleOn": "Encrypt All Sites Eligible is ON",
         "menu_globalDisable": "HTTPS Everywhere is OFF",
@@ -61,6 +66,7 @@
     },
     "be": {
         "about_rulesets_version": "\u0412\u0435\u0440\u0441\u0456\u044f \u043d\u0430\u0431\u043e\u0440\u0430\u045e \u043f\u0440\u0430\u0432\u0456\u043b\u0430\u045e \u0434\u043b\u044f ",
+        "about_version": "\u0412\u0435\u0440\u0441\u0456\u044f",
         "menu_encryptAllSitesEligibleOff": "\u0424\u0443\u043d\u043a\u0446\u044b\u044f \u0448\u044b\u0444\u0440\u0430\u0432\u0430\u043d\u043d\u044f \u045e\u0441\u0456\u0445 \u043f\u0430\u0434\u044b\u0445\u043e\u0434\u0437\u044f\u0447\u044b\u0445 \u0441\u0430\u0439\u0442\u0430\u045e \u0432\u044b\u043a\u043b\u044e\u0447\u0430\u043d\u0430",
         "menu_encryptAllSitesEligibleOn": "\u0424\u0443\u043d\u043a\u0446\u044b\u044f \u0448\u044b\u0444\u0440\u0430\u0432\u0430\u043d\u043d\u044f \u045e\u0441\u0456\u0445 \u043f\u0430\u0434\u044b\u0445\u043e\u0434\u0437\u044f\u0447\u044b\u0445 \u0441\u0430\u0439\u0442\u0430\u045e \u0443\u043a\u043b\u044e\u0447\u0430\u043d\u0430",
         "menu_globalDisable": "HTTPS Everywhere \u0432\u044b\u043a\u043b\u044e\u0447\u0430\u043d\u044b",
@@ -73,6 +79,7 @@
     },
     "bg": {
         "about_rulesets_version": "\u0412\u0435\u0440\u0441\u0438\u044f \u043d\u0430\u0431\u043e\u0440\u0438 \u043e\u0442 \u043f\u0440\u0430\u0432\u0438\u043b\u0430 \u0437\u0430",
+        "about_version": "\u0412\u0435\u0440\u0441\u0438\u044f",
         "menu_encryptAllSitesEligibleOff": "\u041a\u0440\u0438\u043f\u0442\u0438\u0440\u0430\u0439 \u0432\u0441\u0438\u0447\u043a\u0438 \u0441\u0430\u0439\u0442\u043e\u0432\u0435, \u043a\u043e\u0438\u0442\u043e \u043f\u043e\u0437\u0432\u043e\u043b\u044f\u0432\u0430\u0442, \u0435 \u0418\u0417\u041a\u041b\u042e\u0427\u0415\u041d\u041e",
         "menu_encryptAllSitesEligibleOn": "\u041a\u0440\u0438\u043f\u0442\u0438\u0440\u0430\u0439 \u0432\u0441\u0438\u0447\u043a\u0438 \u0441\u0430\u0439\u0442\u043e\u0432\u0435, \u043a\u043e\u0438\u0442\u043e \u043f\u043e\u0437\u0432\u043e\u043b\u044f\u0432\u0430\u0442, \u0435 \u0412\u041a\u041b\u042e\u0427\u0415\u041d\u041e",
         "menu_globalDisable": "HTTPS \u041d\u0430\u0432\u0441\u044f\u043a\u044a\u0434\u0435 \u0435 \u0418\u0417\u041a\u041b\u042e\u0427\u0415\u041d",
@@ -85,6 +92,7 @@
     },
     "bn": {
         "about_rulesets_version": "\u09a8\u09bf\u09af\u09bc\u09ae\u09be\u09ac\u09b2\u09c0 \u09b8\u0982\u09b8\u09cd\u0995\u09b0\u09a3 \u099c\u09a8\u09cd\u09af",
+        "about_version": "\u09b8\u0982\u09b8\u09cd\u0995\u09b0\u09a3",
         "menu_encryptAllSitesEligibleOff": "\u098f\u09a8\u0995\u09cd\u09b0\u09bf\u09aa\u09cd\u099f \u0995\u09b0\u09c1\u09a8 \u09b8\u0995\u09b2 \u09b8\u09be\u0987\u099f \u09af\u09cb\u0997\u09cd\u09af \u09ac\u09a8\u09cd\u09a7 \u0986\u099b\u09c7",
         "menu_encryptAllSitesEligibleOn": "\u098f\u09a8\u0995\u09cd\u09b0\u09bf\u09aa\u09cd\u099f \u0995\u09b0\u09c1\u09a8 \u09b8\u0995\u09b2 \u09b8\u09be\u0987\u099f \u09af\u09cb\u0997\u09cd\u09af \u099a\u09be\u09b2\u09c1 \u0986\u099b\u09c7",
         "menu_globalDisable": "HTTPS Everywhere \u09ac\u09a8\u09cd\u09a7 ",
@@ -97,6 +105,7 @@
     },
     "br": {
         "about_rulesets_version": "Rulesets version for",
+        "about_version": "Version",
         "menu_encryptAllSitesEligibleOff": "Encrypt All Sites Eligible is OFF",
         "menu_encryptAllSitesEligibleOn": "Encrypt All Sites Eligible is ON",
         "menu_globalDisable": "HTTPS Everywhere is OFF",
@@ -109,6 +118,7 @@
     },
     "bs": {
         "about_rulesets_version": "Rulesets version for",
+        "about_version": "Version",
         "menu_encryptAllSitesEligibleOff": "Encrypt All Sites Eligible is OFF",
         "menu_encryptAllSitesEligibleOn": "Encrypt All Sites Eligible is ON",
         "menu_globalDisable": "HTTPS Everywhere is OFF",
@@ -121,6 +131,7 @@
     },
     "ca": {
         "about_rulesets_version": "Versi\u00f3 del conjunt de regles per a",
+        "about_version": "Versi\u00f3",
         "menu_encryptAllSitesEligibleOff": "Xifra tots els llocs est\u00e0 inhabilitat",
         "menu_encryptAllSitesEligibleOn": "Xifra tots els llocs est\u00e0 habilitat",
         "menu_globalDisable": "HTTPS Everywhere est\u00e0 inhabilitat",
@@ -133,6 +144,7 @@
     },
     "cs": {
         "about_rulesets_version": "Verze sady pravidel pro",
+        "about_version": "Verze",
         "menu_encryptAllSitesEligibleOff": "\u0160ifrovan\u00e9 p\u0159ipojen\u00ed pro v\u0161echny vhodn\u00e9 str\u00e1nky je vypnut\u00e9",
         "menu_encryptAllSitesEligibleOn": "\u0160ifrovan\u00e9 p\u0159ipojen\u00ed pro v\u0161echny vhodn\u00e9 str\u00e1nky je zapnut\u00e9",
         "menu_globalDisable": "HTTPS Everywhere je vypnut\u00e9",
@@ -145,6 +157,7 @@
     },
     "cy": {
         "about_rulesets_version": "Rulesets version for",
+        "about_version": "Fersiwn",
         "menu_encryptAllSitesEligibleOff": "Encrypt All Sites Eligible is OFF",
         "menu_encryptAllSitesEligibleOn": "Encrypt All Sites Eligible is ON",
         "menu_globalDisable": "HTTPS Everywhere is OFF",
@@ -157,6 +170,7 @@
     },
     "da": {
         "about_rulesets_version": "Regels\u00e6t-version til",
+        "about_version": "Version",
         "menu_encryptAllSitesEligibleOff": "Krypt\u00e9r alle steder kvalificeret, er sl\u00e5et fra",
         "menu_encryptAllSitesEligibleOn": "Krypt\u00e9r alle steder kvalificeret, er sl\u00e5et til",
         "menu_globalDisable": "HTTPS Everywhere, er sl\u00e5et fra",
@@ -169,6 +183,7 @@
     },
     "de": {
         "about_rulesets_version": "Regelsatz-Version f\u00fcr",
+        "about_version": "Version",
         "menu_encryptAllSitesEligibleOff": "Alle geeigneten Seiten verschl\u00fcsseln ist AUS",
         "menu_encryptAllSitesEligibleOn": "Alle geeigneten Seiten verschl\u00fcsseln ist AN",
         "menu_globalDisable": "HTTPS Everywhere ist AUS",
@@ -181,6 +196,7 @@
     },
     "el": {
         "about_rulesets_version": "\u03a3\u03cd\u03bd\u03bf\u03bb\u03b1 \u03ba\u03b1\u03bd\u03cc\u03bd\u03c9\u03bd \u03ad\u03ba\u03b4\u03bf\u03c3\u03b7\u03c2 \u03b3\u03b9\u03b1",
+        "about_version": "\u0388\u03ba\u03b4\u03bf\u03c3\u03b7",
         "menu_encryptAllSitesEligibleOff": "\u0397 \u0395\u03c0\u03b9\u03bb\u03bf\u03b3\u03ae \u039a\u03c9\u03b4\u03b9\u03ba\u03bf\u03c0\u03bf\u03af\u03b7\u03c3\u03b7 \u038c\u03bb\u03c9\u03bd \u03c4\u03c9\u03bd \u0399\u03c3\u03c4\u03bf\u03c3\u03b5\u03bb\u03af\u03b4\u03c9\u03bd \u03b5\u03af\u03bd\u03b1\u03b9 \u0391\u03c0\u03b5\u03bd\u03b5\u03c1\u03b3\u03bf\u03c0\u03bf\u03b9\u03b7\u03bc\u03ad\u03bd\u03b7",
         "menu_encryptAllSitesEligibleOn": "\u0397 \u0395\u03c0\u03b9\u03bb\u03bf\u03b3\u03ae \u039a\u03c9\u03b4\u03b9\u03ba\u03bf\u03c0\u03bf\u03af\u03b7\u03c3\u03b7 \u038c\u03bb\u03c9\u03bd \u03c4\u03c9\u03bd \u0399\u03c3\u03c4\u03bf\u03c3\u03b5\u03bb\u03af\u03b4\u03c9\u03bd \u03b5\u03af\u03bd\u03b1\u03b9 \u0395\u03bd\u03b5\u03c1\u03b3\u03bf\u03c0\u03bf\u03b9\u03b7\u03bc\u03ad\u03bd\u03b7",
         "menu_globalDisable": "\u03a4\u03bf HTTPS Everywhere \u03b5\u03af\u03bd\u03b1\u03b9 \u0391\u03a0\u0395\u039d\u0395\u03a1\u0393\u039f\u03a0\u039f\u0399\u0397\u039c\u0395\u039d\u039f",
@@ -193,6 +209,7 @@
     },
     "en_GB": {
         "about_rulesets_version": "Rulesets version for",
+        "about_version": "Version",
         "menu_encryptAllSitesEligibleOff": "Encrypt All Sites Eligible is OFF",
         "menu_encryptAllSitesEligibleOn": "Encrypt All Sites Eligible is ON",
         "menu_globalDisable": "HTTPS Everywhere is OFF",
@@ -205,6 +222,7 @@
     },
     "eo": {
         "about_rulesets_version": "Versio de reguloj por",
+        "about_version": "Versio",
         "menu_encryptAllSitesEligibleOff": "\u0108ifri \u0109iujn eblajn retejojn: mal\u015daltita",
         "menu_encryptAllSitesEligibleOn": "\u0108ifri \u0109iujn eblajn retejojn: \u015daltita",
         "menu_globalDisable": "HTTPS\u2011\u0108ie: mal\u015daltita",
@@ -217,6 +235,7 @@
     },
     "es": {
         "about_rulesets_version": "Versi\u00f3n de reglas para",
+        "about_version": "Versi\u00f3n",
         "menu_encryptAllSitesEligibleOff": "Encrypt All Sites Eligible est\u00e1 apagado OFF",
         "menu_encryptAllSitesEligibleOn": "Encrypt All Sites Eligible est\u00e1 encendido ON",
         "menu_globalDisable": "HTTPS Everywhere est\u00e1 apagado OFF",
@@ -229,6 +248,7 @@
     },
     "es_AR": {
         "about_rulesets_version": "Versi\u00f3n de conjuntos de reglas para",
+        "about_version": "Versi\u00f3n",
         "menu_encryptAllSitesEligibleOff": "Cifrar todos los sitios elegibles est\u00e1 desactivado",
         "menu_encryptAllSitesEligibleOn": "Cifrar todos los sitios elegibles est\u00e1 activado",
         "menu_globalDisable": "HTTPS en todas partes est\u00e1 apagado",
@@ -241,6 +261,7 @@
     },
     "es_MX": {
         "about_rulesets_version": "Rulesets version for",
+        "about_version": "Versi\u00f3n",
         "menu_encryptAllSitesEligibleOff": "Encrypt All Sites Eligible is OFF",
         "menu_encryptAllSitesEligibleOn": "Encrypt All Sites Eligible is ON",
         "menu_globalDisable": "HTTPS Everywhere is OFF",
@@ -253,6 +274,7 @@
     },
     "et": {
         "about_rulesets_version": "Reeglistike versioon",
+        "about_version": "Versioon",
         "menu_encryptAllSitesEligibleOff": "Kr\u00fcpteeri k\u00f5ik sobivad saidid (EASE) on V\u00c4LJAS",
         "menu_encryptAllSitesEligibleOn": "Kr\u00fcpteeri k\u00f5ik sobivad saidid (EASE) on SEES",
         "menu_globalDisable": "HTTPS K\u00f5ikjal on V\u00c4LJAS",
@@ -265,6 +287,7 @@
     },
     "eu": {
         "about_rulesets_version": "Arau-multzoaren bertsioa:",
+        "about_version": "Bertsioa",
         "menu_encryptAllSitesEligibleOff": "Encrypt All Sites Eligible ITZALITA dago",
         "menu_encryptAllSitesEligibleOn": "Encrypt All Sites Eligible PIZTUTA dago",
         "menu_globalDisable": "HTTPS Everywhere ITZALITA dago",
@@ -277,6 +300,7 @@
     },
     "fa": {
         "about_rulesets_version": "\u0646\u0633\u062e\u0647 \u0642\u0648\u0627\u0646\u06cc\u0646 \u0628\u0631\u0627\u06cc",
+        "about_version": "\u0646\u0633\u062e\u0647",
         "menu_encryptAllSitesEligibleOff": "\u0631\u0645\u0632\u06af\u0630\u0627\u0631\u06cc \u062a\u0645\u0627\u0645 \u0633\u0627\u06cc\u062a\u200c\u0647\u0627\u06cc \u0648\u0627\u062c\u062f \u0634\u0631\u0627\u06cc\u0637 \u062e\u0627\u0645\u0648\u0634 \u0627\u0633\u062a",
         "menu_encryptAllSitesEligibleOn": "\u0631\u0645\u0632\u06af\u0630\u0627\u0631\u06cc \u062a\u0645\u0627\u0645 \u0633\u0627\u06cc\u062a\u200c\u0647\u0627\u06cc \u0648\u0627\u062c\u062f \u0634\u0631\u0627\u06cc\u0637 \u0631\u0648\u0634\u0646 \u0627\u0633\u062a",
         "menu_globalDisable": "HTTPS \u062f\u0631 \u0647\u0645\u0647 \u062c\u0627 \u062e\u0627\u0645\u0648\u0634 \u0627\u0633\u062a",
@@ -289,6 +313,7 @@
     },
     "fi": {
         "about_rulesets_version": "S\u00e4\u00e4nt\u00f6joukkojen versio kohteelle:",
+        "about_version": "Versio",
         "menu_encryptAllSitesEligibleOff": "Salaa Kaikki Kelvolliset Sivustot on POIS P\u00c4\u00c4LT\u00c4",
         "menu_encryptAllSitesEligibleOn": "Salaa Kaikki Kelvolliset Sivustot on P\u00c4\u00c4LL\u00c4",
         "menu_globalDisable": "HTTPS Everywhere on POIS P\u00c4\u00c4LT\u00c4",
@@ -301,6 +326,7 @@
     },
     "fr": {
         "about_rulesets_version": "Version des ensembles de r\u00e8gles pour",
+        "about_version": "Version",
         "menu_encryptAllSitesEligibleOff": "Chiffrer tous les sites admissibles est d\u00e9sactiv\u00e9e",
         "menu_encryptAllSitesEligibleOn": "Chiffrer tous les sites admissibles est activ\u00e9e",
         "menu_globalDisable": "HTTPS\u00a0partout est d\u00e9sactiv\u00e9e",
@@ -313,6 +339,7 @@
     },
     "fy": {
         "about_rulesets_version": "Rulesets version for",
+        "about_version": "Ferzje",
         "menu_encryptAllSitesEligibleOff": "Encrypt All Sites Eligible is OFF",
         "menu_encryptAllSitesEligibleOn": "Encrypt All Sites Eligible is ON",
         "menu_globalDisable": "HTTPS Everywhere is OFF",
@@ -325,6 +352,7 @@
     },
     "ga": {
         "about_rulesets_version": "Leagan na rialacha le haghaidh",
+        "about_version": "Leagan",
         "menu_encryptAllSitesEligibleOff": "Encrypt All Sites Eligible is OFF",
         "menu_encryptAllSitesEligibleOn": "Encrypt All Sites Eligible is ON",
         "menu_globalDisable": "HTTPS Everywhere M\u00daCHTA",
@@ -337,6 +365,7 @@
     },
     "gd": {
         "about_rulesets_version": "Rulesets version for",
+        "about_version": "Version",
         "menu_encryptAllSitesEligibleOff": "Encrypt All Sites Eligible is OFF",
         "menu_encryptAllSitesEligibleOn": "Encrypt All Sites Eligible is ON",
         "menu_globalDisable": "HTTPS Everywhere is OFF",
@@ -349,6 +378,7 @@
     },
     "gl": {
         "about_rulesets_version": "Rulesets version for",
+        "about_version": "Versi\u00f3n",
         "menu_encryptAllSitesEligibleOff": "Encrypt All Sites Eligible is OFF",
         "menu_encryptAllSitesEligibleOn": "Encrypt All Sites Eligible is ON",
         "menu_globalDisable": "HTTPS Everywhere is OFF",
@@ -361,6 +391,7 @@
     },
     "gu": {
         "about_rulesets_version": "\u0aa8\u0abf\u0aaf\u0aae\u0acb \u0a86\u0ab5\u0ac3\u0aa4\u0acd\u0aa4\u0abf \u0aae\u0abe\u0a9f\u0ac7",
+        "about_version": "\u0a86\u0ab5\u0ac3\u0aa4\u0acd\u0aa4\u0abf",
         "menu_encryptAllSitesEligibleOff": "Encrypt All Sites Eligible is OFF",
         "menu_encryptAllSitesEligibleOn": "Encrypt All Sites Eligible is ON",
         "menu_globalDisable": "HTTPS Everywhere is OFF",
@@ -373,6 +404,7 @@
     },
     "he": {
         "about_rulesets_version": "\u05d2\u05e8\u05e1\u05ea \u05de\u05e2\u05e8\u05db\u05d5\u05ea \u05db\u05dc\u05dc\u05d9\u05dd \u05e2\u05d1\u05d5\u05e8",
+        "about_version": "\u05d2\u05e8\u05e1\u05d4",
         "menu_encryptAllSitesEligibleOff": "\u05d4\u05e6\u05e4\u05e0\u05ea \u05db\u05dc \u05d4\u05d0\u05ea\u05e8\u05d9\u05dd \u05d4\u05d6\u05db\u05d0\u05d9\u05d9\u05dd \u05db\u05d1\u05d5\u05d9\u05d4",
         "menu_encryptAllSitesEligibleOn": "\u05d4\u05e6\u05e4\u05e0\u05ea \u05db\u05dc \u05d4\u05d0\u05ea\u05e8\u05d9\u05dd \u05d4\u05d6\u05db\u05d0\u05d9\u05d9\u05dd \u05e4\u05d5\u05e2\u05dc\u05ea",
         "menu_globalDisable": "\u05db\u05d1\u05d5\u05d9 HTTPS Everywhere",
@@ -385,6 +417,7 @@
     },
     "hi": {
         "about_rulesets_version": "\u0915\u0947 \u0932\u093f\u090f \u0928\u093f\u092f\u092e \u0938\u0902\u0938\u094d\u0915\u0930\u0923",
+        "about_version": "\u0938\u0902\u0938\u094d\u0915\u0930\u0923",
         "menu_encryptAllSitesEligibleOff": "\u0938\u093e\u0930\u0940 \u092f\u094b\u0917\u094d\u092f \u0938\u093e\u0908\u091f\u094d\u0938 \u0915\u0947 \u0932\u093f\u092f\u0947 \u090f\u0928\u094d\u0915\u094d\u0930\u093f\u092a\u094d\u0936\u0928 \u092c\u0902\u0926 \u0939\u0948",
         "menu_encryptAllSitesEligibleOn": "\u0938\u093e\u0930\u0940 \u092f\u094b\u0917\u094d\u092f \u0938\u093e\u0908\u091f\u094d\u0938 \u0915\u0947 \u0932\u093f\u092f\u0947 \u090f\u0928\u094d\u0915\u094d\u0930\u093f\u092a\u094d\u0936\u0928 \u091a\u093e\u0932\u0941 \u0939\u0948",
         "menu_globalDisable": "HTTPS Everywhere \u092c\u0902\u0926 \u0939\u0948",
@@ -397,6 +430,7 @@
     },
     "hr": {
         "about_rulesets_version": "Verzija ruleset-a za",
+        "about_version": "Verzija",
         "menu_encryptAllSitesEligibleOff": "\u0160ifriranje svih prihvatljivih web mjesta je isklju\u010deno",
         "menu_encryptAllSitesEligibleOn": "\u0160ifriranje svih prihvatljivih web mjesta je uklju\u010deno",
         "menu_globalDisable": "HTTPS Everywhere je isklju\u010deno",
@@ -409,6 +443,7 @@
     },
     "hu": {
         "about_rulesets_version": "Szab\u00e1lyk\u00e9szlet verzi\u00f3k ehhez:",
+        "about_version": "Verzi\u00f3",
         "menu_encryptAllSitesEligibleOff": "Minden oldal titkos\u00edt\u00e1sa kikapcsolva",
         "menu_encryptAllSitesEligibleOn": "Minden oldal titkos\u00edt\u00e1sa BEKAPCSOLVA",
         "menu_globalDisable": "HTTPS Everywhere kikapcsolva",
@@ -421,6 +456,7 @@
     },
     "hy": {
         "about_rulesets_version": "Rulesets version for",
+        "about_version": "\u054f\u0561\u0580\u0562\u0565\u0580\u0561\u056f",
         "menu_encryptAllSitesEligibleOff": "Encrypt All Sites Eligible is OFF",
         "menu_encryptAllSitesEligibleOn": "Encrypt All Sites Eligible is ON",
         "menu_globalDisable": "HTTPS Everywhere is OFF",
@@ -433,6 +469,7 @@
     },
     "ia": {
         "about_rulesets_version": "Rulesets version for",
+        "about_version": "Version",
         "menu_encryptAllSitesEligibleOff": "Encrypt All Sites Eligible is OFF",
         "menu_encryptAllSitesEligibleOn": "Encrypt All Sites Eligible is ON",
         "menu_globalDisable": "HTTPS Everywhere is OFF",
@@ -445,6 +482,7 @@
     },
     "id": {
         "about_rulesets_version": "Versi set aturan untuk",
+        "about_version": "Versi",
         "menu_encryptAllSitesEligibleOff": "Mengenkripsi Semua Situs Yang Memenuhi Syarat MATI",
         "menu_encryptAllSitesEligibleOn": "Mengenkripsi Semua Situs Yang Memenuhi Syarat NYALA",
         "menu_globalDisable": "HTTPS Everywhere MATI",
@@ -457,6 +495,7 @@
     },
     "is": {
         "about_rulesets_version": "\u00datg\u00e1fa reglusetta fyrir",
+        "about_version": "\u00datg\u00e1fa",
         "menu_encryptAllSitesEligibleOff": "SL\u00d6KKT er \u00e1 a\u00f0 dulrita \u00f6ll tilt\u00e6k vefsv\u00e6\u00f0i (EASE)",
         "menu_encryptAllSitesEligibleOn": "KVEIKT er \u00e1 a\u00f0 dulrita \u00f6ll tilt\u00e6k vefsv\u00e6\u00f0i (EASE)",
         "menu_globalDisable": "SL\u00d6KKT er \u00e1 HTTPS-allssta\u00f0ar",
@@ -469,6 +508,7 @@
     },
     "it": {
         "about_rulesets_version": "Versione set di regole per",
+        "about_version": "Versione",
         "menu_encryptAllSitesEligibleOff": "Encrypt All Sites Eligible \u00e8 DISATTIVO",
         "menu_encryptAllSitesEligibleOn": "Encrypt All Sites Eligible \u00e8 ATTIVO",
         "menu_globalDisable": "HTTPS Everywhere \u00e8 DISATTIVATO",
@@ -481,6 +521,7 @@
     },
     "ja": {
         "about_rulesets_version": "\u30eb\u30fc\u30eb\u30bb\u30c3\u30c8\u30d0\u30fc\u30b8\u30e7\u30f3",
+        "about_version": "\u30d0\u30fc\u30b8\u30e7\u30f3",
         "menu_encryptAllSitesEligibleOff": "\u300c\u3059\u3079\u3066\u306e\u30b5\u30a4\u30c8\u3092\u6697\u53f7\u5316\u300d\u306f\u7121\u52b9\u3067\u3059",
         "menu_encryptAllSitesEligibleOn": "\u300c\u3059\u3079\u3066\u306e\u30b5\u30a4\u30c8\u3092\u6697\u53f7\u5316\u300d\u306f\u6709\u52b9\u3067\u3059",
         "menu_globalDisable": "HTTPS Everywhere \u306f\u7121\u52b9\u3067\u3059",
@@ -493,6 +534,7 @@
     },
     "ka": {
         "about_rulesets_version": "\u10db\u10d6\u10d0 \u10ec\u10d4\u10e1\u10d4\u10d1\u10d8\u10e1 \u10d5\u10d4\u10e0\u10e1\u10d8\u10d0",
+        "about_version": "\u10d5\u10d4\u10e0\u10e1\u10d8\u10d0",
         "menu_encryptAllSitesEligibleOff": "\u10e7\u10d5\u10d4\u10da\u10d0 \u10e8\u10d4\u10e1\u10d0\u10d1\u10d0\u10db\u10d8\u10e1\u10d8 \u10e1\u10d0\u10d8\u10e2\u10d8\u10e1 \u10d3\u10d0\u10e8\u10d8\u10e4\u10d5\u10e0\u10d0 \u10d2\u10d0\u10db\u10dd\u10e0\u10d7\u10e3\u10da\u10d8\u10d0",
         "menu_encryptAllSitesEligibleOn": "\u10e7\u10d5\u10d4\u10da\u10d0 \u10e8\u10d4\u10e1\u10d0\u10d1\u10d0\u10db\u10d8\u10e1\u10d8 \u10e1\u10d0\u10d8\u10e2\u10d8\u10e1 \u10d3\u10d0\u10e8\u10d8\u10e4\u10d5\u10e0\u10d0 \u10e9\u10d0\u10e0\u10d7\u10e3\u10da\u10d8\u10d0",
         "menu_globalDisable": "HTTPS Everywhere \u10d2\u10d0\u10db\u10dd\u10e0\u10d7\u10e3\u10da\u10d8\u10d0",
@@ -505,6 +547,7 @@
     },
     "kab": {
         "about_rulesets_version": "Rulesets version for",
+        "about_version": "Version",
         "menu_encryptAllSitesEligibleOff": "Encrypt All Sites Eligible is OFF",
         "menu_encryptAllSitesEligibleOn": "Encrypt All Sites Eligible is ON",
         "menu_globalDisable": "HTTPS Everywhere is OFF",
@@ -517,6 +560,7 @@
     },
     "kk": {
         "about_rulesets_version": "\u0415\u0440\u0435\u0436\u0435 \u043d\u04b1\u0441\u049b\u0430\u0441\u044b \u04af\u0448\u0456\u043d",
+        "about_version": "\u041d\u04b1\u0441\u049b\u0430",
         "menu_encryptAllSitesEligibleOff": "\u0416\u0430\u0440\u0430\u043c\u0434\u044b \u0411\u0430\u0440\u043b\u044b\u049b \u0421\u0430\u0439\u0442\u0442\u0430\u0440\u0434\u0430 \u0428\u0438\u0444\u0440\u043b\u0430\u0443 \u04e8\u0428\u0406\u0420\u0423\u041b\u0406.",
         "menu_encryptAllSitesEligibleOn": "\u0416\u0430\u0440\u0430\u043c\u0434\u044b \u0411\u0430\u0440\u043b\u044b\u049b \u0421\u0430\u0439\u0442\u0442\u0430\u0440\u0434\u0430 \u0428\u0438\u0444\u0440\u043b\u0430\u0443 \u049a\u041e\u0421\u0423\u041b\u042b.",
         "menu_globalDisable": "\u0411\u0430\u0440\u044b\u043b\u044b\u049b \u0436\u0435\u0440\u0434\u0435 HTTPS \u04e8\u0428\u0406\u0420\u0423\u041b\u0406.",
@@ -529,6 +573,7 @@
     },
     "km": {
         "about_rulesets_version": "Rulesets version for",
+        "about_version": "\u1780\u17c6\u178e\u17c2",
         "menu_encryptAllSitesEligibleOff": "Encrypt All Sites Eligible is OFF",
         "menu_encryptAllSitesEligibleOn": "Encrypt All Sites Eligible is ON",
         "menu_globalDisable": "HTTPS Everywhere is OFF",
@@ -541,6 +586,7 @@
     },
     "kn": {
         "about_rulesets_version": "Rulesets version for",
+        "about_version": "Version",
         "menu_encryptAllSitesEligibleOff": "Encrypt All Sites Eligible is OFF",
         "menu_encryptAllSitesEligibleOn": "Encrypt All Sites Eligible is ON",
         "menu_globalDisable": "HTTPS Everywhere is OFF",
@@ -553,6 +599,7 @@
     },
     "ko": {
         "about_rulesets_version": "\ud574\ub2f9 \ubc84\uc804\uc758 \uaddc\uce59:",
+        "about_version": "\ubc84\uc804",
         "menu_encryptAllSitesEligibleOff": "\ubaa8\ub4e0 \uc0ac\uc774\ud2b8\ub97c \uc554\ud638\ud654\ud558\uae30",
         "menu_encryptAllSitesEligibleOn": "\uc801\ud569\ud55c \ubaa8\ub4e0 \uc0ac\uc774\ud2b8\ub97c \uc554\ud638\ud654\ud558\uae30",
         "menu_globalDisable": "HTTPS Everywhere \uac00 \uaebc\uc838\uc788\uc2b5\ub2c8\ub2e4.",
@@ -565,6 +612,7 @@
     },
     "lt": {
         "about_rulesets_version": "Taisykli\u0173 rinkinio versija",
+        "about_version": "Versija",
         "menu_encryptAllSitesEligibleOff": "\u0160ifruoti visas galimas svetaines (EASE) yra I\u0160JUNGTA",
         "menu_encryptAllSitesEligibleOn": "\u0160ifruoti visas galimas svetaines (EASE) yra \u012eJUNGTA",
         "menu_globalDisable": "HTTPS Everywhere yra I\u0160JUNGTA",
@@ -577,6 +625,7 @@
     },
     "lv": {
         "about_rulesets_version": "Rulesets version for",
+        "about_version": "Versija",
         "menu_encryptAllSitesEligibleOff": "Encrypt All Sites Eligible is OFF",
         "menu_encryptAllSitesEligibleOn": "Encrypt All Sites Eligible is ON",
         "menu_globalDisable": "HTTPS Everywhere is OFF",
@@ -589,6 +638,7 @@
     },
     "mk": {
         "about_rulesets_version": "\u0412\u0435\u0440\u0437\u0438\u0458\u0430 \u043d\u0430 \u0441\u0435\u0442\u043e\u0432\u0438 \u043d\u0430 \u043f\u0440\u0430\u0432\u0438\u043b\u0430 \u0437\u0430",
+        "about_version": "\u0412\u0435\u0440\u0437\u0438\u0458\u0430",
         "menu_encryptAllSitesEligibleOff": "\u0415\u043d\u043a\u0440\u0438\u043f\u0442\u0438\u0440\u0430\u0458 \u0433\u0438 \u0441\u0438\u0442\u0435 \u043f\u043e\u0434\u043e\u0431\u043d\u0438 \u0432\u0435\u0431 \u0441\u0442\u0440\u0430\u043d\u0438 \u0435 \u0418\u0421\u041a\u041b\u0423\u0427\u0415\u041d\u041e",
         "menu_encryptAllSitesEligibleOn": "\u0415\u043de\u043a\u0440\u0438\u043f\u0442\u0438\u0440\u0430\u045a\u0435 \u043d\u0430 \u0441\u0438\u0442\u0435 \u043f\u043e\u0434\u043e\u0431\u043d\u0438 \u0432\u0435\u0431 \u0441\u0442\u0440\u0430\u043d\u0438 \u0435 \u0412\u041a\u041b\u0423\u0427\u0415\u041d\u041e",
         "menu_globalDisable": "HTTPS \u043d\u0430\u0441\u0435\u043a\u0430\u0434\u0435 \u0435 \u0418\u0421\u041a\u041b\u0423\u0427\u0415\u041d",
@@ -601,6 +651,7 @@
     },
     "ml": {
         "about_rulesets_version": "\u0d35\u0d47\u0d23\u0d4d\u0d1f \u0d2d\u0d30\u0d3f\u0d15\u0d4d\u0d15\u0d41\u0d28\u0d4d\u0d28 \u0d35\u0d3f\u0d27\u0d19\u0d4d\u0d19\u0d7e ",
+        "about_version": "\u0d2a\u0d24\u0d3f\u0d2a\u0d4d\u0d2a\u0d4d",
         "menu_encryptAllSitesEligibleOff": "\u0d0e\u0d32\u0d4d\u0d32\u0d3e \u0d38\u0d48\u0d31\u0d4d\u0d31\u0d41\u0d02 \u0d30\u0d39\u0d38\u0d4d\u0d2f \u0d15\u0d4b\u0d21\u0d41\u0d15\u0d7e \u0d06\u0d15\u0d41\u0d28\u0d4d\u0d28\u0d24\u0d4d \u0d13\u0d2b\u0d4d \u0d06\u0d23\u0d4d ",
         "menu_encryptAllSitesEligibleOn": "\u0d0e\u0d32\u0d4d\u0d32\u0d3e \u0d38\u0d48\u0d31\u0d4d\u0d31\u0d41\u0d02 \u0d30\u0d39\u0d38\u0d4d\u0d2f \u0d15\u0d4b\u0d21\u0d41\u0d15\u0d7e \u0d06\u0d15\u0d41\u0d28\u0d4d\u0d28\u0d24\u0d4d \u0d13\u0d7a \u0d06\u0d23\u0d4d ",
         "menu_globalDisable": "\u0d0e\u0d1b\u0d4d \u0d1f\u0d3f \u0d1f\u0d3f \u0d2a\u0d3f \u0d0e\u0d38\u0d4d \u0d0e\u0d32\u0d4d\u0d32\u0d3e\u0d2f\u0d3f\u0d1f\u0d24\u0d4d\u0d24\u0d41\u0d02 \u0d0e\u0d28\u0d4d\u0d28\u0d41\u0d33\u0d4d\u0d33\u0d24\u0d4d \u0d13\u0d2b\u0d4d \u0d06\u0d23\u0d4d ",
@@ -613,6 +664,7 @@
     },
     "mr": {
         "about_rulesets_version": "Rulesets version for",
+        "about_version": "\u0906\u0935\u0943\u0924\u094d\u0924\u0940",
         "menu_encryptAllSitesEligibleOff": "Encrypt All Sites Eligible is OFF",
         "menu_encryptAllSitesEligibleOn": "Encrypt All Sites Eligible is ON",
         "menu_globalDisable": "HTTPS Everywhere is OFF",
@@ -625,6 +677,7 @@
     },
     "ms_MY": {
         "about_rulesets_version": "Versi set peraturan untuk",
+        "about_version": "Versi",
         "menu_encryptAllSitesEligibleOff": "Sulitkan Semua Laman Yang Layak MATI",
         "menu_encryptAllSitesEligibleOn": "Sulitkan Semua Laman Yang Layak HIDUP",
         "menu_globalDisable": "HTTPS Everywhere MATI",
@@ -637,6 +690,7 @@
     },
     "my": {
         "about_rulesets_version": "Rulesets version for",
+        "about_version": "\u1017\u102c\u1038\u101b\u103e\u1004\u103a\u1038",
         "menu_encryptAllSitesEligibleOff": "Encrypt All Sites Eligible is OFF",
         "menu_encryptAllSitesEligibleOn": "Encrypt All Sites Eligible is ON",
         "menu_globalDisable": "HTTPS Everywhere is OFF",
@@ -649,6 +703,7 @@
     },
     "nb": {
         "about_rulesets_version": "Regelsett versjon for",
+        "about_version": "Versjon",
         "menu_encryptAllSitesEligibleOff": "Krypter alle kvalifiserte nettsteder er AV",
         "menu_encryptAllSitesEligibleOn": "Krypter alle kvalifiserte nettsteder er P\u00c5",
         "menu_globalDisable": "HTTPS Everywhere er AV",
@@ -661,6 +716,7 @@
     },
     "ne": {
         "about_rulesets_version": "Rulesets version for",
+        "about_version": "Version",
         "menu_encryptAllSitesEligibleOff": "Encrypt All Sites Eligible is OFF",
         "menu_encryptAllSitesEligibleOn": "Encrypt All Sites Eligible is ON",
         "menu_globalDisable": "HTTPS Everywhere is OFF",
@@ -673,6 +729,7 @@
     },
     "nl": {
         "about_rulesets_version": "Regelsetversie voor",
+        "about_version": "Versie",
         "menu_encryptAllSitesEligibleOff": "Alle in aanmerking komende websites versleutelen staat UIT",
         "menu_encryptAllSitesEligibleOn": "Alle in aanmerking komende websites versleutelen staat AAN",
         "menu_globalDisable": "HTTPS Everywhere staat UIT",
@@ -685,6 +742,7 @@
     },
     "nl_BE": {
         "about_rulesets_version": "Rulesets version for",
+        "about_version": "Versie",
         "menu_encryptAllSitesEligibleOff": "Encrypt All Sites Eligible is OFF",
         "menu_encryptAllSitesEligibleOn": "Encrypt All Sites Eligible is ON",
         "menu_globalDisable": "HTTPS Everywhere is OFF",
@@ -697,6 +755,7 @@
     },
     "nn": {
         "about_rulesets_version": "Rulesets version for",
+        "about_version": "Versjon",
         "menu_encryptAllSitesEligibleOff": "Encrypt All Sites Eligible is OFF",
         "menu_encryptAllSitesEligibleOn": "Encrypt All Sites Eligible is ON",
         "menu_globalDisable": "HTTPS Everywhere is OFF",
@@ -709,6 +768,7 @@
     },
     "oc": {
         "about_rulesets_version": "Rulesets version for",
+        "about_version": "Version",
         "menu_encryptAllSitesEligibleOff": "Encrypt All Sites Eligible is OFF",
         "menu_encryptAllSitesEligibleOn": "Encrypt All Sites Eligible is ON",
         "menu_globalDisable": "HTTPS Everywhere is OFF",
@@ -721,6 +781,7 @@
     },
     "or": {
         "about_rulesets_version": "Rulesets version for",
+        "about_version": "Version",
         "menu_encryptAllSitesEligibleOff": "Encrypt All Sites Eligible is OFF",
         "menu_encryptAllSitesEligibleOn": "Encrypt All Sites Eligible is ON",
         "menu_globalDisable": "HTTPS Everywhere is OFF",
@@ -733,6 +794,7 @@
     },
     "pa": {
         "about_rulesets_version": "\u0a07\u0a38 \u0a32\u0a08 \u0a30\u0a42\u0a32-\u0a38\u0a48\u0a71\u0a1f \u0a35\u0a30\u0a5b\u0a28",
+        "about_version": "\u0a35\u0a30\u0a1c\u0a3c\u0a28",
         "menu_encryptAllSitesEligibleOff": "\u0a38\u0a3e\u0a30\u0a40\u0a06\u0a02 \u0a2a\u0a3e\u0a24\u0a30 \u0a38\u0a3e\u0a08\u0a1f\u0a3e\u0a02 \u0a28\u0a42\u0a70 \u0a07\u0a70\u0a15\u0a4d\u0a30\u0a3f\u0a2a\u0a1f \u0a15\u0a30\u0a28\u0a3e \u0a2c\u0a70\u0a26 \u0a39\u0a48",
         "menu_encryptAllSitesEligibleOn": "\u0a38\u0a3e\u0a30\u0a40\u0a06\u0a02 \u0a2a\u0a3e\u0a24\u0a30 \u0a38\u0a3e\u0a08\u0a1f\u0a3e\u0a02 \u0a28\u0a42\u0a70 \u0a07\u0a70\u0a15\u0a4d\u0a30\u0a3f\u0a2a\u0a1f \u0a15\u0a30\u0a28\u0a3e \u0a1a\u0a3e\u0a32\u0a42 \u0a39\u0a48",
         "menu_globalDisable": "HTTPS \u0a10\u0a35\u0a30\u0a40\u0a35\u0a47\u0a05\u0a30 \u0a2c\u0a70\u0a26 \u0a39\u0a48",
@@ -745,6 +807,7 @@
     },
     "pl": {
         "about_rulesets_version": "Wersja zestawu regu\u0142 dla ",
+        "about_version": "Wersja",
         "menu_encryptAllSitesEligibleOff": "Szyfruj wszystkie mo\u017cliwe witryny jest WY\u0141\u0104CZONE",
         "menu_encryptAllSitesEligibleOn": "Szyfruj wszystkie mo\u017cliwe witryny jest W\u0141\u0104CZONE",
         "menu_globalDisable": "HTTPS Everywhere jest WY\u0141\u0104CZONE",
@@ -757,6 +820,7 @@
     },
     "pt_BR": {
         "about_rulesets_version": "Conjunto de regras para a vers\u00e3o",
+        "about_version": "Vers\u00e3o",
         "menu_encryptAllSitesEligibleOff": "Criptografar todos os sites eleg\u00edveis est\u00e1 desativado",
         "menu_encryptAllSitesEligibleOn": "Criptografar todos sites eleg\u00edveis est\u00e1 ligado",
         "menu_globalDisable": "HTTPS Everywhere est\u00e1 Desativado",
@@ -769,6 +833,7 @@
     },
     "pt_PT": {
         "about_rulesets_version": "Vers\u00e3o dos conjuntos de regras para",
+        "about_version": "Vers\u00e3o",
         "menu_encryptAllSitesEligibleOff": "Encriptar todos os sites eleg\u00edveis est\u00e1 desativado",
         "menu_encryptAllSitesEligibleOn": "Encriptar todos os sites eleg\u00edveis est\u00e1 ativado",
         "menu_globalDisable": "HTTPS Everywhere est\u00e1 desativado",
@@ -781,6 +846,7 @@
     },
     "ro": {
         "about_rulesets_version": "Versiune seturi de reguli pentru",
+        "about_version": "Versiune",
         "menu_encryptAllSitesEligibleOff": "Cripteaz\u0103 toate site-urile eligibile este dezactivat",
         "menu_encryptAllSitesEligibleOn": "Cripteaz\u0103 toate site-urile eligibile este activat",
         "menu_globalDisable": "HTTPS Oriunde este dezactivat",
@@ -793,6 +859,7 @@
     },
     "ru": {
         "about_rulesets_version": "\u0412\u0435\u0440\u0441\u0438\u044f \u043d\u0430\u0431\u043e\u0440\u043e\u0432 \u043f\u0440\u0430\u0432\u0438\u043b \u0434\u043b\u044f",
+        "about_version": "\u0412\u0435\u0440\u0441\u0438\u044f",
         "menu_encryptAllSitesEligibleOff": "\u0428\u0438\u0444\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u0432\u0441\u0435\u0445 \u043f\u043e\u0434\u0445\u043e\u0434\u044f\u0449\u0438\u0445 \u0441\u0430\u0439\u0442\u043e\u0432 \u0432\u044b\u043a\u043b\u044e\u0447\u0435\u043d\u043e",
         "menu_encryptAllSitesEligibleOn": "\u0428\u0438\u0444\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u0432\u0441\u0435\u0445 \u043f\u043e\u0434\u0445\u043e\u0434\u044f\u0449\u0438\u0445 \u0441\u0430\u0439\u0442\u043e\u0432 \u0432\u043a\u043b\u044e\u0447\u0435\u043d\u043e",
         "menu_globalDisable": "HTTPS Everywhere \u0432\u044b\u043a\u043b\u044e\u0447\u0435\u043d\u043e",
@@ -805,6 +872,7 @@
     },
     "si_LK": {
         "about_rulesets_version": "Rulesets version for",
+        "about_version": "\u0dc3\u0d82\u0dc3\u0dca\u0d9a\u0dbb\u0dab\u0dba",
         "menu_encryptAllSitesEligibleOff": "Encrypt All Sites Eligible is OFF",
         "menu_encryptAllSitesEligibleOn": "Encrypt All Sites Eligible is ON",
         "menu_globalDisable": "HTTPS Everywhere is OFF",
@@ -817,6 +885,7 @@
     },
     "sk": {
         "about_rulesets_version": "Verzia pravidiel pre",
+        "about_version": "Verzia",
         "menu_encryptAllSitesEligibleOff": "\u0160ifrovanie v\u0161etk\u00fdch vhodn\u00fdch str\u00e1nok je VYPNUT\u00c9",
         "menu_encryptAllSitesEligibleOn": "\u0160ifrovanie v\u0161etk\u00fdch vhodn\u00fdch str\u00e1nok je ZAPNUT\u00c9",
         "menu_globalDisable": "Roz\u0161\u00edrenie HTTPS Everywhere je VYPNUT\u00c9",
@@ -829,6 +898,7 @@
     },
     "sl": {
         "about_rulesets_version": "Rulesets version for",
+        "about_version": "Razli\u010dica",
         "menu_encryptAllSitesEligibleOff": "Encrypt All Sites Eligible is OFF",
         "menu_encryptAllSitesEligibleOn": "Encrypt All Sites Eligible is ON",
         "menu_globalDisable": "HTTPS Everywhere is OFF",
@@ -841,6 +911,7 @@
     },
     "son": {
         "about_rulesets_version": "Rulesets version for",
+        "about_version": "Version",
         "menu_encryptAllSitesEligibleOff": "Encrypt All Sites Eligible is OFF",
         "menu_encryptAllSitesEligibleOn": "Encrypt All Sites Eligible is ON",
         "menu_globalDisable": "HTTPS Everywhere is OFF",
@@ -853,6 +924,7 @@
     },
     "sq": {
         "about_rulesets_version": "Version Grupi rregullash p\u00ebr",
+        "about_version": "Version",
         "menu_encryptAllSitesEligibleOff": "\u201cFsheht\u00ebzo Krejt Sajtet e Kualifikuesh\u00ebm\u201d \u00ebsht\u00eb OFF",
         "menu_encryptAllSitesEligibleOn": "\u201cFsheht\u00ebzo Krejt Sajtet e Kualifikuesh\u00ebm\u201d \u00ebsht\u00eb  ON",
         "menu_globalDisable": "HTTPS Everywhere \u00ebsht\u00eb OFF",
@@ -865,6 +937,7 @@
     },
     "sr": {
         "about_rulesets_version": "Verzija setova pravila za",
+        "about_version": "Verzija",
         "menu_encryptAllSitesEligibleOff": "\u0160ifrovanje svih sajtova koji imaju tu mogu\u0107nost je isklju\u010dena",
         "menu_encryptAllSitesEligibleOn": "\u0160ifrovanje svih sajtova koji imaju tu mogu\u0107nost je uklju\u010dena",
         "menu_globalDisable": "HTTPS svuda je isklju\u010den",
@@ -877,6 +950,7 @@
     },
     "sv": {
         "about_rulesets_version": "Regelupps\u00e4ttningsversion f\u00f6r",
+        "about_version": "Version",
         "menu_encryptAllSitesEligibleOff": "Kryptera alla kvalificerade webbplatser \u00e4r AV",
         "menu_encryptAllSitesEligibleOn": "Kryptera alla kvalificerade webbplatser \u00e4r P\u00c5",
         "menu_globalDisable": "HTTPS Everywhere \u00e4r AV",
@@ -889,6 +963,7 @@
     },
     "sw": {
         "about_rulesets_version": "Seti ya sheria kwa toleo",
+        "about_version": "Toleo",
         "menu_encryptAllSitesEligibleOff": "Encrypt All Sites Eligible is OFF",
         "menu_encryptAllSitesEligibleOn": "Encrypt All Sites Eligible is ON",
         "menu_globalDisable": "HTTPS Everywhere is OFF",
@@ -901,6 +976,7 @@
     },
     "ta": {
         "about_rulesets_version": "Rulesets version for",
+        "about_version": "\u0baa\u0ba4\u0bbf\u0baa\u0bcd\u0baa\u0bc1",
         "menu_encryptAllSitesEligibleOff": "Encrypt All Sites Eligible is OFF",
         "menu_encryptAllSitesEligibleOn": "Encrypt All Sites Eligible is ON",
         "menu_globalDisable": "HTTPS Everywhere is OFF",
@@ -913,6 +989,7 @@
     },
     "te": {
         "about_rulesets_version": "Rulesets version for",
+        "about_version": "Version",
         "menu_encryptAllSitesEligibleOff": "Encrypt All Sites Eligible is OFF",
         "menu_encryptAllSitesEligibleOn": "Encrypt All Sites Eligible is ON",
         "menu_globalDisable": "HTTPS Everywhere is OFF",
@@ -925,6 +1002,7 @@
     },
     "templates": {
         "about_rulesets_version": "Rulesets version for",
+        "about_version": "Version",
         "menu_encryptAllSitesEligibleOff": "Encrypt All Sites Eligible is OFF",
         "menu_encryptAllSitesEligibleOn": "Encrypt All Sites Eligible is ON",
         "menu_globalDisable": "HTTPS Everywhere is OFF",
@@ -937,6 +1015,7 @@
     },
     "th": {
         "about_rulesets_version": "\u0e23\u0e38\u0e48\u0e19\u0e02\u0e2d\u0e07\u0e0a\u0e38\u0e14\u0e01\u0e0e\u0e2a\u0e33\u0e2b\u0e23\u0e31\u0e1a",
+        "about_version": "\u0e23\u0e38\u0e48\u0e19",
         "menu_encryptAllSitesEligibleOff": "\u0e01\u0e32\u0e23\u0e40\u0e02\u0e49\u0e32\u0e23\u0e2b\u0e31\u0e2a\u0e25\u0e31\u0e1a\u0e17\u0e38\u0e01\u0e40\u0e27\u0e47\u0e1a\u0e44\u0e0b\u0e15\u0e4c\u0e17\u0e35\u0e48\u0e40\u0e02\u0e49\u0e32\u0e02\u0e48\u0e32\u0e22\u0e1b\u0e34\u0e14\u0e2d\u0e22\u0e39\u0e48",
         "menu_encryptAllSitesEligibleOn": "\u0e01\u0e32\u0e23\u0e40\u0e02\u0e49\u0e32\u0e23\u0e2b\u0e31\u0e2a\u0e25\u0e31\u0e1a\u0e17\u0e38\u0e01\u0e40\u0e27\u0e47\u0e1a\u0e44\u0e0b\u0e15\u0e4c\u0e17\u0e35\u0e48\u0e40\u0e02\u0e49\u0e32\u0e02\u0e48\u0e32\u0e22\u0e40\u0e1b\u0e34\u0e14\u0e2d\u0e22\u0e39\u0e48",
         "menu_globalDisable": "HTTPS Everywhere \u0e1b\u0e34\u0e14\u0e2d\u0e22\u0e39\u0e48",
@@ -949,6 +1028,7 @@
     },
     "tr": {
         "about_rulesets_version": "Kural K\u00fcmesi S\u00fcr\u00fcm\u00fc",
+        "about_version": "S\u00fcr\u00fcm",
         "menu_encryptAllSitesEligibleOff": "Olabilecek T\u00fcm Siteler \u015eifrelensin Kapal\u0131",
         "menu_encryptAllSitesEligibleOn": "Olabilecek T\u00fcm Siteler \u015eifrelensin A\u00e7\u0131k",
         "menu_globalDisable": "HTTPS Everywhere Kapal\u0131",
@@ -961,6 +1041,7 @@
     },
     "uk": {
         "about_rulesets_version": "\u041d\u0430\u0431\u043e\u0440\u0438 \u043f\u0440\u0430\u0432\u0438\u043b, \u0432\u0435\u0440\u0441\u0456\u044f \u0434\u043b\u044f",
+        "about_version": "\u0412\u0435\u0440\u0441\u0456\u044f",
         "menu_encryptAllSitesEligibleOff": "\u0428\u0438\u0444\u0440\u0443\u0432\u0430\u043d\u043d\u044f \u0443\u0441\u0456\u0445 \u0434\u043e\u043f\u0443\u0441\u0442\u0438\u043c\u0438\u0445 \u0441\u0430\u0439\u0442\u0456\u0432 \u0412\u0418\u041c\u041a\u041d\u0415\u041d\u041e",
         "menu_encryptAllSitesEligibleOn": "\u0428\u0438\u0444\u0440\u0443\u0432\u0430\u043d\u043d\u044f \u0443\u0441\u0456\u0445 \u0434\u043e\u043f\u0443\u0441\u0442\u0438\u043c\u0438\u0445 \u0441\u0430\u0439\u0442\u0456\u0432 \u0423\u0412\u0406\u041c\u041a\u041d\u0415\u041d\u041e",
         "menu_globalDisable": "HTTPS Everywhere \u0412\u0418\u041c\u041a\u041d\u0415\u041d\u0418\u0419",
@@ -973,6 +1054,7 @@
     },
     "ur": {
         "about_rulesets_version": "\u0645\u062c\u0645\u0648\u0639\u06c1 \u0642\u0648\u0627\u0646\u06cc\u0646 \u06a9\u0627 \u0648\u0631\u0698\u0646 &#37;S \u06a9\u06cc\u0644\u0626\u06d2 ",
+        "about_version": "\u0648\u0631\u0698\u0646",
         "menu_encryptAllSitesEligibleOff": "Encrypt All Sites Eligible is OFF",
         "menu_encryptAllSitesEligibleOn": "Encrypt All Sites Eligible is ON",
         "menu_globalDisable": "HTTPS Everywhere is OFF",
@@ -985,6 +1067,7 @@
     },
     "uz": {
         "about_rulesets_version": "Rulesets version for",
+        "about_version": "Versiyasi",
         "menu_encryptAllSitesEligibleOff": "Encrypt All Sites Eligible is OFF",
         "menu_encryptAllSitesEligibleOn": "Encrypt All Sites Eligible is ON",
         "menu_globalDisable": "HTTPS Everywhere is OFF",
@@ -997,6 +1080,7 @@
     },
     "vi": {
         "about_rulesets_version": "Quy t\u1eafc \u0111\u00e1nh phi\u00ean b\u1ea3n cho",
+        "about_version": "Phi\u00ean b\u1ea3n",
         "menu_encryptAllSitesEligibleOff": "M\u00e3 h\u00f3a t\u1ea5t c\u1ea3 c\u00e1c trang Web \u0111\u1ee7 \u0111i\u1ec1u ki\u1ec7n \u0111ang T\u1eaeT",
         "menu_encryptAllSitesEligibleOn": "M\u00e3 h\u00f3a t\u1ea5t c\u1ea3 c\u00e1c trang Web \u0111\u1ee7 \u0111i\u1ec1u ki\u1ec7n \u0111ang B\u1eacT",
         "menu_globalDisable": "HTTPS Everywhere \u0111ang T\u1eaeT",
@@ -1009,6 +1093,7 @@
     },
     "zh_CN": {
         "about_rulesets_version": "\u89c4\u5219\u96c6\u7684\u7248\u672c\u5bf9\u4e8e",
+        "about_version": "\u7248\u672c",
         "menu_encryptAllSitesEligibleOff": "\u5df2\u5173\u95ed\u5f3a\u5236HTTPS\u52a0\u5bc6\u6240\u6709\u7f51\u7ad9",
         "menu_encryptAllSitesEligibleOn": "\u5df2\u5f00\u542f\u5f3a\u5236HTTPS\u52a0\u5bc6\u6240\u6709\u7f51\u7ad9",
         "menu_globalDisable": "HTTPS Everywhere \u5df2\u5173\u95ed",
@@ -1021,6 +1106,7 @@
     },
     "zh_HK": {
         "about_rulesets_version": "Rulesets version for",
+        "about_version": "\u7248\u672c",
         "menu_encryptAllSitesEligibleOff": "Encrypt All Sites Eligible is OFF",
         "menu_encryptAllSitesEligibleOn": "Encrypt All Sites Eligible is ON",
         "menu_globalDisable": "HTTPS Everywhere is OFF",
@@ -1033,6 +1119,7 @@
     },
     "zh_TW": {
         "about_rulesets_version": "\u898f\u5247\u96c6\u7248\u672c",
+        "about_version": "\u7248\u672c",
         "menu_encryptAllSitesEligibleOff": "\u52a0\u5bc6\u6240\u6709\u5408\u683c\u7684\u7db2\u7ad9\u5df2\u95dc\u9589",
         "menu_encryptAllSitesEligibleOn": "\u52a0\u5bc6\u6240\u6709\u5408\u683c\u7684\u7db2\u7ad9\u5df2\u958b\u555f",
         "menu_globalDisable": "HTTPS Everywhere \u5df2\u95dc\u9589",

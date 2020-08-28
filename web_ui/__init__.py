@@ -31,7 +31,8 @@ def index():
                            ease=settings['ease'],
                            enabled=settings['enabled'],
                            update_channel_timestamps=json.dumps(settings['update_channel_timestamps']),
-                           sites_disabled=json.dumps(list(settings['sites_disabled'])))
+                           sites_disabled=json.dumps(list(settings['sites_disabled'])),
+                           version_string=settings['version_string'])
 
 @app.route('/settings_changed', methods=['POST'])
 def settings_changed():

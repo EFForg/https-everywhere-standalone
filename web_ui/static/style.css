@@ -27,9 +27,12 @@ img#banner{
   line-height: 150%;
 }
 
-#rulesets-versions{
+#versions{
   font-weight: bold;
   font-size: .8em;
+  line-height: 100%;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
 #enabled_wrapper, #ease_wrapper{

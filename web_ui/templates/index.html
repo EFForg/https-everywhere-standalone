@@ -8,10 +8,14 @@
 <script type='text/javascript'>
   var update_channel_timestamps = JSON.parse('{{ update_channel_timestamps | safe }}');
   var sites_disabled = JSON.parse('{{ sites_disabled | safe }}');
+  var version_string = '{{ version_string }}';
 </script>
 <img id='banner' src='/static/images/https-everywhere-banner.png' alt='HTTPS Everywhere (Banner)'>
 <div id='content_wrapper'>
-  <div id='rulesets-versions'></div>
+  <div id='versions'>
+    <div id='version'></div>
+    <div id='rulesets-versions'></div>
+  </div>
   <div id='enabled_wrapper'>
     <h1 id='enabled_text'></h1>
     <input type='checkbox' name='enabled' id='enabled' {% if enabled %}checked='checked'{% endif %}><label for='enabled' id='enabled_label'></label><br>
