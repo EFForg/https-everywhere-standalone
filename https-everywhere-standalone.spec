@@ -3,8 +3,8 @@
 block_cipher = None
 
 
-a = Analysis(['https-everywhere-mitmproxy.py'],
-             pathex=['/home/user/workspace/https-everywhere-mitmproxy'],
+a = Analysis(['https-everywhere-standalone.py'],
+             pathex=['/home/user/workspace/https-everywhere-standalone'],
              binaries=[],
              datas=[('update_channels.json', '.'), ('web_ui/templates', 'web_ui/templates'), ('web_ui/static', 'web_ui/static')],
              hiddenimports=['configparser'],
@@ -23,7 +23,7 @@ exe = EXE(pyz,
           a.zipfiles,
           a.datas,
           [],
-          name='https-everywhere-mitmproxy',
+          name='https-everywhere-standalone',
           debug=False,
           bootloader_ignore_signals=False,
           strip=False,

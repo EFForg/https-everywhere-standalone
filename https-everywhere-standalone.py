@@ -1,6 +1,6 @@
 from mitmproxy import http, ctx, proxy, options
 from mitmproxy.tools.dump import DumpMaster
-import https_everywhere_mitmproxy_pyo as https_everywhere
+import https_everywhere_standalone_pyo as https_everywhere
 import os, sys, argparse
 from ipaddress import ip_address
 from pathlib import Path

@@ -264,7 +264,7 @@ unsafe fn set_site_disabled(ptr: usize, site: String, set_disabled: bool) -> PyR
 
 /// A Python module implemented in Rust.
 #[pymodule]
-fn https_everywhere_mitmproxy_pyo(_py: Python, m: &PyModule) -> PyResult<()> {
+fn https_everywhere_standalone_pyo(_py: Python, m: &PyModule) -> PyResult<()> {
     simple_logger::init().unwrap();
     m.add_wrapped(wrap_pyfunction!(create_rulesets))?;
     m.add_wrapped(wrap_pyfunction!(destroy_rulesets))?;

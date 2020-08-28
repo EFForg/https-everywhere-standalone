@@ -1,5 +1,5 @@
 #!/bin/bash
-COMMAND="python3 https-everywhere-mitmproxy.py --transparent"
+COMMAND="python3 https-everywhere-standalone.py --transparent"
 
 ./pre-mitm.sh
 if id -u httpse > /dev/null 2> /dev/null; then

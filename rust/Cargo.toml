@@ -1,11 +1,11 @@
 [package]
-name = "https-everywhere-mitmproxy-pyo"
+name = "https-everywhere-standalone-pyo"
 version = "0.1.0"
 authors = ["William Budington <bill@eff.org>"]
 edition = "2018"
 
 [lib]
-name = "https_everywhere_mitmproxy_pyo"
+name = "https_everywhere_standalone_pyo"
 crate-type = ["cdylib"]
 
 [dependencies]
