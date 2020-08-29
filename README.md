@@ -22,7 +22,7 @@ Platform support is limited, so first try this.  If it doesn't work, try the 'de
 
 In order to build the project, you'll need to have [rust](https://rust-lang.org/) >= 1.39 installed.
 
-    sudo apt install libssl-dev pkg-config python3-pip python3-venv
+    sudo apt install libssl-dev pkg-config python3-pip python3-venv libsqlite3-dev
     python3 -m venv .venv
     source .venv/bin/activate
     pip3 install -r requirements.txt
