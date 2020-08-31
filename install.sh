@@ -1,26 +1,26 @@
 #!/bin/bash
 
-PLATFORM=`python3 -c "import sys; print(sys.platform)"`
-ARCH=`python3 -c "import platform; print(platform.machine())"`
-VERSION=`python3 -c "import platform; print(platform.python_version()[:3])" | sed 's/\.//g'`
-ARCH=`python3 -c "import platform; print(platform.machine())"`
-IMPLEMENTATION=`python3 -c "import platform; print(platform.python_implementation())"`
-if [ "$IMPLEMENTATION" == "CPython" ]; then
-	IMPLEMENTATION=cp
-fi
-if [ "$VERSION" == "38" ]; then
-	MVER=38
-else
-	MVER=${VERSION}m
+PLATFORM=`python3 -c "import sys; print(sys.platform.lower())"`
+ARCH=`python3 -c "import platform; print(platform.machine().lower())"`
+VERSION=`python3 -c "import version; print(version.VERSION_STRING)"`
+if [ "$PLATFORM" == "win32" ]; then
+	EXTENSION=".exe"
 fi
 
-if wget -c -P rust/wheels/ https://github.com/EFForg/https-everywhere-mitmproxy-wheels/raw/master/https_everywhere_mitmproxy_pyo-0.1.0-${IMPLEMENTATION}${VERSION}-${IMPLEMENTATION}${MVER}-${PLATFORM}_${ARCH}.whl; then
-	pip3 install -r requirements.txt
-	pip3 install --upgrade --force pyasn1 # who knows why we have to do this...
+if wget -c -O dist/https-everywhere-standalone${EXTENSION} https://github.com/EFForg/https-everywhere-standalone/releases/download/v${VERSION}/https-everywhere-standalone-${VERSION}-${PLATFORM}-${ARCH}${EXTENSION}; then
+	if [ "$PLATFORM" == "win32" ]; then
+	  echo "Installing as a transparent proxy on windows is not supported at this time.  You can run this as an HTTP proxy, the executable is in the 'dist' folder."
+	  exit 1
+	fi
+	chmod +x dist/https-everywhere-standalone${EXTENSION}
 	echo "Are you installing on a workstation or a router?"
 	select wr in workstation router; do
 		case $wr in
-			workstation ) echo "Adding user 'httpse'..."
+			workstation ) if [ $UID != "0" ]; then
+				  echo "This script must be run as root to install on a workstation"
+				  exit 1
+				fi
+				echo "Adding user 'httpse'..."
 				useradd -rmu 1789 -d /var/lib/httpse httpse
 				echo "Creating 'pre-mitm.sh'..."
 				echo "iptables -t nat -A OUTPUT -p tcp --dport 80 -m owner ! --uid-owner 1789 -j DNAT --to 127.0.0.1:8080" > pre-mitm.sh
@@ -28,6 +28,9 @@ if wget -c -P rust/wheels/ https://github.com/EFForg/https-everywhere-mitmproxy-
 				echo "Creating 'post-mitm.sh'..."
 				echo "iptables -t nat -D OUTPUT -p tcp --dport 80 -m owner ! --uid-owner 1789 -j DNAT --to 127.0.0.1:8080" > post-mitm.sh
 				chmod +x post-mitm.sh
+				echo "Moving binary to 'httpse' home directory..."
+				chown httpse:httpse dist/https-everywhere-standalone${EXTENSION}
+				mv dist/https-everywhere-standalone${EXTENSION} /var/lib/httpse/
 				echo "DONE"
 				break
 				;;
@@ -42,5 +45,5 @@ if wget -c -P rust/wheels/ https://github.com/EFForg/https-everywhere-mitmproxy-
 		esac
 	done
 else
-	echo "Error: https-everywhere-mitmproxy is not supported on your system."
+	echo "Error: https-everywhere-standalone is not supported on your system."
 fi

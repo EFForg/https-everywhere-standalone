@@ -4,9 +4,7 @@ import https_everywhere_standalone_pyo as https_everywhere
 import os, sys, argparse
 from ipaddress import ip_address
 from pathlib import Path
-import web_ui
-
-VERSION_STRING = "0.1.0"
+import web_ui, version
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--transparent', action='store_true', default=False,
@@ -57,7 +55,7 @@ class Rewriter:
                 'enabled': https_everywhere.get_enabled_or(self.settings_ptr, True),
                 'update_channel_timestamps': https_everywhere.get_update_channel_timestamps(self.updater_ptr),
                 'sites_disabled': https_everywhere.get_sites_disabled(self.settings_ptr),
-                'version_string': VERSION_STRING,
+                'version_string': version.VERSION_STRING,
                }
 
     def request(self, flow):

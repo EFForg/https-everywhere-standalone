@@ -6,4 +6,3 @@ __pycache__
 pre-mitm.sh
 post-mitm.sh
 build
-dist
