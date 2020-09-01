@@ -1,3 +1,5 @@
+Please note that this is a research project for testing the viability of this solution. Because of this we can't commit to maintain, introduce new features, nor fix bugs.
+
 # HTTPS Everywhere Standalone
 
 [HTTPS Everywhere](https://www.eff.org/https-everywhere) is a project which seeks to standardize usage of the secure HTTPS transport layer over antiquated HTTP.  HTTPS Everywhere maintains a list of sites that support HTTPS, and redirects requests if a user attempts to visit HTTP using a browser addon.
