@@ -97,10 +97,11 @@ rw = Rewriter()
 
 opts = options.Options(listen_host=str(args.proxy_host), listen_port=args.proxy_port)
 opts.add_option("body_size_limit", int, 0, "")
-opts.add_option("allow_hosts", list, ["^http:"], "")
 opts.add_option("dumper_filter", str, "error", "")
 if args.transparent:
     opts.add_option("mode", str, "transparent", "")
+else:
+    opts.add_option("allow_hosts", list, ["^http:"], "")
 pconf = proxy.config.ProxyConfig(opts)
 
 m = DumpMaster({}, with_dumper=False)
