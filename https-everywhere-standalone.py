@@ -1,7 +1,7 @@
 from mitmproxy import http, ctx, proxy, options
 from mitmproxy.tools.dump import DumpMaster
 import https_everywhere_standalone_pyo as https_everywhere
-import os, sys, argparse
+import os, sys, argparse, threading, asyncio
 from ipaddress import ip_address
 from pathlib import Path
 import web_ui, version
@@ -9,6 +9,9 @@ import web_ui, version
 parser = argparse.ArgumentParser()
 parser.add_argument('--transparent', action='store_true', default=False,
         help='Run in transparent mode (default: false)')
+if sys.platform != "linux":
+    parser.add_argument('--hide-icon', action='store_true', default=False,
+            help='Hide the system tray icon (default: false)')
 parser.add_argument('--host', dest='proxy_host', type=ip_address, default='127.0.0.1',
         help='Host to run proxy on (default: 127.0.0.1)')
 parser.add_argument('--port', dest='proxy_port', type=int, default=8080,
@@ -20,10 +23,18 @@ parser.add_argument('--web-ui-port', dest='web_ui_port', type=int, default=8081,
 args = parser.parse_args()
 
 
+initial_path = os.getcwd()
+def chdir_to_project():
+    # If we are packaged as a standalone executable, cd into temp dir
+    # otherwise, cd to initial path
+    try:
+        os.chdir(sys._MEIPASS)
+    except AttributeError:
+        os.chdir(initial_path)
+
+
 class Rewriter:
     def __init__(self):
-        initial_path = os.getcwd()
-
         os.chdir(Path.home())
 
         self.rs_ptr = https_everywhere.create_rulesets()
@@ -31,12 +42,7 @@ class Rewriter:
         self.settings_ptr = https_everywhere.create_settings(self.s_ptr)
         self.rw_ptr = https_everywhere.create_rewriter(self.rs_ptr, self.settings_ptr)
 
-        # If we are packaged as a standalone executable, cd into temp dir
-        # otherwise, cd to initial path
-        try:
-            os.chdir(sys._MEIPASS)
-        except AttributeError:
-            os.chdir(initial_path)
+        chdir_to_project()
 
         self.updater_ptr = https_everywhere.create_updater(self.rs_ptr, self.s_ptr)
         https_everywhere.update_rulesets(self.updater_ptr)
@@ -93,24 +99,68 @@ class Rewriter:
         https_everywhere.destroy_rulesets(self.rs_ptr)
 
 
+class MitMProxyThread(threading.Thread):
+    def __init__(self, rw):
+        threading.Thread.__init__(self)
+
+        self.rw = rw
+        self.loop = asyncio.new_event_loop()
+
+        opts = options.Options(listen_host=str(args.proxy_host), listen_port=args.proxy_port)
+        opts.add_option("body_size_limit", int, 0, "")
+        opts.add_option("dumper_filter", str, "error", "")
+        if args.transparent:
+            opts.add_option("mode", str, "transparent", "")
+        else:
+            opts.add_option("allow_hosts", list, ["^http:"], "")
+        self.pconf = proxy.config.ProxyConfig(opts)
+
+    def run(self):
+        asyncio.set_event_loop(self.loop)
+
+        self.m = DumpMaster({}, with_dumper=False)
+        self.m.addons.add(self.rw)
+        self.m.server = proxy.server.ProxyServer(self.pconf)
+        self.m.run()
+
+    def shutdown(self):
+        self.m.shutdown()
+
+
+def shutdown():
+    global icon, mt
+    if sys.platform != "linux" and not args.hide_icon:
+        icon.stop()
+    mt.shutdown()
+    web_ui.shutdown()
+
+
 rw = Rewriter()
+mt = MitMProxyThread(rw)
+if sys.platform != "linux" and not args.hide_icon:
+        import pystray, webbrowser
+        from PIL import Image
 
-opts = options.Options(listen_host=str(args.proxy_host), listen_port=args.proxy_port)
-opts.add_option("body_size_limit", int, 0, "")
-opts.add_option("dumper_filter", str, "error", "")
-if args.transparent:
-    opts.add_option("mode", str, "transparent", "")
-else:
-    opts.add_option("allow_hosts", list, ["^http:"], "")
-pconf = proxy.config.ProxyConfig(opts)
+        def settings_clicked(icon, item):
+            webbrowser.open(f"http://{str(args.web_ui_host)}:{str(args.web_ui_port)}")
 
-m = DumpMaster({}, with_dumper=False)
-m.addons.add(rw)
-m.server = proxy.server.ProxyServer(pconf)
+        chdir_to_project()
+        icon = pystray.Icon('HTTPS Everywhere', Image.open("icon.png"), menu=pystray.Menu(
+            pystray.MenuItem(
+                'Settings',
+                settings_clicked,
+                default=True,
+                ),
+            pystray.MenuItem(
+                'Exit',
+                shutdown,
+                )))
+
 
 try:
-        web_ui.run(args.web_ui_host, args.web_ui_port, rw)
-        m.run()
+    mt.start()
+    web_ui.run(args.web_ui_host, args.web_ui_port, rw)
+    if sys.platform != "linux" and not args.hide_icon:
+        icon.run()
 except KeyboardInterrupt:
-        m.shutdown()
-        web_ui.shutdown()
+    shutdown()
