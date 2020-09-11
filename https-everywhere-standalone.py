@@ -138,8 +138,11 @@ def shutdown():
 rw = Rewriter()
 mt = MitMProxyThread(rw)
 if sys.platform != "linux" and not args.hide_icon:
-        import pystray, webbrowser
+        import pystray, webbrowser, win32gui, win32con
         from PIL import Image
+
+        console_window = win32gui.GetForegroundWindow()
+        win32gui.ShowWindow(console_window, win32con.SW_HIDE)
 
         def settings_clicked(icon, item):
             webbrowser.open(f"http://{str(args.web_ui_host)}:{str(args.web_ui_port)}")

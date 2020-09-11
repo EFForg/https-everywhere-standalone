@@ -2,3 +2,4 @@ maturin==0.8.2
 mitmproxy==5.1.1
 PyInstaller==3.6
 pystray==0.17.1 ; sys_platform != "linux"
+pywin32==228 ; sys_platform == "win32"
