@@ -32,7 +32,10 @@ def index():
                            enabled=settings['enabled'],
                            update_channel_timestamps=json.dumps(settings['update_channel_timestamps']),
                            sites_disabled=json.dumps(list(settings['sites_disabled'])),
-                           version_string=settings['version_string'])
+                           version_string=settings['version_string'],
+                           proxy_host_string=str(proxy_host),
+                           proxy_port=proxy_port,
+                           transparent=json.dumps(transparent))
 
 @app.route('/settings_changed', methods=['POST'])
 def settings_changed():
@@ -46,9 +49,12 @@ def set_site_disabled():
     return json.dumps(rw.set_site_disabled(results['site'], results['disabled']))
 
 
-def run(host, port, rewriter):
-    global rw, server
-    rw = rewriter
+def run(host, port, proxy_host_local, proxy_port_local, transparent_local, rw_local):
+    global rw, server, proxy_host, proxy_port, transparent
+    rw = rw_local
+    proxy_host = proxy_host_local
+    proxy_port = proxy_port_local
+    transparent = transparent_local
 
     log = logging.getLogger('werkzeug')
     log.setLevel(logging.ERROR)

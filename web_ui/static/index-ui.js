@@ -1,9 +1,11 @@
-let version, rulesets_versions, ease, enabled, ease_text, ease_explainer, enabled_text, t, sites_disabled_wrapper, host_not_formatted_correctly;
+let version, rulesets_versions, proxy_server_port, transparent_notification, ease, enabled, ease_text, ease_explainer, enabled_text, t, sites_disabled_wrapper, host_not_formatted_correctly;
 
 window.onload = async () => {
   t = await get_translator();
   version = document.getElementById('version');
   rulesets_versions = document.getElementById('rulesets-versions');
+  proxy_server_port = document.getElementById('proxy-server-port');
+  transparent_notification = document.getElementById('transparent-notification');
   ease = document.getElementById('ease');
   ease_text = document.getElementById('ease_text');
   ease_explainer = document.getElementById('ease_explainer');
@@ -14,6 +16,12 @@ window.onload = async () => {
 
   host_not_formatted_correctly.innerText = t("options_hostNotFormattedCorrectly");
   version.innerText = `${t("about_version")}: ${version_string}`;
+  proxy_server_port.innerText = `Proxy server running on ${proxy_host_string}:${proxy_port}`
+  if (transparent) {
+    transparent_notification.innerText = `You must set up your firewall rules to forward packets to the specified host and port.`
+  } else {
+    transparent_notification.innerText = `You must configure your applications to use an HTTP proxy on the specified host and port.`
+  }
 
   ease.onchange = () => {
     send_settings({'ease': ease.checked});

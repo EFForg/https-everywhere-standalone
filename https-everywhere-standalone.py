@@ -162,7 +162,7 @@ if sys.platform != "linux" and not args.hide_icon:
 
 try:
     mt.start()
-    web_ui.run(args.web_ui_host, args.web_ui_port, rw)
+    web_ui.run(args.web_ui_host, args.web_ui_port, args.proxy_host, args.proxy_port, args.transparent, rw)
     if sys.platform != "linux" and not args.hide_icon:
         icon.run()
 except KeyboardInterrupt:

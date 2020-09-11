@@ -27,12 +27,16 @@ img#banner{
   line-height: 150%;
 }
 
-#versions{
+#versions, #proxy_info{
   font-weight: bold;
   font-size: .8em;
   line-height: 100%;
   margin-top: 10px;
   margin-bottom: 5px;
+}
+#proxy_info{
+  font-weight: normal;
+  color: #222;
 }
 
 #enabled_wrapper, #ease_wrapper{

@@ -9,12 +9,19 @@
   var update_channel_timestamps = JSON.parse('{{ update_channel_timestamps | safe }}');
   var sites_disabled = JSON.parse('{{ sites_disabled | safe }}');
   var version_string = '{{ version_string }}';
+  var proxy_host_string = '{{ proxy_host_string }}';
+  var proxy_port = {{ proxy_port }};
+  var transparent = {{ transparent }};
 </script>
 <img id='banner' src='/static/images/https-everywhere-banner.png' alt='HTTPS Everywhere (Banner)'>
 <div id='content_wrapper'>
   <div id='versions'>
     <div id='version'></div>
     <div id='rulesets-versions'></div>
+  </div>
+  <div id='proxy_info'>
+    <div id='proxy-server-port'></div>
+    <div id='transparent-notification'></div>
   </div>
   <div id='enabled_wrapper'>
     <h1 id='enabled_text'></h1>
