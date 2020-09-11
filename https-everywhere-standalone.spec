@@ -1,13 +1,17 @@
 # -*- mode: python ; coding: utf-8 -*-
+import sys
 
 block_cipher = None
 
+hiddenimports = ['configparser', 'pkg_resources.py2_warn']
+if sys.platform == "win32":
+             hiddenimports.append('pystray._win32')
 
 a = Analysis(['https-everywhere-standalone.py'],
              pathex=['/home/user/workspace/https-everywhere-standalone'],
              binaries=[],
              datas=[('update_channels.json', '.'), ('icon.png', '.'), ('web_ui/templates', 'web_ui/templates'), ('web_ui/static', 'web_ui/static')],
-             hiddenimports=['configparser', 'pkg_resources.py2_warn'],
+             hiddenimports=hiddenimports,
              hookspath=[],
              runtime_hooks=[],
              excludes=[],
