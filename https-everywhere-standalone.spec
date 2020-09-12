@@ -4,13 +4,17 @@ import sys
 block_cipher = None
 
 hiddenimports = ['configparser', 'pkg_resources.py2_warn']
+datas = [('update_channels.json', '.'), ('web_ui/templates', 'web_ui/templates'), ('web_ui/static', 'web_ui/static')]
 if sys.platform == "win32":
              hiddenimports.append('pystray._win32')
+             datas.append(('icon.png', '.'))
+             datas.append(('icon-disabled.png', '.'))
+             datas.append(('icon-blocking.png', '.'))
 
 a = Analysis(['https-everywhere-standalone.py'],
              pathex=['/home/user/workspace/https-everywhere-standalone'],
              binaries=[],
-             datas=[('update_channels.json', '.'), ('icon.png', '.'), ('web_ui/templates', 'web_ui/templates'), ('web_ui/static', 'web_ui/static')],
+             datas=datas,
              hiddenimports=hiddenimports,
              hookspath=[],
              runtime_hooks=[],

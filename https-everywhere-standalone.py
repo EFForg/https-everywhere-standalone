@@ -64,6 +64,11 @@ class Rewriter:
                 'version_string': version.VERSION_STRING,
                }
 
+    def cached_settings(self):
+        return {'ease': https_everywhere.get_ease_mode_enabled_or(self.settings_ptr, False),
+                'enabled': https_everywhere.get_enabled_or(self.settings_ptr, True),
+               }
+
     def request(self, flow):
         url = flow.request.pretty_url
         ra = https_everywhere.rewrite_url(self.rw_ptr, url)
@@ -126,11 +131,12 @@ class MitMProxyThread(threading.Thread):
     def shutdown(self):
         self.m.shutdown()
 
+stop_icon = None
 
 def shutdown():
-    global icon, mt
+    global stop_icon, mt
     if sys.platform != "linux" and not args.hide_icon:
-        icon.stop()
+        stop_icon = True
     mt.shutdown()
     web_ui.shutdown()
 
@@ -138,32 +144,63 @@ def shutdown():
 rw = Rewriter()
 mt = MitMProxyThread(rw)
 if sys.platform != "linux" and not args.hide_icon:
-        import pystray, webbrowser, win32gui, win32con
+        import pystray, webbrowser, win32gui, win32con, time
         from PIL import Image
 
         console_window = win32gui.GetForegroundWindow()
         win32gui.ShowWindow(console_window, win32con.SW_HIDE)
 
-        def settings_clicked(icon, item):
+        def settings_clicked(_icon, _item):
             webbrowser.open(f"http://{str(args.web_ui_host)}:{str(args.web_ui_port)}")
 
-        chdir_to_project()
-        icon = pystray.Icon('HTTPS Everywhere', Image.open("icon.png"), menu=pystray.Menu(
-            pystray.MenuItem(
-                'Settings',
-                settings_clicked,
-                default=True,
-                ),
-            pystray.MenuItem(
-                'Exit',
-                shutdown,
-                )))
+        def icon_image():
+            global rw
+            settings = rw.cached_settings()
+            chdir_to_project()
+            if settings['enabled'] == False:
+                return Image.open("icon-disabled.png")
+            elif settings['ease'] == True:
+                return Image.open("icon-blocking.png")
+            else:
+                return Image.open("icon.png")
+
+        def get_icon():
+            return pystray.Icon('HTTPS Everywhere', icon_image(), menu=pystray.Menu(
+                pystray.MenuItem(
+                    'Settings',
+                    settings_clicked,
+                    default=True,
+                    ),
+                pystray.MenuItem(
+                    'Exit',
+                    shutdown,
+                    )))
+
+        def icon_setup(icon):
+            global rw, stop_icon
+
+            icon.visible = True
+
+            settings = rw.cached_settings()
+            enabled = settings['enabled']
+            ease = settings['ease']
+            while stop_icon != True:
+                time.sleep(1)
+                settings = rw.cached_settings()
+                if enabled != settings['enabled'] or ease != settings['ease']:
+                    enabled = settings['enabled']
+                    ease = settings['ease']
+                    icon.icon = icon_image()
+
+            icon.stop()
+
+        icon = get_icon()
 
 
 try:
     mt.start()
     web_ui.run(args.web_ui_host, args.web_ui_port, args.proxy_host, args.proxy_port, args.transparent, rw)
     if sys.platform != "linux" and not args.hide_icon:
-        icon.run()
+        icon.run(icon_setup)
 except KeyboardInterrupt:
     shutdown()
