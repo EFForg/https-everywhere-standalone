@@ -16,11 +16,11 @@ window.onload = async () => {
 
   host_not_formatted_correctly.innerText = t("options_hostNotFormattedCorrectly");
   version.innerText = `${t("about_version")}: ${version_string}`;
-  proxy_server_port.innerText = `Proxy server running on ${proxy_host_string}:${proxy_port}`
+  proxy_server_port.innerText = `${t("standalone_proxy_server_info_prefix")} ${proxy_host_string}:${proxy_port}`
   if (transparent) {
-    transparent_notification.innerText = `You must set up your firewall rules to forward packets to the specified host and port.`
+    transparent_notification.innerText = t("standalone_transparent_true");
   } else {
-    transparent_notification.innerText = `You must configure your applications to use an HTTP proxy on the specified host and port.`
+    transparent_notification.innerText = t("standalone_transparent_false");
   }
 
   ease.onchange = () => {

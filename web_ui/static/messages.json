@@ -10,7 +10,11 @@
         "menu_httpNoWhereExplainedBlocked": "Unencrypted requests are currently blocked",
         "options_addDisabledSite": "Add Disabled Site",
         "options_disabledUrlsListed": "HTTPS Everywhere Sites Disabled",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Enter disabled site",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "af": {
         "about_rulesets_version": "Rulesets version for",
@@ -23,7 +27,11 @@
         "menu_httpNoWhereExplainedBlocked": "Unencrypted requests are currently blocked",
         "options_addDisabledSite": "Add Disabled Site",
         "options_disabledUrlsListed": "HTTPS Everywhere Sites Disabled",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Enter disabled site",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "ar": {
         "about_rulesets_version": "\u0625\u0635\u062f\u0627\u0631\u0629 \u0645\u062c\u0645\u0648\u0639\u0629 \u0642\u0648\u0627\u0639\u062f",
@@ -34,9 +42,13 @@
         "menu_globalEnable": "\u0628\u0631\u0648\u062a\u0648\u0643\u0648\u0644 \u0627\u0644\u0640 HTTPS \u0645\u0641\u0639\u0644 \u0639\u0644\u0649 \u062c\u0645\u064a\u0639 \u0627\u0644\u0645\u0648\u0627\u0642\u0639",
         "menu_httpNoWhereExplainedAllowed": "\u0627\u0644\u0637\u0644\u0628\u0627\u062a \u063a\u064a\u0631 \u0627\u0644\u0645\u0634\u0641\u0631\u0629 \u0645\u0633\u0645\u0648\u062d \u0628\u0647\u0627 \u062d\u0627\u0644\u064a\u0627",
         "menu_httpNoWhereExplainedBlocked": "\u0627\u0644\u0637\u0644\u0628\u0627\u062a \u063a\u064a\u0631 \u0627\u0644\u0645\u0634\u0641\u0631\u0629 \u0645\u062d\u0638\u0648\u0631\u0629 \u062d\u0627\u0644\u064a\u0627",
-        "options_addDisabledSite": "Add Disabled Site",
+        "options_addDisabledSite": "\u0625\u0636\u0627\u0641\u0629 \u0645\u0648\u0642\u0639 \u0645\u0639\u0637\u0644",
         "options_disabledUrlsListed": "\u0645\u0648\u0627\u0642\u0639 \u00abHTTPS \u0641\u064a \u0643\u0644 \u0645\u0643\u0627\u0646\u00bb \u0645\u0639\u0637\u0651\u0644\u0629",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "\u0623\u062f\u062e\u0644 \u0645\u0648\u0642\u0639 \u0645\u0639\u0637\u0644",
+        "options_hostNotFormattedCorrectly": "\u062a\u0639\u0630\u0631 \u0625\u0636\u0627\u0641\u0629 \u0647\u0630\u0627 \u0627\u0644\u0645\u0636\u064a\u0641 \u0644\u0623\u0646\u0647 \u0644\u0645 \u064a\u062a\u0645 \u062a\u0646\u0633\u064a\u0642\u0647 \u0628\u0634\u0643\u0644 \u0635\u062d\u064a\u062d. \u064a\u0631\u062c\u0649 \u0627\u0644\u062a\u062d\u0642\u0642 \u0645\u0646 \u0630\u0644\u0643 \u0648\u062d\u0627\u0648\u0644 \u0645\u0631\u0629 \u0623\u062e\u0631\u0649.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "ast": {
         "about_rulesets_version": "Rulesets version for",
@@ -49,7 +61,11 @@
         "menu_httpNoWhereExplainedBlocked": "Unencrypted requests are currently blocked",
         "options_addDisabledSite": "Add Disabled Site",
         "options_disabledUrlsListed": "HTTPS Everywhere Sites Disabled",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Enter disabled site",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "az": {
         "about_rulesets_version": "Rulesets version for",
@@ -62,7 +78,11 @@
         "menu_httpNoWhereExplainedBlocked": "Unencrypted requests are currently blocked",
         "options_addDisabledSite": "Add Disabled Site",
         "options_disabledUrlsListed": "HTTPS Everywhere Sites Disabled",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Enter disabled site",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "be": {
         "about_rulesets_version": "\u0412\u0435\u0440\u0441\u0456\u044f \u043d\u0430\u0431\u043e\u0440\u0430\u045e \u043f\u0440\u0430\u0432\u0456\u043b\u0430\u045e \u0434\u043b\u044f ",
@@ -75,7 +95,11 @@
         "menu_httpNoWhereExplainedBlocked": "\u041d\u0435\u0437\u0430\u0448\u044b\u0444\u0440\u0430\u0432\u0430\u043d\u044b\u044f \u0437\u0430\u043f\u044b\u0442\u044b \u045e \u0431\u044f\u0433\u0443\u0447\u044b \u0447\u0430\u0441 \u0437\u0430\u0431\u043b\u0430\u043a\u0430\u0432\u0430\u043d\u044b",
         "options_addDisabledSite": "Add Disabled Site",
         "options_disabledUrlsListed": "\u0421\u0430\u0439\u0442\u044b \u0437 \u0430\u0434\u043a\u043b\u044e\u0447\u0430\u043d\u043d\u044b\u043c HTTPS Everywhere",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Enter disabled site",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "bg": {
         "about_rulesets_version": "\u0412\u0435\u0440\u0441\u0438\u044f \u043d\u0430\u0431\u043e\u0440\u0438 \u043e\u0442 \u043f\u0440\u0430\u0432\u0438\u043b\u0430 \u0437\u0430",
@@ -88,20 +112,28 @@
         "menu_httpNoWhereExplainedBlocked": "\u041d\u0435\u043a\u0440\u0438\u043f\u0442\u0438\u0440\u0430\u043d\u0438\u0442\u0435 \u0437\u0430\u044f\u0432\u043a\u0438 \u0432 \u043c\u043e\u043c\u0435\u043d\u0442\u0430 \u0441\u0430 \u0431\u043b\u043e\u043a\u0438\u0440\u0430\u043d\u0438",
         "options_addDisabledSite": "Add Disabled Site",
         "options_disabledUrlsListed": "HTTPS \u041d\u0430\u0432\u0441\u044f\u043a\u044a\u0434\u0435 \u0418\u0437\u043a\u043b\u044e\u0447\u0435\u043d\u0438 \u0421\u0430\u0439\u0442\u043e\u0432\u0435",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Enter disabled site",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "bn": {
         "about_rulesets_version": "\u09a8\u09bf\u09af\u09bc\u09ae\u09be\u09ac\u09b2\u09c0 \u09b8\u0982\u09b8\u09cd\u0995\u09b0\u09a3 \u099c\u09a8\u09cd\u09af",
         "about_version": "\u09b8\u0982\u09b8\u09cd\u0995\u09b0\u09a3",
-        "menu_encryptAllSitesEligibleOff": "\u098f\u09a8\u0995\u09cd\u09b0\u09bf\u09aa\u09cd\u099f \u0995\u09b0\u09c1\u09a8 \u09b8\u0995\u09b2 \u09b8\u09be\u0987\u099f \u09af\u09cb\u0997\u09cd\u09af \u09ac\u09a8\u09cd\u09a7 \u0986\u099b\u09c7",
-        "menu_encryptAllSitesEligibleOn": "\u098f\u09a8\u0995\u09cd\u09b0\u09bf\u09aa\u09cd\u099f \u0995\u09b0\u09c1\u09a8 \u09b8\u0995\u09b2 \u09b8\u09be\u0987\u099f \u09af\u09cb\u0997\u09cd\u09af \u099a\u09be\u09b2\u09c1 \u0986\u099b\u09c7",
+        "menu_encryptAllSitesEligibleOff": "\u09b8\u0995\u09b2 \u09af\u09cb\u0997\u09cd\u09af \u09b8\u09be\u0987\u099f \u098f\u09a8\u0995\u09cd\u09b0\u09bf\u09aa\u09cd\u099f \u0995\u09b0\u09be \u09ac\u09a8\u09cd\u09a7 \u09b0\u09df\u09c7\u099b\u09c7",
+        "menu_encryptAllSitesEligibleOn": "\u09b8\u0995\u09b2 \u09af\u09cb\u0997\u09cd\u09af \u09b8\u09be\u0987\u099f \u098f\u09a8\u0995\u09cd\u09b0\u09bf\u09aa\u09cd\u099f \u0995\u09b0\u09be \u099a\u09be\u09b2\u09c1 \u09b0\u09df\u09c7\u099b\u09c7",
         "menu_globalDisable": "HTTPS Everywhere \u09ac\u09a8\u09cd\u09a7 ",
-        "menu_globalEnable": "HTTPS HTTPS \u099a\u09be\u09b2\u09c1",
+        "menu_globalEnable": "HTTPS Everywhere \u099a\u09be\u09b2\u09c1",
         "menu_httpNoWhereExplainedAllowed": "\u098f\u09a8\u0995\u09cd\u09b0\u09bf\u09aa\u09cd\u099f \u0995\u09b0\u09be \u0985\u09a8\u09c1\u09b0\u09cb\u09a7 \u09ac\u09b0\u09cd\u09a4\u09ae\u09be\u09a8\u09c7 \u0985\u09a8\u09c1\u09ae\u09cb\u09a6\u09bf\u09a4",
         "menu_httpNoWhereExplainedBlocked": "\u098f\u09a8\u0995\u09cd\u09b0\u09bf\u09aa\u09b6\u09a8\u09ac\u09bf\u09b9\u09c0\u09a8 \u0985\u09a8\u09c1\u09b0\u09cb\u09a7 \u09ac\u09b0\u09cd\u09a4\u09ae\u09be\u09a8\u09c7 \u0985\u09ac\u09b0\u09cb\u09a7 \u0995\u09b0\u09be \u09b9\u09af\u09bc\u09c7\u099b\u09c7",
-        "options_addDisabledSite": "Add Disabled Site",
+        "options_addDisabledSite": "\u09ac\u09bf\u0995\u09b2 \u09b8\u09be\u0987\u099f \u09af\u09cb\u0997 \u0995\u09b0\u09c1\u09a8",
         "options_disabledUrlsListed": "HTTPS Everywhere \u09b8\u09be\u0987\u099f \u0985\u0995\u09be\u09b0\u09cd\u09af\u0995\u09b0",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "\u09ac\u09bf\u0995\u09b2 \u09b8\u09be\u0987\u099f \u09b2\u09bf\u0996\u09c1\u09a8",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "br": {
         "about_rulesets_version": "Rulesets version for",
@@ -114,7 +146,11 @@
         "menu_httpNoWhereExplainedBlocked": "Unencrypted requests are currently blocked",
         "options_addDisabledSite": "Add Disabled Site",
         "options_disabledUrlsListed": "HTTPS Everywhere Sites Disabled",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Enter disabled site",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "bs": {
         "about_rulesets_version": "Rulesets version for",
@@ -127,7 +163,11 @@
         "menu_httpNoWhereExplainedBlocked": "Unencrypted requests are currently blocked",
         "options_addDisabledSite": "Add Disabled Site",
         "options_disabledUrlsListed": "HTTPS Everywhere Sites Disabled",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Enter disabled site",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "ca": {
         "about_rulesets_version": "Versi\u00f3 del conjunt de regles per a",
@@ -140,7 +180,11 @@
         "menu_httpNoWhereExplainedBlocked": "Les sol\u00b7licituds sense xifrat estan blocades actualment",
         "options_addDisabledSite": "Afegeix un lloc desactivat",
         "options_disabledUrlsListed": "HTTPS Everywhere per llocs web Desactivat",
-        "options_enterDisabledSite": "Introdu\u00efu un lloc desactivat"
+        "options_enterDisabledSite": "Introdu\u00efu un lloc desactivat",
+        "options_hostNotFormattedCorrectly": "No pot afegir-se el servidor perqu\u00e8 no tenia el format correcte. Comproveu-ho i torneu-ho a provar.",
+        "standalone_proxy_server_info_prefix": "El servidor intermediari s'est\u00e0 executant",
+        "standalone_transparent_false": "Heu de configurar les vostres aplicacions per a utilitzar un servidor intermediari HTTP en el servidor i port especificats.",
+        "standalone_transparent_true": "Cal que definiu les regles del vostre tallafoc perqu\u00e8 reenvi\u00ef els paquets al servidor i port especificats."
     },
     "cs": {
         "about_rulesets_version": "Verze sady pravidel pro",
@@ -151,9 +195,13 @@
         "menu_globalEnable": "HTTPS Everywhere je zapnut\u00e9",
         "menu_httpNoWhereExplainedAllowed": "Ne\u0161ifrovan\u00e9 po\u017eadavky jsou moment\u00e1ln\u011b povoleny",
         "menu_httpNoWhereExplainedBlocked": "Ne\u0161ifrovan\u00e9 po\u017eadavky jsou moment\u00e1ln\u011b blokov\u00e1ny",
-        "options_addDisabledSite": "Add Disabled Site",
+        "options_addDisabledSite": "P\u0159idat blokovanou str\u00e1nku",
         "options_disabledUrlsListed": "Str\u00e1nky HTTPS Everywhere zak\u00e1z\u00e1ny",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Vstoupit na blokovanou str\u00e1nku",
+        "options_hostNotFormattedCorrectly": "Tento server nemohl b\u00fdt p\u0159id\u00e1n proto\u017ee nebyl korektn\u011b form\u00e1tov\u00e1n. Pros\u00edm zkontrolujte jej a zkuste to znovu.",
+        "standalone_proxy_server_info_prefix": "Proxy server b\u011b\u017e\u00ed na",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "cy": {
         "about_rulesets_version": "Rulesets version for",
@@ -166,7 +214,11 @@
         "menu_httpNoWhereExplainedBlocked": "Unencrypted requests are currently blocked",
         "options_addDisabledSite": "Add Disabled Site",
         "options_disabledUrlsListed": "HTTPS Everywhere Sites Disabled",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Enter disabled site",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "da": {
         "about_rulesets_version": "Regels\u00e6t-version til",
@@ -179,7 +231,11 @@
         "menu_httpNoWhereExplainedBlocked": "Ukrypterede anmodninger blokeres i \u00f8jeblikket",
         "options_addDisabledSite": "Tilf\u00f8j deaktiveret sted",
         "options_disabledUrlsListed": "HTTPS Everywhere-steder deaktiveret",
-        "options_enterDisabledSite": "Indtast deaktiveret sted"
+        "options_enterDisabledSite": "Indtast deaktiveret sted",
+        "options_hostNotFormattedCorrectly": "V\u00e6rten kunne ikke tilf\u00f8jes da den ikke er formateret korrekt. Tjek den venligst og pr\u00f8v igen.",
+        "standalone_proxy_server_info_prefix": "Proxyserver k\u00f8rer p\u00e5",
+        "standalone_transparent_false": "Du skal konfigurere dine programmer til at bruge en HTTP-proxy p\u00e5 den angivne v\u00e6rt eller port.",
+        "standalone_transparent_true": "Du skal ops\u00e6tte dine firewall-regler for at viderestille pakker til den angivne v\u00e6rt eller port."
     },
     "de": {
         "about_rulesets_version": "Regelsatz-Version f\u00fcr",
@@ -192,7 +248,11 @@
         "menu_httpNoWhereExplainedBlocked": "Unverschl\u00fcsselte Anfragen sind derzeit blockiert.",
         "options_addDisabledSite": "Deaktivierte Seite hinzuf\u00fcgen",
         "options_disabledUrlsListed": "HTTPS Everywhere deaktivierte Webseiten",
-        "options_enterDisabledSite": "Deaktivierte Seite eingeben"
+        "options_enterDisabledSite": "Deaktivierte Seite eingeben",
+        "options_hostNotFormattedCorrectly": "Dieser Host konnte nicht hinzugef\u00fcgt werden, da er nicht richtig formatiert wurde. Bitte \u00fcberpr\u00fcfen und erneut versuchen.",
+        "standalone_proxy_server_info_prefix": "Proxy-Server l\u00e4uft auf",
+        "standalone_transparent_false": "Du musst deine Anwendungen so konfigurieren, dass sie einen HTTP-Proxy auf dem angegebenen Host und Anschluss verwenden.",
+        "standalone_transparent_true": "Du musst deine Firewall-Regeln so einrichten, dass Pakete an den angegebenen Host und Anschluss weitergeleitet werden."
     },
     "el": {
         "about_rulesets_version": "\u03a3\u03cd\u03bd\u03bf\u03bb\u03b1 \u03ba\u03b1\u03bd\u03cc\u03bd\u03c9\u03bd \u03ad\u03ba\u03b4\u03bf\u03c3\u03b7\u03c2 \u03b3\u03b9\u03b1",
@@ -203,9 +263,13 @@
         "menu_globalEnable": "\u03a4\u03bf HTTPS Everywhere \u03b5\u03af\u03bd\u03b1\u03b9 \u0395\u039d\u0395\u03a1\u0393\u039f\u03a0\u039f\u0399\u0397\u039c\u0395\u039d\u039f",
         "menu_httpNoWhereExplainedAllowed": "\u03a4\u03b1 \u03bc\u03b7 \u03ba\u03c1\u03c5\u03c0\u03c4\u03bf\u03b3\u03c1\u03b1\u03c6\u03b7\u03bc\u03ad\u03bd\u03b1 \u03b1\u03b9\u03c4\u03ae\u03bc\u03b1\u03c4\u03b1 \u03c0\u03c1\u03bf\u03c2 \u03c4\u03bf \u03c0\u03b1\u03c1\u03cc\u03bd \u03b5\u03c0\u03b9\u03c4\u03c1\u03ad\u03c0\u03bf\u03bd\u03c4\u03b1\u03b9 ",
         "menu_httpNoWhereExplainedBlocked": "\u03a4\u03b1 \u03bc\u03b7 \u03ba\u03c1\u03c5\u03c0\u03c4\u03bf\u03b3\u03c1\u03b1\u03c6\u03b7\u03bc\u03ad\u03bd\u03b1 \u03b1\u03b9\u03c4\u03ae\u03bc\u03b1\u03c4\u03b1 \u03c0\u03c1\u03bf\u03c2 \u03c4\u03bf \u03c0\u03b1\u03c1\u03cc\u03bd \u03b1\u03c0\u03bf\u03ba\u03bb\u03b5\u03af\u03bf\u03bd\u03c4\u03b1\u03b9 ",
-        "options_addDisabledSite": "Add Disabled Site",
+        "options_addDisabledSite": "\u03a0\u03c1\u03bf\u03c3\u03b8\u03ae\u03ba\u03b7 \u03b1\u03c0\u03b5\u03bd\u03b5\u03c1\u03b3\u03bf\u03c0\u03bf\u03b9\u03b7\u03bc\u03ad\u03bd\u03b7\u03c2 \u03c3\u03b5\u03bb\u03af\u03b4\u03b1\u03c2",
         "options_disabledUrlsListed": "HTTPS Everywhere \u03b9\u03c3\u03c4\u03bf\u03c3\u03b5\u03bb\u03af\u03b4\u03b5\u03c2 \u03b1\u03c0\u03b5\u03bd\u03b5\u03c1\u03b3\u03bf\u03c0\u03bf\u03b9\u03b7\u03bc\u03ad\u03bd\u03b5\u03c2",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "\u0395\u03b9\u03c3\u03b1\u03b3\u03c9\u03b3\u03ae \u03b1\u03c0\u03b5\u03bd\u03b5\u03c1\u03b3\u03bf\u03c0\u03bf\u03b9\u03b7\u03bc\u03ad\u03bd\u03b7\u03c2 \u03c3\u03b5\u03bb\u03af\u03b4\u03b1\u03c2",
+        "options_hostNotFormattedCorrectly": "\u0391\u03c5\u03c4\u03cc\u03c2 \u03bf \u03b4\u03b9\u03b1\u03ba\u03bf\u03bc\u03b9\u03c3\u03c4\u03ae\u03c2 \u03b4\u03b5\u03bd \u03bc\u03c0\u03cc\u03c1\u03b5\u03c3\u03b5 \u03bd\u03b1 \u03c0\u03c1\u03bf\u03c3\u03c4\u03b5\u03b8\u03b5\u03af \u03b3\u03b9\u03b1\u03c4\u03af \u03b4\u03b5\u03bd \u03ad\u03c7\u03b5\u03b9 \u03c3\u03c9\u03c3\u03c4\u03ae \u03bc\u03bf\u03c1\u03c6\u03bf\u03c0\u03bf\u03af\u03b7\u03c3\u03b7. \u03a0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03ce \u03b5\u03bb\u03ad\u03b3\u03be\u03c4\u03b5 \u03c4\u03bf \u03ba\u03b1\u03b9 \u03c0\u03c1\u03bf\u03c3\u03c0\u03b1\u03b8\u03ae\u03c3\u03c4\u03b5 \u03be\u03b1\u03bd\u03ac.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "en_GB": {
         "about_rulesets_version": "Rulesets version for",
@@ -218,7 +282,11 @@
         "menu_httpNoWhereExplainedBlocked": "Unencrypted requests are currently blocked",
         "options_addDisabledSite": "Add Disabled Site",
         "options_disabledUrlsListed": "HTTPS Everywhere Sites Disabled",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Enter disabled site",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "eo": {
         "about_rulesets_version": "Versio de reguloj por",
@@ -231,7 +299,11 @@
         "menu_httpNoWhereExplainedBlocked": "Ne\u0109ifritaj petoj estas nuntempe blokitaj",
         "options_addDisabledSite": "Aldoni retejon por escepti",
         "options_disabledUrlsListed": "Retejoj malaktivigitaj por HTTPS-\u0108ie",
-        "options_enterDisabledSite": "Enigu retejon por escepti"
+        "options_enterDisabledSite": "Enigu retejon por escepti",
+        "options_hostNotFormattedCorrectly": "Ne povis aldoni tiun \u0109i retejon, \u0109ar \u011di ne estas \u011duste enigita. Kontrolu \u011dian \u011dustecon kaj reprovu.",
+        "standalone_proxy_server_info_prefix": "Retperanta servilo funkcianta \u0109e",
+        "standalone_transparent_false": "Vi devas agordi viajn programojn por uzi HTTP-retperanton \u0109e la difinita komputilo kaj pordo.",
+        "standalone_transparent_true": "Vi devas agordi regulojn de via fajro\u015dirmilo por enkursigi paketojn al la difinita komputilo kaj pordo."
     },
     "es": {
         "about_rulesets_version": "Versi\u00f3n de reglas para",
@@ -244,20 +316,28 @@
         "menu_httpNoWhereExplainedBlocked": "Las solicitudes sin cifrar est\u00e1n bloqueadas actualmente",
         "options_addDisabledSite": "A\u00f1adir lugares inhabilitados",
         "options_disabledUrlsListed": "Sitios deshabilitados por HTTPS Everywhere",
-        "options_enterDisabledSite": "Introducir el sitio inhabilitado"
+        "options_enterDisabledSite": "Introducir el sitio inhabilitado",
+        "options_hostNotFormattedCorrectly": "No se ha podido a\u00f1adir este host porque no estaba formateado correctamente. Por favor, compru\u00e9balo e int\u00e9ntalo de nuevo.",
+        "standalone_proxy_server_info_prefix": "El servidor proxy funciona en",
+        "standalone_transparent_false": "Debes configurar tus aplicaciones para utilizar un proxy HTTP en el host y puerto especificados.",
+        "standalone_transparent_true": "Debes configurar las reglas de tu cortafuegos para reenviar los paquetes al host y al puerto especificados."
     },
     "es_AR": {
         "about_rulesets_version": "Versi\u00f3n de conjuntos de reglas para",
         "about_version": "Versi\u00f3n",
-        "menu_encryptAllSitesEligibleOff": "Cifrar todos los sitios elegibles est\u00e1 desactivado",
-        "menu_encryptAllSitesEligibleOn": "Cifrar todos los sitios elegibles est\u00e1 activado",
-        "menu_globalDisable": "HTTPS en todas partes est\u00e1 apagado",
-        "menu_globalEnable": "HTTPS en todas partes est\u00e1 activado",
-        "menu_httpNoWhereExplainedAllowed": "Las solicitudes no cifradas est\u00e1n permitidas actualmente",
-        "menu_httpNoWhereExplainedBlocked": "Las solicitudes no cifradas est\u00e1n actualmente bloqueadas",
+        "menu_encryptAllSitesEligibleOff": "Encriptar Todos los Sitios Elegibles est\u00e1 desactivado",
+        "menu_encryptAllSitesEligibleOn": "Encriptar Todos los Sitios Elegibles est\u00e1 activado",
+        "menu_globalDisable": "HTTPS Everywhere est\u00e1 pagado",
+        "menu_globalEnable": "HTTPS Everywhere est\u00e1 activado",
+        "menu_httpNoWhereExplainedAllowed": "Las solicitudes no encriptadas est\u00e1n permitidas actualmente",
+        "menu_httpNoWhereExplainedBlocked": "Las solicitudes no encriptadas est\u00e1n actualmente bloqueadas",
         "options_addDisabledSite": "Agregar sitio deshabilitado",
         "options_disabledUrlsListed": "Sitios con HTTPS Everywhere deshabilitado",
-        "options_enterDisabledSite": "Ingresar sitio deshabilitado"
+        "options_enterDisabledSite": "Ingresar sitio deshabilitado",
+        "options_hostNotFormattedCorrectly": "Este equipo no pudo ser agregado porque no estaba formateado correctamente. Por favor comprobalo e intent\u00e1 de nuevo.",
+        "standalone_proxy_server_info_prefix": "Servidor proxy corriendo en",
+        "standalone_transparent_false": "Ten\u00e9s que configurar tus aplicaciones para usar un proxy HTTP en el equipo y puerto especificados.",
+        "standalone_transparent_true": "Ten\u00e9s que configurar las reglas de tu cortafuego para redirigir paquetes hacia el equipo y puerto especificados."
     },
     "es_MX": {
         "about_rulesets_version": "Rulesets version for",
@@ -270,7 +350,11 @@
         "menu_httpNoWhereExplainedBlocked": "Unencrypted requests are currently blocked",
         "options_addDisabledSite": "Add Disabled Site",
         "options_disabledUrlsListed": "HTTPS Everywhere Sites Disabled",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Enter disabled site",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "et": {
         "about_rulesets_version": "Reeglistike versioon",
@@ -283,7 +367,11 @@
         "menu_httpNoWhereExplainedBlocked": "Kr\u00fcpteerimata taotlused on hetkel blokeeritud",
         "options_addDisabledSite": "Lisa keelatud sait",
         "options_disabledUrlsListed": "HTTPS K\u00f5ikjal blokeeritud veebilehed",
-        "options_enterDisabledSite": "Sisene keelatud saiti"
+        "options_enterDisabledSite": "Sisene keelatud saiti",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "eu": {
         "about_rulesets_version": "Arau-multzoaren bertsioa:",
@@ -296,7 +384,11 @@
         "menu_httpNoWhereExplainedBlocked": "Enkriptatu gabeko eskaerak blokeatuta daude",
         "options_addDisabledSite": "Add Disabled Site",
         "options_disabledUrlsListed": "HTTPS Everywhere ezgaitutako guneak",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Enter disabled site",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "fa": {
         "about_rulesets_version": "\u0646\u0633\u062e\u0647 \u0642\u0648\u0627\u0646\u06cc\u0646 \u0628\u0631\u0627\u06cc",
@@ -309,7 +401,11 @@
         "menu_httpNoWhereExplainedBlocked": "\u062f\u0631\u062e\u0648\u0627\u0633\u062a\u200c\u0647\u0627\u06cc \u0631\u0645\u0632\u06af\u0630\u0627\u0631\u06cc \u0646\u0634\u062f\u0647 \u062f\u0631 \u062d\u0627\u0644 \u062d\u0627\u0636\u0631 \u0645\u0633\u062f\u0648\u062f \u0634\u062f\u0647\u200c\u0627\u0646\u062f",
         "options_addDisabledSite": "\u0627\u0641\u0632\u0648\u062f\u0646 \u0633\u0627\u06cc\u062a \u063a\u06cc\u0631\u200c\u0641\u0639\u0627\u0644",
         "options_disabledUrlsListed": "HTTPS \u062f\u0631 \u0647\u0645\u0647 \u062c\u0627 \u063a\u06cc\u0631 \u0641\u0639\u0627\u0644 \u0627\u0633\u062a",
-        "options_enterDisabledSite": "\u0648\u0631\u0648\u062f \u0633\u0627\u06cc\u062a \u063a\u06cc\u0631\u200c\u0641\u0639\u0627\u0644"
+        "options_enterDisabledSite": "\u0648\u0631\u0648\u062f \u0633\u0627\u06cc\u062a \u063a\u06cc\u0631\u200c\u0641\u0639\u0627\u0644",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "fi": {
         "about_rulesets_version": "S\u00e4\u00e4nt\u00f6joukkojen versio kohteelle:",
@@ -322,7 +418,11 @@
         "menu_httpNoWhereExplainedBlocked": "Salaamattomat pyynn\u00f6t on estetty",
         "options_addDisabledSite": "Add Disabled Site",
         "options_disabledUrlsListed": "HTTPS Everywhere - estetyt sivut",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Enter disabled site",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "fr": {
         "about_rulesets_version": "Version des ensembles de r\u00e8gles pour",
@@ -335,7 +435,11 @@
         "menu_httpNoWhereExplainedBlocked": "Les requ\u00eates non chiffr\u00e9es sont bloqu\u00e9es actuellement",
         "options_addDisabledSite": "Ajouter un site \u00e0 d\u00e9sactiver",
         "options_disabledUrlsListed": "Sites d\u00e9sactiv\u00e9s dans HTTPS\u00a0partout",
-        "options_enterDisabledSite": "Saisir un site \u00e0 D\u00e9sactiver"
+        "options_enterDisabledSite": "Saisir un site \u00e0 D\u00e9sactiver",
+        "options_hostNotFormattedCorrectly": "Cet h\u00f4te n\u2019a pas pu \u00eatre ajout\u00e9, car il n\u2019\u00e9tait pas correctement form\u00e9. Veuille le v\u00e9rifier et r\u00e9essayer.",
+        "standalone_proxy_server_info_prefix": "Serveur mandataire en fonction sur",
+        "standalone_transparent_false": "Vous devez configurer vos applications pour qu\u2019elles utilisent un mandataire HTTP sur l\u2019h\u00f4te et le port indiqu\u00e9s.",
+        "standalone_transparent_true": "Vous devez configurer les r\u00e8gles de votre pare-feu pour acheminer les paquets vers l\u2019h\u00f4te et le port indiqu\u00e9s."
     },
     "fy": {
         "about_rulesets_version": "Rulesets version for",
@@ -348,20 +452,28 @@
         "menu_httpNoWhereExplainedBlocked": "Unencrypted requests are currently blocked",
         "options_addDisabledSite": "Add Disabled Site",
         "options_disabledUrlsListed": "HTTPS Everywhere Sites Disabled",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Enter disabled site",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "ga": {
         "about_rulesets_version": "Leagan na rialacha le haghaidh",
         "about_version": "Leagan",
-        "menu_encryptAllSitesEligibleOff": "Encrypt All Sites Eligible is OFF",
-        "menu_encryptAllSitesEligibleOn": "Encrypt All Sites Eligible is ON",
+        "menu_encryptAllSitesEligibleOff": "Cripti\u00fa Nuair is F\u00e9idir (EASE): M\u00daCHTA",
+        "menu_encryptAllSitesEligibleOn": "Cripti\u00fa Nuair is F\u00e9idir (EASE): AR SI\u00daL",
         "menu_globalDisable": "HTTPS Everywhere M\u00daCHTA",
         "menu_globalEnable": "HTTPS Everywhere AR SI\u00daL",
-        "menu_httpNoWhereExplainedAllowed": "Unencrypted requests are currently allowed",
-        "menu_httpNoWhereExplainedBlocked": "Unencrypted requests are currently blocked",
-        "options_addDisabledSite": "Add Disabled Site",
+        "menu_httpNoWhereExplainedAllowed": "T\u00e1 iarratais neamhchriptithe ceadaithe faoi l\u00e1thair",
+        "menu_httpNoWhereExplainedBlocked": "T\u00e1 cosc ar iarratais neamhchriptithe faoi l\u00e1thair",
+        "options_addDisabledSite": "Cuir Su\u00edomh D\u00edchumasaithe Leis",
         "options_disabledUrlsListed": "Su\u00edmh ar ar d\u00edchumasa\u00edodh HTTPS Everywhere",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Cuir isteach su\u00edomh d\u00edchumasaithe",
+        "options_hostNotFormattedCorrectly": "N\u00edorbh fh\u00e9idir an t-\u00f3stach a chur leis toisc go raibh an fhorm\u00e1id m\u00edcheart. Deimhnigh \u00e9 agus bain triail eile as.",
+        "standalone_proxy_server_info_prefix": "T\u00e1 an seachfhreastala\u00ed ag rith ar",
+        "standalone_transparent_false": "Caithfidh t\u00fa do chuid feidhmchl\u00e1r a chumr\u00fa chun seachfhreastala\u00ed HTTP a \u00fas\u00e1id ar an \u00f3steach agus port sonraithe.",
+        "standalone_transparent_true": "Caithfidh t\u00fa do chuid rialacha balla d\u00f3ite\u00e1in a shocr\u00fa sa chaoi go gcuirfear paic\u00e9id ar aghaidh go dt\u00ed an t-\u00f3stach agus an port sonraithe."
     },
     "gd": {
         "about_rulesets_version": "Rulesets version for",
@@ -374,7 +486,11 @@
         "menu_httpNoWhereExplainedBlocked": "Unencrypted requests are currently blocked",
         "options_addDisabledSite": "Add Disabled Site",
         "options_disabledUrlsListed": "HTTPS Everywhere Sites Disabled",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Enter disabled site",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "gl": {
         "about_rulesets_version": "Rulesets version for",
@@ -387,7 +503,11 @@
         "menu_httpNoWhereExplainedBlocked": "Unencrypted requests are currently blocked",
         "options_addDisabledSite": "Add Disabled Site",
         "options_disabledUrlsListed": "HTTPS Everywhere Sites Disabled",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Enter disabled site",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "gu": {
         "about_rulesets_version": "\u0aa8\u0abf\u0aaf\u0aae\u0acb \u0a86\u0ab5\u0ac3\u0aa4\u0acd\u0aa4\u0abf \u0aae\u0abe\u0a9f\u0ac7",
@@ -400,7 +520,11 @@
         "menu_httpNoWhereExplainedBlocked": "Unencrypted requests are currently blocked",
         "options_addDisabledSite": "Add Disabled Site",
         "options_disabledUrlsListed": "HTTPS Everywhere \u0ab8\u0abe\u0a87\u0a9f\u0acd\u0ab8 \u0aa8\u0abf\u0ab7\u0acd\u0a95\u0acd\u0ab0\u0abf\u0aaf",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Enter disabled site",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "he": {
         "about_rulesets_version": "\u05d2\u05e8\u05e1\u05ea \u05de\u05e2\u05e8\u05db\u05d5\u05ea \u05db\u05dc\u05dc\u05d9\u05dd \u05e2\u05d1\u05d5\u05e8",
@@ -413,7 +537,11 @@
         "menu_httpNoWhereExplainedBlocked": "\u05d1\u05e7\u05e9\u05d5\u05ea \u05d1\u05dc\u05ea\u05d9 \u05de\u05d5\u05e6\u05e4\u05e0\u05d5\u05ea \u05d7\u05e1\u05d5\u05de\u05d5\u05ea \u05db\u05e8\u05d2\u05e2",
         "options_addDisabledSite": "\u05d4\u05d5\u05e1\u05e3 \u05d0\u05ea\u05e8 \u05de\u05d5\u05e9\u05d1\u05ea",
         "options_disabledUrlsListed": "\u05de\u05d5\u05e9\u05d1\u05ea\u05d9\u05dd HTTPS Everywhere \u05d0\u05ea\u05e8\u05d9",
-        "options_enterDisabledSite": "\u05d4\u05db\u05e0\u05e1 \u05d0\u05ea\u05e8 \u05de\u05d5\u05e9\u05d1\u05ea"
+        "options_enterDisabledSite": "\u05d4\u05db\u05e0\u05e1 \u05d0\u05ea\u05e8 \u05de\u05d5\u05e9\u05d1\u05ea",
+        "options_hostNotFormattedCorrectly": "\u05de\u05d0\u05e8\u05d7 \u05d6\u05d4 \u05dc\u05d0 \u05d4\u05d9\u05d4 \u05d9\u05db\u05d5\u05dc \u05dc\u05d4\u05ea\u05d5\u05d5\u05e1\u05e3 \u05de\u05d0\u05d7\u05e8 \u05e9\u05d4\u05d5\u05d0 \u05dc\u05d0 \u05ea\u05d5\u05e1\u05d3\u05e8 \u05db\u05e8\u05d0\u05d5\u05d9. \u05d0\u05e0\u05d0 \u05d1\u05d3\u05d5\u05e7 \u05d0\u05d5\u05ea\u05d5 \u05d5\u05e0\u05e1\u05d4 \u05e9\u05d5\u05d1.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "hi": {
         "about_rulesets_version": "\u0915\u0947 \u0932\u093f\u090f \u0928\u093f\u092f\u092e \u0938\u0902\u0938\u094d\u0915\u0930\u0923",
@@ -426,7 +554,11 @@
         "menu_httpNoWhereExplainedBlocked": "\u092c\u093f\u0928\u093e \u090f\u0928\u094d\u0915\u094d\u0930\u093f\u092a\u094d\u0936\u0928 \u0935\u093e\u0932\u0940 requests \u0905\u092d\u093f \u0930\u094b\u0915\u0940 \u091c\u093e \u0930\u0939\u0940 \u0939\u0948\u0902",
         "options_addDisabledSite": "Add Disabled Site",
         "options_disabledUrlsListed": "HTTPS Everywhere \u0935\u0947\u092c\u0938\u093e\u0907\u091f\u094b\u0902 \u0928\u093f\u0930\u094d\u092f\u094b\u0917\u094d\u092f",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Enter disabled site",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "hr": {
         "about_rulesets_version": "Verzija ruleset-a za",
@@ -439,7 +571,11 @@
         "menu_httpNoWhereExplainedBlocked": "Ne\u0161ifrirani zahtjevi su trenuta\u010dno blokirani",
         "options_addDisabledSite": "Dodaj deaktivirano web mjesto",
         "options_disabledUrlsListed": "HTTPS Everywhere deaktivirane stranice",
-        "options_enterDisabledSite": "Upi\u0161i deaktivirano web mjesto"
+        "options_enterDisabledSite": "Upi\u0161i deaktivirano web mjesto",
+        "options_hostNotFormattedCorrectly": "Nije bilo mogu\u0107e dodati ovo ra\u010dunalo, jer nije ispravno formatirano. Provjeri i poku\u0161aj ponovo.",
+        "standalone_proxy_server_info_prefix": "Proxy poslu\u017eitelj pokrenut na",
+        "standalone_transparent_false": "Mora\u0161 konfigurirati tvoje programe, tako da koriste HTTP proxy na odre\u0111enom ra\u010dunalu i priklju\u010dku.",
+        "standalone_transparent_true": "Mora\u0161 postaviti pravila vatrozida za proslje\u0111ivanje paketa na odre\u0111eno ra\u010dunalo i priklju\u010dak."
     },
     "hu": {
         "about_rulesets_version": "Szab\u00e1lyk\u00e9szlet verzi\u00f3k ehhez:",
@@ -452,7 +588,11 @@
         "menu_httpNoWhereExplainedBlocked": "A titkos\u00edtatlan lek\u00e9rdez\u00e9sek jelenleg tiltva vannak",
         "options_addDisabledSite": "Letiltott oldal hozz\u00e1ad\u00e1sa",
         "options_disabledUrlsListed": "HTTPS Everywhere Sites kikapcsolva",
-        "options_enterDisabledSite": "Letiltott oldal megad\u00e1sa"
+        "options_enterDisabledSite": "Letiltott oldal megad\u00e1sa",
+        "options_hostNotFormattedCorrectly": "Ez a kiszolg\u00e1l\u00f3 nem adhat\u00f3 hozz\u00e1, mert nem megfelel\u0151en form\u00e1zott. K\u00e9rj\u00fck ellen\u0151rizze, majd pr\u00f3b\u00e1lja \u00fajra.",
+        "standalone_proxy_server_info_prefix": "Proxy szerver fut itt:",
+        "standalone_transparent_false": "Be kell \u00e1ll\u00edtania az alkalmaz\u00e1sokat, hogy HTTP proxy-t haszn\u00e1ljanak a megadott kiszolg\u00e1l\u00f3ra \u00e9s portra.",
+        "standalone_transparent_true": "Be kell \u00e1ll\u00edtania a t\u0171zfal szab\u00e1lyokat, hogy tov\u00e1bb\u00edtsa a csomagokat a megadott kiszolg\u00e1l\u00f3ra \u00e9s portra."
     },
     "hy": {
         "about_rulesets_version": "Rulesets version for",
@@ -465,7 +605,11 @@
         "menu_httpNoWhereExplainedBlocked": "Unencrypted requests are currently blocked",
         "options_addDisabledSite": "Add Disabled Site",
         "options_disabledUrlsListed": "HTTPS Everywhere Sites Disabled",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Enter disabled site",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "ia": {
         "about_rulesets_version": "Rulesets version for",
@@ -478,7 +622,11 @@
         "menu_httpNoWhereExplainedBlocked": "Unencrypted requests are currently blocked",
         "options_addDisabledSite": "Add Disabled Site",
         "options_disabledUrlsListed": "HTTPS Everywhere Sites Disabled",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Enter disabled site",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "id": {
         "about_rulesets_version": "Versi set aturan untuk",
@@ -491,7 +639,11 @@
         "menu_httpNoWhereExplainedBlocked": "Permintaan yang tidak terenkripsi saat ini diblokir",
         "options_addDisabledSite": "Add Disabled Site",
         "options_disabledUrlsListed": "Situs HTTPS Everywhere Dinonaktifkan",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Enter disabled site",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "is": {
         "about_rulesets_version": "\u00datg\u00e1fa reglusetta fyrir",
@@ -504,7 +656,11 @@
         "menu_httpNoWhereExplainedBlocked": "Loka\u00f0 er \u00e1 \u00f3dulrita\u00f0ar bei\u00f0nir",
         "options_addDisabledSite": "B\u00e6ta vi\u00f0 \u00f3virkju\u00f0u vefsv\u00e6\u00f0i",
         "options_disabledUrlsListed": "Vefir me\u00f0 HTTPS-allssta\u00f0ar \u00f3virkir",
-        "options_enterDisabledSite": "Setja inn \u00f3virkja\u00f0 vefsv\u00e6\u00f0i"
+        "options_enterDisabledSite": "Setja inn \u00f3virkja\u00f0 vefsv\u00e6\u00f0i",
+        "options_hostNotFormattedCorrectly": "Ekki n\u00e1\u00f0ist a\u00f0 b\u00e6ta vi\u00f0 \u00feessari h\u00fdsilv\u00e9l vegna \u00feess a\u00f0 h\u00fan var ekki r\u00e9tt sni\u00f0in. Athuga\u00f0u hana og reyndu aftur.",
+        "standalone_proxy_server_info_prefix": "Milli\u00fej\u00f3nn keyrir \u00e1",
+        "standalone_transparent_false": "\u00de\u00fa ver\u00f0ur a\u00f0 stilla forritin \u00fe\u00edn til a\u00f0 nota HTTP-milli\u00fej\u00f3n \u00e1 uppgefna h\u00fdsilv\u00e9l og n\u00famer g\u00e1ttar.",
+        "standalone_transparent_true": "\u00de\u00fa ver\u00f0ur a\u00f0 stilla eldveggjarreglurnar \u00fe\u00ednar upp til a\u00f0 beina p\u00f6kkum \u00e1 uppgefna h\u00fdsilv\u00e9l og n\u00famer g\u00e1ttar."
     },
     "it": {
         "about_rulesets_version": "Versione set di regole per",
@@ -517,7 +673,11 @@
         "menu_httpNoWhereExplainedBlocked": "Le richieste non criptate sono al momento bloccate",
         "options_addDisabledSite": "Aggiungi sito disattivato",
         "options_disabledUrlsListed": "Siti disattivati per HTTPS Everywhere",
-        "options_enterDisabledSite": "Inserisci sito disattivato"
+        "options_enterDisabledSite": "Inserisci sito disattivato",
+        "options_hostNotFormattedCorrectly": "Questo host non \u00e8 stato aggiunto perch\u00e8 non \u00e8 formattato correttamente. Per favore controllalo e riprova.",
+        "standalone_proxy_server_info_prefix": "Server proxy in esecuzione su",
+        "standalone_transparent_false": "Devi configurare le tue applicazioni per usare un proxy HTTP sull'host e porta specificati.",
+        "standalone_transparent_true": "Devi impostare le tue regole firewall per inoltrare i pacchetti all'host e porta specificati."
     },
     "ja": {
         "about_rulesets_version": "\u30eb\u30fc\u30eb\u30bb\u30c3\u30c8\u30d0\u30fc\u30b8\u30e7\u30f3",
@@ -530,7 +690,11 @@
         "menu_httpNoWhereExplainedBlocked": "\u975e\u6697\u53f7\u5316\u30ea\u30af\u30a8\u30b9\u30c8\u306f\u73fe\u5728\u30d6\u30ed\u30c3\u30af\u3055\u308c\u307e\u3059",
         "options_addDisabledSite": "\u7121\u52b9\u5316\u3059\u308b\u30b5\u30a4\u30c8\u3092\u8ffd\u52a0",
         "options_disabledUrlsListed": "HTTPS Everywhere \u3092\u7121\u52b9\u5316\u3059\u308b\u30b5\u30a4\u30c8",
-        "options_enterDisabledSite": "\u7121\u52b9\u5316\u3059\u308b\u30b5\u30a4\u30c8..."
+        "options_enterDisabledSite": "\u7121\u52b9\u5316\u3059\u308b\u30b5\u30a4\u30c8...",
+        "options_hostNotFormattedCorrectly": "\u30db\u30b9\u30c8\u306f\u6b63\u3057\u3044\u66f8\u5f0f\u3067\u306f\u306a\u3044\u305f\u3081\u3001\u8ffd\u52a0\u3067\u304d\u307e\u305b\u3093\u3067\u3057\u305f\u3002\u5165\u529b\u3092\u78ba\u8a8d\u306e\u4e0a\u3001\u3082\u3046\u4e00\u5ea6\u3084\u308a\u76f4\u3057\u3066\u304f\u3060\u3055\u3044\u3002",
+        "standalone_proxy_server_info_prefix": "\u30d7\u30ed\u30ad\u30b7\u30b5\u30fc\u30d0\u30fc\u306f\u52d5\u4f5c\u3057\u307e\u3059\u3001",
+        "standalone_transparent_false": "\u30a2\u30d7\u30ea\u306f\u7279\u5b9a\u3055\u308c\u3066\u3044\u308b\u30db\u30b9\u30c8\u3084\u30dd\u30fc\u30c8\u306bHTTP\u30d7\u30ed\u30ad\u30b7\u3092\u5229\u7528\u3059\u308b\u3088\u3046\u306b\u8a2d\u5b9a\u3057\u306a\u3051\u308c\u3070\u306a\u308a\u307e\u305b\u3093\u3002",
+        "standalone_transparent_true": "\u7279\u5b9a\u3055\u308c\u3066\u3044\u308b\u30db\u30b9\u30c8\u3084\u30dd\u30fc\u30c8\u306b\u30d1\u30b1\u30c3\u30c8\u3092\u9001\u4fe1\u3059\u308b\u305f\u3081\u3001\u30d5\u30a1\u30a4\u30a2\u30a6\u30a9\u30fc\u30eb\u306e\u30eb\u30fc\u30eb\u3092\u8a2d\u5b9a\u3057\u306a\u3051\u308c\u3070\u306a\u308a\u307e\u305b\u3093\u3002"
     },
     "ka": {
         "about_rulesets_version": "\u10db\u10d6\u10d0 \u10ec\u10d4\u10e1\u10d4\u10d1\u10d8\u10e1 \u10d5\u10d4\u10e0\u10e1\u10d8\u10d0",
@@ -543,7 +707,11 @@
         "menu_httpNoWhereExplainedBlocked": "\u10d3\u10d0\u10e3\u10e8\u10d8\u10e4\u10e0\u10d0\u10d5\u10d8 \u10db\u10dd\u10d7\u10ee\u10dd\u10d5\u10dc\u10d4\u10d1\u10d8 \u10d0\u10db\u10df\u10d0\u10db\u10d0\u10d3 \u10e8\u10d4\u10d6\u10e6\u10e3\u10d3\u10e3\u10da\u10d8\u10d0",
         "options_addDisabledSite": "\u10d2\u10d0\u10db\u10dd\u10e0\u10d7\u10e3\u10da\u10d8 \u10e1\u10d0\u10d8\u10e2\u10d8\u10e1 \u10d3\u10d0\u10db\u10d0\u10e2\u10d4\u10d1\u10d0",
         "options_disabledUrlsListed": "HTTPS Everywhere \u10e1\u10d0\u10d8\u10e2\u10d4\u10d1\u10d8 \u10d2\u10d0\u10db\u10dd\u10e0\u10d7\u10e3\u10da\u10d8\u10d0",
-        "options_enterDisabledSite": "\u10d2\u10d0\u10db\u10dd\u10e0\u10d7\u10e3\u10da\u10d8 \u10e1\u10d0\u10d8\u10e2\u10d8\u10e1 \u10e8\u10d4\u10e7\u10d5\u10d0\u10dc\u10d0"
+        "options_enterDisabledSite": "\u10d2\u10d0\u10db\u10dd\u10e0\u10d7\u10e3\u10da\u10d8 \u10e1\u10d0\u10d8\u10e2\u10d8\u10e1 \u10e8\u10d4\u10e7\u10d5\u10d0\u10dc\u10d0",
+        "options_hostNotFormattedCorrectly": "\u10d4\u10e1 \u10db\u10d8\u10e1\u10d0\u10db\u10d0\u10e0\u10d7\u10d8 \u10d5\u10d4\u10e0 \u10d3\u10d0\u10d4\u10db\u10d0\u10e2\u10d0, \u10e0\u10d0\u10d3\u10d2\u10d0\u10dc \u10d0\u10e0\u10d0\u10e1\u10ec\u10dd\u10e0\u10d8 \u10e4\u10dd\u10e0\u10db\u10d8\u10d7\u10d0\u10d0. \u10d2\u10d7\u10ee\u10dd\u10d5\u10d7, \u10d2\u10d0\u10d3\u10d0\u10d0\u10db\u10dd\u10ec\u10db\u10dd\u10d7 \u10d3\u10d0 \u10e1\u10ea\u10d0\u10d3\u10dd\u10d7 \u10ee\u10d4\u10da\u10d0\u10ee\u10da\u10d0.",
+        "standalone_proxy_server_info_prefix": "\u10de\u10e0\u10dd\u10e5\u10e1\u10d8 \u10e1\u10d4\u10e0\u10d5\u10d4\u10e0\u10d8 \u10d2\u10d0\u10e8\u10d5\u10d4\u10d1\u10e3\u10da\u10d8\u10d0",
+        "standalone_transparent_false": "\u10e3\u10dc\u10d3\u10d0 \u10d2\u10d0\u10db\u10d0\u10e0\u10d7\u10dd\u10d7 \u10d0\u10de\u10da\u10d8\u10d9\u10d0\u10ea\u10d8\u10d4\u10d1\u10d8, HTTP-\u10de\u10e0\u10dd\u10e5\u10e1\u10d8\u10e1 \u10d2\u10d0\u10db\u10dd\u10e1\u10d0\u10e7\u10d4\u10dc\u10d4\u10d1\u10da\u10d0\u10d3, \u10e8\u10d4\u10e1\u10d0\u10d1\u10d0\u10db\u10d8\u10e1 \u10db\u10d3\u10d4\u10d1\u10d0\u10e0\u10d4\u10dd\u10d1\u10d0\u10e1\u10d0 \u10d3\u10d0 \u10de\u10dd\u10e0\u10e2\u10d6\u10d4.",
+        "standalone_transparent_true": "\u10e3\u10dc\u10d3\u10d0 \u10d2\u10d0\u10db\u10d0\u10e0\u10d7\u10dd\u10d7 \u10e5\u10e1\u10d4\u10da\u10d8\u10e1 \u10e4\u10d0\u10e0\u10d8\u10e1 \u10ec\u10d4\u10e1\u10d4\u10d1\u10d8, \u10d9\u10e0\u10d4\u10d1\u10e3\u10da\u10d4\u10d1\u10d8\u10e1 \u10e8\u10d4\u10e1\u10d0\u10d1\u10d0\u10db\u10d8\u10e1 \u10db\u10d3\u10d4\u10d1\u10d0\u10e0\u10d4\u10dd\u10d1\u10d0\u10e1\u10d0 \u10d3\u10d0 \u10de\u10dd\u10e0\u10e2\u10d6\u10d4 \u10d2\u10d0\u10d3\u10d0\u10db\u10d8\u10e1\u10d0\u10db\u10d0\u10e0\u10d7\u10d4\u10d1\u10d8\u10e1\u10d7\u10d5\u10d8\u10e1."
     },
     "kab": {
         "about_rulesets_version": "Rulesets version for",
@@ -556,7 +724,11 @@
         "menu_httpNoWhereExplainedBlocked": "Unencrypted requests are currently blocked",
         "options_addDisabledSite": "Add Disabled Site",
         "options_disabledUrlsListed": "HTTPS Everywhere Sites Disabled",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Enter disabled site",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "kk": {
         "about_rulesets_version": "\u0415\u0440\u0435\u0436\u0435 \u043d\u04b1\u0441\u049b\u0430\u0441\u044b \u04af\u0448\u0456\u043d",
@@ -569,7 +741,11 @@
         "menu_httpNoWhereExplainedBlocked": "\u0428\u0438\u0444\u0440\u0430\u043b\u0430\u043d\u0431\u0430\u0493\u0430\u043d \u0441\u04b1\u0440\u0430\u0443\u043b\u0430\u0440 \u049b\u0430\u0437\u0456\u0440\u0433\u0456 \u0443\u0430\u049b\u044b\u0442\u0442\u0430 \u0431\u04b1\u0493\u0430\u0442\u0442\u0430\u043b\u0493\u0430\u043d.",
         "options_addDisabledSite": "\u0410\u0436\u044b\u0440\u0442\u0430\u044b\u043b\u0493\u0430\u043d \u0441\u0430\u0439\u0442 \u049b\u043e\u0441\u044b\u04a3\u044b\u0437.",
         "options_disabledUrlsListed": "HTTPS-\u0442\u044b \u0431\u0430\u0440\u043b\u044b\u049b \u0441\u0430\u0439\u0442\u0442\u0430\u0440\u0434\u0430 \u04e9\u0448\u0456\u0440\u0443",
-        "options_enterDisabledSite": "\u0410\u0436\u044b\u0440\u0430\u0442\u044b\u043b\u0493\u0430\u043d \u0441\u0430\u0439\u0442\u049b\u0430 \u043a\u0456\u0440\u0456\u04a3\u0456\u0437."
+        "options_enterDisabledSite": "\u0410\u0436\u044b\u0440\u0430\u0442\u044b\u043b\u0493\u0430\u043d \u0441\u0430\u0439\u0442\u049b\u0430 \u043a\u0456\u0440\u0456\u04a3\u0456\u0437.",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "km": {
         "about_rulesets_version": "Rulesets version for",
@@ -582,7 +758,11 @@
         "menu_httpNoWhereExplainedBlocked": "Unencrypted requests are currently blocked",
         "options_addDisabledSite": "Add Disabled Site",
         "options_disabledUrlsListed": "HTTPS Everywhere Sites Disabled",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Enter disabled site",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "kn": {
         "about_rulesets_version": "Rulesets version for",
@@ -595,7 +775,11 @@
         "menu_httpNoWhereExplainedBlocked": "Unencrypted requests are currently blocked",
         "options_addDisabledSite": "Add Disabled Site",
         "options_disabledUrlsListed": "HTTPS Everywhere Sites Disabled",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Enter disabled site",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "ko": {
         "about_rulesets_version": "\ud574\ub2f9 \ubc84\uc804\uc758 \uaddc\uce59:",
@@ -608,7 +792,11 @@
         "menu_httpNoWhereExplainedBlocked": "\ud604\uc7ac \uc554\ud638\ud654\ub418\uc9c0 \uc54a\uc740 \uc694\uccad\uc740 \ucc28\ub2e8\ub429\ub2c8\ub2e4.",
         "options_addDisabledSite": "Add Disabled Site",
         "options_disabledUrlsListed": "HTTPS Everywhere \uc0ac\uc774\ud2b8 \ube44\ud65c\uc131\ud654",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Enter disabled site",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "lt": {
         "about_rulesets_version": "Taisykli\u0173 rinkinio versija",
@@ -621,7 +809,11 @@
         "menu_httpNoWhereExplainedBlocked": "\u0160iuo metu ne\u0161ifruotos u\u017eklausos yra u\u017eblokuotos",
         "options_addDisabledSite": "Prid\u0117ti i\u0161jungt\u0105 svetain\u0119",
         "options_disabledUrlsListed": "HTTPS Everywhere svetain\u0117s i\u0161jungtos",
-        "options_enterDisabledSite": "\u012eveskite i\u0161jungt\u0105 svetain\u0119"
+        "options_enterDisabledSite": "\u012eveskite i\u0161jungt\u0105 svetain\u0119",
+        "options_hostNotFormattedCorrectly": "Nepavyko prid\u0117ti \u0161io serverio, nes jis nebuvo teisingai suformuotas. Patikrinkite j\u012f ir bandykite dar kart\u0105.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "lv": {
         "about_rulesets_version": "Rulesets version for",
@@ -634,7 +826,11 @@
         "menu_httpNoWhereExplainedBlocked": "Unencrypted requests are currently blocked",
         "options_addDisabledSite": "Add Disabled Site",
         "options_disabledUrlsListed": "HTTPS Everywhere Sites Disabled",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Enter disabled site",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "mk": {
         "about_rulesets_version": "\u0412\u0435\u0440\u0437\u0438\u0458\u0430 \u043d\u0430 \u0441\u0435\u0442\u043e\u0432\u0438 \u043d\u0430 \u043f\u0440\u0430\u0432\u0438\u043b\u0430 \u0437\u0430",
@@ -647,7 +843,11 @@
         "menu_httpNoWhereExplainedBlocked": "\u041d\u0435e\u043d\u043a\u0440\u0438\u043f\u0442\u0438\u0440\u0430\u043d\u0438\u0442\u0435 \u0431\u0430\u0440\u0430\u045a\u0430 \u0441\u0435 \u043c\u043e\u043c\u0435\u043d\u0442\u0430\u043b\u043d\u043e \u0431\u043b\u043e\u043a\u0438\u0440\u0430\u043d\u0438",
         "options_addDisabledSite": "\u0414\u043e\u0434\u0430\u0434\u0438 \u043e\u043d\u0435\u0432\u043e\u0437\u043c\u043e\u0436\u0435\u043d\u0430 \u0441\u0442\u0440\u0430\u043d\u0430",
         "options_disabledUrlsListed": "HTTPS \u041d\u0430\u0441\u0435\u043a\u0430\u0434\u0435 \u041e\u043d\u0435\u0432\u043e\u0437\u043c\u043e\u0436\u0435\u043d\u0438 \u0432\u0435\u0431 \u0441\u0442\u0440\u0430\u043d\u0438",
-        "options_enterDisabledSite": "\u0412\u043d\u0435\u0441\u0438 \u043e\u043d\u0435\u0432\u043e\u0437\u043c\u043e\u0436\u0435\u043d\u0430 \u0441\u0442\u0440\u0430\u043d\u0430"
+        "options_enterDisabledSite": "\u0412\u043d\u0435\u0441\u0438 \u043e\u043d\u0435\u0432\u043e\u0437\u043c\u043e\u0436\u0435\u043d\u0430 \u0441\u0442\u0440\u0430\u043d\u0430",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "ml": {
         "about_rulesets_version": "\u0d35\u0d47\u0d23\u0d4d\u0d1f \u0d2d\u0d30\u0d3f\u0d15\u0d4d\u0d15\u0d41\u0d28\u0d4d\u0d28 \u0d35\u0d3f\u0d27\u0d19\u0d4d\u0d19\u0d7e ",
@@ -660,7 +860,11 @@
         "menu_httpNoWhereExplainedBlocked": "\u0d30\u0d39\u0d38\u0d4d\u0d2f \u0d15\u0d4b\u0d21\u0d41\u0d15\u0d7e \u0d05\u0d32\u0d4d\u0d32\u0d3e\u0d24\u0d4d\u0d24 \u0d05\u0d2a\u0d47\u0d15\u0d4d\u0d37\u0d15\u0d7e \u0d28\u0d3f\u0d30\u0d4b\u0d27\u0d3f\u0d1a\u0d4d\u0d1a\u0d3f\u0d30\u0d3f\u0d15\u0d4d\u0d15\u0d41\u0d15\u0d2f\u0d3e\u0d23\u0d4d ",
         "options_addDisabledSite": "Add Disabled Site",
         "options_disabledUrlsListed": "\u0d0e\u0d1b\u0d4d \u0d1f\u0d3f \u0d1f\u0d3f \u0d2a\u0d3f \u0d0e\u0d38\u0d4d \u0d0e\u0d35\u0d46\u0d30\u0d3f\u0d35\u0d48\u0d2f\u0d7c \u0d38\u0d48\u0d31\u0d4d\u0d31\u0d41\u0d15\u0d7e \u0d28\u0d3f\u0d30\u0d4b\u0d27\u0d3f\u0d1a\u0d4d\u0d1a\u0d3f\u0d30\u0d3f\u0d15\u0d4d\u0d15\u0d41\u0d28\u0d4d\u0d28\u0d41",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Enter disabled site",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "mr": {
         "about_rulesets_version": "Rulesets version for",
@@ -673,7 +877,11 @@
         "menu_httpNoWhereExplainedBlocked": "Unencrypted requests are currently blocked",
         "options_addDisabledSite": "Add Disabled Site",
         "options_disabledUrlsListed": "HTTPS Everywhere Sites Disabled",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Enter disabled site",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "ms_MY": {
         "about_rulesets_version": "Versi set peraturan untuk",
@@ -686,7 +894,11 @@
         "menu_httpNoWhereExplainedBlocked": "Permintaan tidak tersulit buat masa ini disekat",
         "options_addDisabledSite": "Add Disabled Site",
         "options_disabledUrlsListed": "Laman HTTPS Everywhere Dilumpuhkan",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Enter disabled site",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "my": {
         "about_rulesets_version": "Rulesets version for",
@@ -699,7 +911,11 @@
         "menu_httpNoWhereExplainedBlocked": "Unencrypted requests are currently blocked",
         "options_addDisabledSite": "Add Disabled Site",
         "options_disabledUrlsListed": "HTTPS Everywhere Sites Disabled",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Enter disabled site",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "nb": {
         "about_rulesets_version": "Regelsett versjon for",
@@ -712,7 +928,11 @@
         "menu_httpNoWhereExplainedBlocked": "Ukryptert foresp\u00f8rsler er for \u00f8yeblikket blokkert",
         "options_addDisabledSite": "Legg til deaktivert nettsted",
         "options_disabledUrlsListed": "HTTPS Everywhere nettsteder deaktivert",
-        "options_enterDisabledSite": "G\u00e5 inn p\u00e5 deaktivert nettsted"
+        "options_enterDisabledSite": "G\u00e5 inn p\u00e5 deaktivert nettsted",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "ne": {
         "about_rulesets_version": "Rulesets version for",
@@ -725,7 +945,11 @@
         "menu_httpNoWhereExplainedBlocked": "Unencrypted requests are currently blocked",
         "options_addDisabledSite": "Add Disabled Site",
         "options_disabledUrlsListed": "HTTPS Everywhere Sites Disabled",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Enter disabled site",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "nl": {
         "about_rulesets_version": "Regelsetversie voor",
@@ -738,7 +962,11 @@
         "menu_httpNoWhereExplainedBlocked": "Niet-versleutelde aanvragen worden momenteel geblokkeerd",
         "options_addDisabledSite": "Uitgeschakelde website toevoegen",
         "options_disabledUrlsListed": "Uitgeschakelde HTTPS Everywhere-websites",
-        "options_enterDisabledSite": "Voer uitgeschakelde website in"
+        "options_enterDisabledSite": "Voer uitgeschakelde website in",
+        "options_hostNotFormattedCorrectly": "Deze host kon niet worden toegevoegd, omdat de notatie van de naam onjuist is. Controleer deze en probeer het opnieuw.",
+        "standalone_proxy_server_info_prefix": "Proxyserver actief op",
+        "standalone_transparent_false": "U moet uw toepassingen configureren voor het gebruik van een HTTP-proxy op de opgegeven host en poort.",
+        "standalone_transparent_true": "U moet uw firewallregels zo instellen dat pakketten naar de opgegeven host en poort worden doorgestuurd."
     },
     "nl_BE": {
         "about_rulesets_version": "Rulesets version for",
@@ -751,7 +979,11 @@
         "menu_httpNoWhereExplainedBlocked": "Unencrypted requests are currently blocked",
         "options_addDisabledSite": "Add Disabled Site",
         "options_disabledUrlsListed": "HTTPS Everywhere Sites Disabled",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Enter disabled site",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "nn": {
         "about_rulesets_version": "Rulesets version for",
@@ -764,7 +996,11 @@
         "menu_httpNoWhereExplainedBlocked": "Unencrypted requests are currently blocked",
         "options_addDisabledSite": "Add Disabled Site",
         "options_disabledUrlsListed": "HTTPS Everywhere Sites Disabled",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Enter disabled site",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "oc": {
         "about_rulesets_version": "Rulesets version for",
@@ -777,7 +1013,11 @@
         "menu_httpNoWhereExplainedBlocked": "Unencrypted requests are currently blocked",
         "options_addDisabledSite": "Add Disabled Site",
         "options_disabledUrlsListed": "HTTPS Everywhere Sites Disabled",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Enter disabled site",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "or": {
         "about_rulesets_version": "Rulesets version for",
@@ -790,7 +1030,11 @@
         "menu_httpNoWhereExplainedBlocked": "Unencrypted requests are currently blocked",
         "options_addDisabledSite": "Add Disabled Site",
         "options_disabledUrlsListed": "HTTPS Everywhere Sites Disabled",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Enter disabled site",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "pa": {
         "about_rulesets_version": "\u0a07\u0a38 \u0a32\u0a08 \u0a30\u0a42\u0a32-\u0a38\u0a48\u0a71\u0a1f \u0a35\u0a30\u0a5b\u0a28",
@@ -803,7 +1047,11 @@
         "menu_httpNoWhereExplainedBlocked": "\u0a28\u0a3e-\u0a07\u0a70\u0a15\u0a4d\u0a30\u0a3f\u0a2a\u0a1f \u0a15\u0a40\u0a24\u0a40\u0a06\u0a02 \u0a2c\u0a47\u0a28\u0a24\u0a40\u0a06\u0a02 \u0a09\u0a71\u0a24\u0a47 \u0a07\u0a38 \u0a35\u0a47\u0a32\u0a47 \u0a2a\u0a3e\u0a2c\u0a70\u0a26\u0a40 \u0a32\u0a3e\u0a08 \u0a39\u0a48",
         "options_addDisabledSite": "\u0a05\u0a38\u0a2e\u0a30\u0a71\u0a25 \u0a15\u0a40\u0a24\u0a40 \u0a38\u0a3e\u0a08\u0a1f \u0a1c\u0a4b\u0a5c\u0a4b",
         "options_disabledUrlsListed": "HTTPS \u0a10\u0a35\u0a30\u0a40\u0a35\u0a47\u0a05\u0a30 \u0a38\u0a3e\u0a08\u0a1f\u0a3e\u0a02 \u0a05\u0a38\u0a2e\u0a30\u0a71\u0a25 \u0a39\u0a28",
-        "options_enterDisabledSite": "\u0a05\u0a38\u0a2e\u0a30\u0a71\u0a25 \u0a15\u0a40\u0a24\u0a40 \u0a38\u0a3e\u0a08\u0a1f \u0a09\u0a71\u0a24\u0a47 \u0a1c\u0a3e\u0a13"
+        "options_enterDisabledSite": "\u0a05\u0a38\u0a2e\u0a30\u0a71\u0a25 \u0a15\u0a40\u0a24\u0a40 \u0a38\u0a3e\u0a08\u0a1f \u0a09\u0a71\u0a24\u0a47 \u0a1c\u0a3e\u0a13",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "pl": {
         "about_rulesets_version": "Wersja zestawu regu\u0142 dla ",
@@ -816,7 +1064,11 @@
         "menu_httpNoWhereExplainedBlocked": "Niezaszyfrowane \u017c\u0105dania s\u0105 obecnie zablokowane",
         "options_addDisabledSite": "Dodaj stron\u0119 do wyj\u0105tk\u00f3w",
         "options_disabledUrlsListed": "Strony wy\u0142\u0105czone w HTTPS Everywhere",
-        "options_enterDisabledSite": "Wprowad\u017a wykluczan\u0105 stron\u0119"
+        "options_enterDisabledSite": "Wprowad\u017a wykluczan\u0105 stron\u0119",
+        "options_hostNotFormattedCorrectly": "Nie mo\u017cna doda\u0107 tego hosta, poniewa\u017c nie zosta\u0142 poprawnie sformatowany. Sprawd\u017a to i spr\u00f3buj ponownie.",
+        "standalone_proxy_server_info_prefix": "Serwer proxy dzia\u0142aj\u0105cy na",
+        "standalone_transparent_false": "Musisz skonfigurowa\u0107 swoje aplikacje, aby korzysta\u0142y z serwera proxy HTTP na okre\u015blonym komputerze i porcie.",
+        "standalone_transparent_true": "Musisz skonfigurowa\u0107 swoj\u0105 zapor\u0119 sieciow\u0105, aby przekierowywa\u0142a pakiety na okre\u015blony komputer i port."
     },
     "pt_BR": {
         "about_rulesets_version": "Conjunto de regras para a vers\u00e3o",
@@ -827,9 +1079,13 @@
         "menu_globalEnable": "HTTPS Everywhere est\u00e1 Ativado",
         "menu_httpNoWhereExplainedAllowed": "Solicita\u00e7\u00f5es n\u00e3o criptografadas s\u00e3o permitidas atualmente",
         "menu_httpNoWhereExplainedBlocked": "Pedidos n\u00e3o criptografados est\u00e3o atualmente bloqueados",
-        "options_addDisabledSite": "Adicionar site desativado",
+        "options_addDisabledSite": "Adicionar Um Site Desativado",
         "options_disabledUrlsListed": "HTTPS Everywhere Sites Desabilitados",
-        "options_enterDisabledSite": "Entrar no site desativado"
+        "options_enterDisabledSite": "Entrar em um site desativado",
+        "options_hostNotFormattedCorrectly": "Este hospedeiro n\u00e3o p\u00f4de ser adicionado porque n\u00e3o foi formatado corretamente. Por favor, tente novamente.",
+        "standalone_proxy_server_info_prefix": "Servidor proxy rodando em",
+        "standalone_transparent_false": "Voc\u00ea deve configurar suas aplica\u00e7\u00f5es para usarem um proxy HTTP no hospedeiro e porta especificados.",
+        "standalone_transparent_true": "Voc\u00ea deve configurar suas regras de firewall para encaminhar pacotes para o hospedeiro e a porta especificados."
     },
     "pt_PT": {
         "about_rulesets_version": "Vers\u00e3o dos conjuntos de regras para",
@@ -842,7 +1098,11 @@
         "menu_httpNoWhereExplainedBlocked": "Os pedidos n\u00e3o encriptados est\u00e3o atualmente bloqueados",
         "options_addDisabledSite": "Adicionar Website Desativado",
         "options_disabledUrlsListed": "HTTPS Everywhere - Sites desativados",
-        "options_enterDisabledSite": "Adicione Website Desativado"
+        "options_enterDisabledSite": "Adicione Website Desativado",
+        "options_hostNotFormattedCorrectly": "Este host n\u00e3o pode ser adicionado porque n\u00e3o est\u00e1 formatado corretamente. Por favor, reveja-o e tente de novo.",
+        "standalone_proxy_server_info_prefix": "Servidor Proxy a correr em",
+        "standalone_transparent_false": "Deve configurar as suas aplica\u00e7\u00f5es a usar um proxy HTTP para o host e port especificados.",
+        "standalone_transparent_true": "Deve configurar as regras da sua firewall para retransmitir packets para o host e port especificados."
     },
     "ro": {
         "about_rulesets_version": "Versiune seturi de reguli pentru",
@@ -855,7 +1115,11 @@
         "menu_httpNoWhereExplainedBlocked": "Solicit\u0103rile necriptate sunt blocate \u00een prezent",
         "options_addDisabledSite": "Ad\u0103uga\u021bi site dezactivat",
         "options_disabledUrlsListed": "Site-uri HTTPS Oriunde Dezactivate",
-        "options_enterDisabledSite": "Introduce\u021bi site-ul dezactivat"
+        "options_enterDisabledSite": "Introduce\u021bi site-ul dezactivat",
+        "options_hostNotFormattedCorrectly": "Aceast\u0103 gazd\u0103 nu a putut fi ad\u0103ugat\u0103 deoarece nu a fost formatat\u0103 corect. Verifica\u021bi \u0219i \u00eencerca\u021bi din nou.",
+        "standalone_proxy_server_info_prefix": "Server proxy pornit",
+        "standalone_transparent_false": "Trebuie s\u0103 configura\u021bi aplica\u021biile pentru a utiliza un proxy HTTP pe gazda \u0219i portul specificate.",
+        "standalone_transparent_true": "Trebuie configurate regulile firewall-ului pentru a redirec\u021biona pachetele c\u0103tre gazda \u0219i portul specificate."
     },
     "ru": {
         "about_rulesets_version": "\u0412\u0435\u0440\u0441\u0438\u044f \u043d\u0430\u0431\u043e\u0440\u043e\u0432 \u043f\u0440\u0430\u0432\u0438\u043b \u0434\u043b\u044f",
@@ -868,7 +1132,28 @@
         "menu_httpNoWhereExplainedBlocked": "\u041d\u0435\u0437\u0430\u0448\u0438\u0444\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0435 \u0437\u0430\u043f\u0440\u043e\u0441\u044b \u0441\u0435\u0439\u0447\u0430\u0441 \u0437\u0430\u043a\u0440\u044b\u0442\u044b",
         "options_addDisabledSite": "\u0414\u043e\u0431\u0430\u0432\u0438\u0442\u044c \u043e\u0442\u043a\u043b\u044e\u0447\u0451\u043d\u043d\u044b\u0439 \u0441\u0430\u0439\u0442",
         "options_disabledUrlsListed": "\u0421\u0430\u0439\u0442\u044b \u0441 \u043e\u0442\u043a\u043b\u044e\u0447\u0435\u043d\u043d\u044b\u043c HTTPS Everywhere",
-        "options_enterDisabledSite": "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u043e\u0442\u043a\u043b\u044e\u0447\u0451\u043d\u043d\u044b\u0439 \u0441\u0430\u0439\u0442"
+        "options_enterDisabledSite": "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u043e\u0442\u043a\u043b\u044e\u0447\u0451\u043d\u043d\u044b\u0439 \u0441\u0430\u0439\u0442",
+        "options_hostNotFormattedCorrectly": "\u042d\u0442\u043e\u0442 \u0445\u043e\u0441\u0442 \u043d\u0435\u0432\u043e\u0437\u043c\u043e\u0436\u043d\u043e \u0434\u043e\u0431\u0430\u0432\u0438\u0442\u044c, \u0442\u0430\u043a \u043a\u0430\u043a \u043e\u043d \u0438\u043c\u0435\u0435\u0442 \u043d\u0435\u043a\u043e\u0440\u0440\u0435\u043a\u0442\u043d\u044b\u0439 \u0444\u043e\u0440\u043c\u0430\u0442. \u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u043f\u0440\u043e\u0432\u0435\u0440\u044c\u0442\u0435 \u0435\u0433\u043e \u0438 \u043f\u043e\u043f\u0440\u043e\u0431\u0443\u0439\u0442\u0435 \u0435\u0449\u0435 \u0440\u0430\u0437.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
+    },
+    "si": {
+        "about_rulesets_version": "Rulesets version for",
+        "about_version": "Version",
+        "menu_encryptAllSitesEligibleOff": "Encrypt All Sites Eligible is OFF",
+        "menu_encryptAllSitesEligibleOn": "Encrypt All Sites Eligible is ON",
+        "menu_globalDisable": "HTTPS Everywhere is OFF",
+        "menu_globalEnable": "HTTPS Everywhere is ON",
+        "menu_httpNoWhereExplainedAllowed": "Unencrypted requests are currently allowed",
+        "menu_httpNoWhereExplainedBlocked": "Unencrypted requests are currently blocked",
+        "options_addDisabledSite": "Add Disabled Site",
+        "options_disabledUrlsListed": "HTTPS Everywhere Sites Disabled",
+        "options_enterDisabledSite": "Enter disabled site",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "si_LK": {
         "about_rulesets_version": "Rulesets version for",
@@ -881,7 +1166,11 @@
         "menu_httpNoWhereExplainedBlocked": "Unencrypted requests are currently blocked",
         "options_addDisabledSite": "Add Disabled Site",
         "options_disabledUrlsListed": "HTTPS Everywhere Sites Disabled",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Enter disabled site",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "sk": {
         "about_rulesets_version": "Verzia pravidiel pre",
@@ -894,7 +1183,11 @@
         "menu_httpNoWhereExplainedBlocked": "Neza\u0161ifrovan\u00e9 po\u017eiadavky s\u00fa aktu\u00e1lne blokovan\u00e9",
         "options_addDisabledSite": "Add Disabled Site",
         "options_disabledUrlsListed": "HTTPS Everywhere - str\u00e1nky, na ktor\u00fdch je roz\u0161\u00edrenie zak\u00e1zan\u00e9",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Enter disabled site",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "sl": {
         "about_rulesets_version": "Rulesets version for",
@@ -907,7 +1200,11 @@
         "menu_httpNoWhereExplainedBlocked": "Unencrypted requests are currently blocked",
         "options_addDisabledSite": "Add Disabled Site",
         "options_disabledUrlsListed": "HTTPS Everywhere Sites Disabled",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Enter disabled site",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "son": {
         "about_rulesets_version": "Rulesets version for",
@@ -920,7 +1217,11 @@
         "menu_httpNoWhereExplainedBlocked": "Unencrypted requests are currently blocked",
         "options_addDisabledSite": "Add Disabled Site",
         "options_disabledUrlsListed": "HTTPS Everywhere Sites Disabled",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Enter disabled site",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "sq": {
         "about_rulesets_version": "Version Grupi rregullash p\u00ebr",
@@ -933,7 +1234,11 @@
         "menu_httpNoWhereExplainedBlocked": "K\u00ebrkesat e pafsheht\u00ebzuara bllokohen",
         "options_addDisabledSite": "Shtoni Sajte t\u00eb \u00c7aktivizuar",
         "options_disabledUrlsListed": "Sajte HTTPS Everywhere t\u00eb \u00c7aktivizuar",
-        "options_enterDisabledSite": "Jepni sajt t\u00eb \u00e7aktivizuar"
+        "options_enterDisabledSite": "Jepni sajt t\u00eb \u00e7aktivizuar",
+        "options_hostNotFormattedCorrectly": "Kjo streh\u00eb s\u2019u shtua dot, ngaq\u00eb s\u2019\u00ebsht\u00eb formatuar sakt\u00eb. Ju lutemi, kontrollojeni dhe riprovoni.",
+        "standalone_proxy_server_info_prefix": "Sh\u00ebrbyesi nd\u00ebrmjet\u00ebs po punon",
+        "standalone_transparent_false": "Duhet t\u2019i form\u00ebsoni aplikacionet tuaja t\u00eb p\u00ebrdorin nj\u00eb nd\u00ebrmjet\u00ebs HTTP te streha dhe porta e specifikuar.",
+        "standalone_transparent_true": "Duhet t\u00eb ujdisni rregulla firewall-i q\u00eb paketat t\u2019i p\u00ebrcillen streh\u00ebs dhe port\u00ebs s\u00eb specifikuar."
     },
     "sr": {
         "about_rulesets_version": "Verzija setova pravila za",
@@ -946,7 +1251,11 @@
         "menu_httpNoWhereExplainedBlocked": "Ne\u0161ifrovani zahtevi su trenutno blokirani",
         "options_addDisabledSite": "Add Disabled Site",
         "options_disabledUrlsListed": "Sajtovi gde je onemogu\u0107en HTTPS Svuda",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Enter disabled site",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "sv": {
         "about_rulesets_version": "Regelupps\u00e4ttningsversion f\u00f6r",
@@ -959,7 +1268,11 @@
         "menu_httpNoWhereExplainedBlocked": "Okrypterade f\u00f6rfr\u00e5gningar blockeras f\u00f6r n\u00e4rvarande",
         "options_addDisabledSite": "L\u00e4gg till inaktiverad webbplats",
         "options_disabledUrlsListed": "HTTPS Everywhere inaktiverade webbplatser",
-        "options_enterDisabledSite": "Ange inaktiverad webbplats"
+        "options_enterDisabledSite": "Ange inaktiverad webbplats",
+        "options_hostNotFormattedCorrectly": "Denna v\u00e4rd kunde inte l\u00e4ggas till eftersom den inte var formaterad korrekt. V\u00e4nligen kontrollera det och f\u00f6rs\u00f6k igen.",
+        "standalone_proxy_server_info_prefix": "Proxyserver k\u00f6rs p\u00e5",
+        "standalone_transparent_false": "Du m\u00e5ste konfigurera dina applikationer s\u00e5 att de anv\u00e4nder en HTTP-proxy p\u00e5 den angivna v\u00e4rden och porten.",
+        "standalone_transparent_true": "Du m\u00e5ste st\u00e4lla in dina brandv\u00e4ggsregler f\u00f6r att vidarebefordra paket till den angivna v\u00e4rden och porten."
     },
     "sw": {
         "about_rulesets_version": "Seti ya sheria kwa toleo",
@@ -972,7 +1285,11 @@
         "menu_httpNoWhereExplainedBlocked": "Unencrypted requests are currently blocked",
         "options_addDisabledSite": "Add Disabled Site",
         "options_disabledUrlsListed": "HTTPS kilamahali tovuti zimezuiliwa",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Enter disabled site",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "ta": {
         "about_rulesets_version": "Rulesets version for",
@@ -985,7 +1302,11 @@
         "menu_httpNoWhereExplainedBlocked": "Unencrypted requests are currently blocked",
         "options_addDisabledSite": "Add Disabled Site",
         "options_disabledUrlsListed": "HTTPS Everywhere Sites Disabled",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Enter disabled site",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "te": {
         "about_rulesets_version": "Rulesets version for",
@@ -998,7 +1319,11 @@
         "menu_httpNoWhereExplainedBlocked": "Unencrypted requests are currently blocked",
         "options_addDisabledSite": "Add Disabled Site",
         "options_disabledUrlsListed": "HTTPS Everywhere Sites Disabled",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Enter disabled site",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "templates": {
         "about_rulesets_version": "Rulesets version for",
@@ -1011,7 +1336,11 @@
         "menu_httpNoWhereExplainedBlocked": "Unencrypted requests are currently blocked",
         "options_addDisabledSite": "Add Disabled Site",
         "options_disabledUrlsListed": "HTTPS Everywhere Sites Disabled",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Enter disabled site",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "th": {
         "about_rulesets_version": "\u0e23\u0e38\u0e48\u0e19\u0e02\u0e2d\u0e07\u0e0a\u0e38\u0e14\u0e01\u0e0e\u0e2a\u0e33\u0e2b\u0e23\u0e31\u0e1a",
@@ -1024,7 +1353,11 @@
         "menu_httpNoWhereExplainedBlocked": "\u0e04\u0e33\u0e23\u0e49\u0e2d\u0e07\u0e17\u0e35\u0e48\u0e44\u0e21\u0e48\u0e44\u0e14\u0e49\u0e40\u0e02\u0e49\u0e32\u0e23\u0e2b\u0e31\u0e2a\u0e25\u0e31\u0e1a\u0e16\u0e39\u0e01\u0e1a\u0e25\u0e47\u0e2d\u0e01\u0e2d\u0e22\u0e39\u0e48\u0e43\u0e19\u0e15\u0e2d\u0e19\u0e19\u0e35\u0e49",
         "options_addDisabledSite": "\u0e40\u0e1e\u0e34\u0e48\u0e21\u0e44\u0e0b\u0e15\u0e4c\u0e17\u0e35\u0e48\u0e1b\u0e34\u0e14\u0e43\u0e0a\u0e49\u0e07\u0e32\u0e19",
         "options_disabledUrlsListed": "\u0e40\u0e27\u0e47\u0e1a\u0e44\u0e0b\u0e15\u0e4c HTTPS Everywhere \u0e16\u0e39\u0e01\u0e1b\u0e34\u0e14\u0e44\u0e27\u0e49",
-        "options_enterDisabledSite": "\u0e43\u0e2a\u0e48\u0e44\u0e0b\u0e15\u0e4c\u0e17\u0e35\u0e48\u0e1b\u0e34\u0e14\u0e43\u0e0a\u0e49\u0e07\u0e32\u0e19"
+        "options_enterDisabledSite": "\u0e43\u0e2a\u0e48\u0e44\u0e0b\u0e15\u0e4c\u0e17\u0e35\u0e48\u0e1b\u0e34\u0e14\u0e43\u0e0a\u0e49\u0e07\u0e32\u0e19",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "tr": {
         "about_rulesets_version": "Kural K\u00fcmesi S\u00fcr\u00fcm\u00fc",
@@ -1037,7 +1370,11 @@
         "menu_httpNoWhereExplainedBlocked": "\u015eifrelenmemi\u015f istekler \u015fu anda engelleniyor",
         "options_addDisabledSite": "Devre D\u0131\u015f\u0131 B\u0131rak\u0131lm\u0131\u015f Site Ekle",
         "options_disabledUrlsListed": "HTTPS Everywhere Siteleri Devre D\u0131\u015f\u0131 B\u0131rak\u0131ld\u0131",
-        "options_enterDisabledSite": "Devre d\u0131\u015f\u0131 b\u0131rak\u0131lm\u0131\u015f siteyi yaz\u0131n"
+        "options_enterDisabledSite": "Devre d\u0131\u015f\u0131 b\u0131rak\u0131lm\u0131\u015f siteyi yaz\u0131n",
+        "options_hostNotFormattedCorrectly": "Bi\u00e7imi hatal\u0131 oldu\u011fundan bu sunucu eklenemedi. L\u00fctfen denetleyip yeniden deneyin.",
+        "standalone_proxy_server_info_prefix": "Vekil sunucu \u015furada \u00e7al\u0131\u015f\u0131yor",
+        "standalone_transparent_false": "Uygulamalar\u0131n\u0131z\u0131 belirtilen sunucu ve kap\u0131 numaras\u0131na g\u00f6re bir HTTP vekil sunucu kullanacak \u015fekilde yap\u0131land\u0131rmal\u0131s\u0131n\u0131z.",
+        "standalone_transparent_true": "Paketleri belirtilen sunucu ve kap\u0131 numaras\u0131na iletmek i\u00e7in g\u00fcvenlik duvar\u0131 kurallar\u0131n\u0131z\u0131 ayarlamal\u0131s\u0131n\u0131z."
     },
     "uk": {
         "about_rulesets_version": "\u041d\u0430\u0431\u043e\u0440\u0438 \u043f\u0440\u0430\u0432\u0438\u043b, \u0432\u0435\u0440\u0441\u0456\u044f \u0434\u043b\u044f",
@@ -1050,7 +1387,11 @@
         "menu_httpNoWhereExplainedBlocked": "\u041d\u0435\u0437\u0430\u0448\u0438\u0444\u0440\u043e\u0432\u0430\u043d\u0456 \u0437\u0430\u043f\u0438\u0442\u0438 \u043d\u0430\u0440\u0430\u0437\u0456 \u0431\u043b\u043e\u043a\u0443\u044e\u0442\u044c\u0441\u044f",
         "options_addDisabledSite": "Add Disabled Site",
         "options_disabledUrlsListed": "\u0412\u0438\u043c\u043a\u043d\u0435\u043d\u0456 \u0441\u0430\u0439\u0442\u0438 HTTPS Everywhere",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Enter disabled site",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "ur": {
         "about_rulesets_version": "\u0645\u062c\u0645\u0648\u0639\u06c1 \u0642\u0648\u0627\u0646\u06cc\u0646 \u06a9\u0627 \u0648\u0631\u0698\u0646 &#37;S \u06a9\u06cc\u0644\u0626\u06d2 ",
@@ -1063,7 +1404,11 @@
         "menu_httpNoWhereExplainedBlocked": "Unencrypted requests are currently blocked",
         "options_addDisabledSite": "Add Disabled Site",
         "options_disabledUrlsListed": "\u06c1\u0627\u0626\u067e\u0631 \u0679\u06cc\u06a9\u0633\u0679 \u0679\u0631\u0627\u0646\u0633\u0641\u0631 \u067e\u0631\u0648\u0679\u0648\u06a9\u0648\u0644 \u0633\u06a9\u06cc\u0648\u0631 \u06c1\u0631 \u062c\u06af\u06c1 HTTPS Everywhere \u063a\u06cc\u0631 \u0641\u0639\u0627\u0644 \u0633\u0627\u0626\u06cc\u0679\u0633",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Enter disabled site",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "uz": {
         "about_rulesets_version": "Rulesets version for",
@@ -1076,7 +1421,11 @@
         "menu_httpNoWhereExplainedBlocked": "Unencrypted requests are currently blocked",
         "options_addDisabledSite": "Add Disabled Site",
         "options_disabledUrlsListed": "HTTPS Everywhere Sites Disabled",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Enter disabled site",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "vi": {
         "about_rulesets_version": "Quy t\u1eafc \u0111\u00e1nh phi\u00ean b\u1ea3n cho",
@@ -1089,7 +1438,11 @@
         "menu_httpNoWhereExplainedBlocked": "Nh\u1eefng y\u00eau c\u1ea7u ch\u01b0a \u0111\u01b0\u1ee3c m\u00e3 h\u00f3a \u0111ang b\u1ecb ch\u1eb7n",
         "options_addDisabledSite": "Th\u00eam trang web \u0111\u01b0\u1ee3c ngo\u1ea1i tr\u1eeb",
         "options_disabledUrlsListed": "Danh s\u00e1ch trang web t\u1eaft HTTPS Everywhere",
-        "options_enterDisabledSite": "\u0110i\u1ec1n trang web ngo\u1ea1i tr\u1eeb"
+        "options_enterDisabledSite": "\u0110i\u1ec1n trang web ngo\u1ea1i tr\u1eeb",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "zh_CN": {
         "about_rulesets_version": "\u89c4\u5219\u96c6\u7684\u7248\u672c\u5bf9\u4e8e",
@@ -1102,7 +1455,11 @@
         "menu_httpNoWhereExplainedBlocked": "\u5df2\u963b\u6b62\u672a\u52a0\u5bc6\u7684\u8bf7\u6c42",
         "options_addDisabledSite": "\u6dfb\u52a0\u7981\u7528\u7684\u7f51\u5740",
         "options_disabledUrlsListed": "HTTPS Everywhere \u7f51\u7ad9\u88ab\u7981\u6b62",
-        "options_enterDisabledSite": "\u8f93\u5165\u7981\u7528\u7684\u7f51\u7ad9"
+        "options_enterDisabledSite": "\u8f93\u5165\u7981\u7528\u7684\u7f51\u7ad9",
+        "options_hostNotFormattedCorrectly": "\u7531\u4e8e\u683c\u5f0f\u9519\u8bef\uff0c\u670d\u52a1\u5668\u672a\u80fd\u6dfb\u52a0\u3002\u8bf7\u66f4\u6b63\u5e76\u91cd\u65b0\u5c1d\u8bd5\u3002",
+        "standalone_proxy_server_info_prefix": "\u4ee3\u7406\u670d\u52a1\u5668\u4e0a\u8fd0\u884c",
+        "standalone_transparent_false": "\u60a8\u5fc5\u987b\u8bbe\u7f6e\u60a8\u7684\u5e94\u7528\uff0c\u5728\u6307\u5b9a\u7684\u670d\u52a1\u5668\u548c\u7aef\u53e3\u4e0a\uff0c\u4f7f\u7528HTTP\u4ee3\u7406\u3002",
+        "standalone_transparent_true": "\u60a8\u5fc5\u987b\u8bbe\u7f6e\u9632\u706b\u5899\u89c4\u5219\uff0c\u6765\u8f6c\u53d1\u6570\u636e\u5305\u5230\u6307\u5b9a\u7684\u670d\u52a1\u5668\u548c\u7aef\u53e3\u3002"
     },
     "zh_HK": {
         "about_rulesets_version": "Rulesets version for",
@@ -1115,7 +1472,11 @@
         "menu_httpNoWhereExplainedBlocked": "Unencrypted requests are currently blocked",
         "options_addDisabledSite": "Add Disabled Site",
         "options_disabledUrlsListed": "HTTPS Everywhere Sites Disabled",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Enter disabled site",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     },
     "zh_TW": {
         "about_rulesets_version": "\u898f\u5247\u96c6\u7248\u672c",
@@ -1128,6 +1489,10 @@
         "menu_httpNoWhereExplainedBlocked": "\u76ee\u524d\u5df2\u963b\u64cb\u672a\u52a0\u5bc6\u7684\u8acb\u6c42",
         "options_addDisabledSite": "Add Disabled Site",
         "options_disabledUrlsListed": "HTTPS Everywhere \u505c\u7528\u7684\u7db2\u7ad9",
-        "options_enterDisabledSite": "Enter disabled site"
+        "options_enterDisabledSite": "Enter disabled site",
+        "options_hostNotFormattedCorrectly": "This host could not be added because it was not formatted correctly. Please check it and try again.",
+        "standalone_proxy_server_info_prefix": "Proxy server running on",
+        "standalone_transparent_false": "You must configure your applications to use an HTTP proxy on the specified host and port.",
+        "standalone_transparent_true": "You must set up your firewall rules to forward packets to the specified host and port."
     }
 }
