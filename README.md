@@ -62,7 +62,7 @@ A bit-by-bit reproducible build can be generated.
 
 To verify our Linux builds, the repository must be owned by a user named `user` and live in `/home/user/workspace/https-everywhere-standalone`.
 
-First, following the steps above in [Setup](#Setup).  Then running the following:
+First, following the steps above in [Setup](#Setup).  If you've done this previously, update all the packages you've previously installed to the latest version.  Then running the following:
 
     PYTHONHASHSEED=1
     export PYTHONHASHSEED
@@ -73,7 +73,7 @@ First, following the steps above in [Setup](#Setup).  Then running the following
 
 To verify our Windows build, the repository must be owned by a user named `User` and live in `C:\Users\User\workspace\https-everywhere-standalone`.
 
-First, follow the steps above in [Setup](#Setup), modifying for Windows.  Then run the following using Powershell:
+First, follow the steps above in [Setup](#Setup), modifying for Windows.  If you've done this previously, update all the packages you've previously installed to the latest version.  Then run the following using Powershell:
 
     py -m pipenv shell
     $env:PYTHONHASHSEED=1
