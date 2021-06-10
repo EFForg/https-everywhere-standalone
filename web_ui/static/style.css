@@ -7,21 +7,15 @@
   --space: 5px;
 }
 body{
-  margin-top: 6em;
-  left: 50%;
-  position: relative;
-  overflow-x: hidden;
+  margin: 5% auto;
+  max-width: 600px;
 }
 
 img#banner{
-  position: relative;
-  left: -289px;
+  width: 100%;
 }
 
 #content_wrapper{
-  width: 600px;
-  position: relative;
-  left: -300px;
   font-size: 12pt;
   font-family: sans-serif;
   line-height: 150%;
@@ -144,3 +138,10 @@ input:checked+label:after {
   margin-top: 22px;
   width: 15px;
 }
+
+@media screen and (max-width: 600px) {
+  body {
+    padding: 2%;
+  }
+}
+
